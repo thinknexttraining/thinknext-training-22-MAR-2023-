@@ -1,0 +1,114 @@
+﻿<%@ Page Title="Download Certificate" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="DownloadCertificate.aspx.cs" Inherits="DownloadCertificate" %>
+
+<%--<%@ Register Assembly="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" Namespace="CrystalDecisions.Web" TagPrefix="CR" %>--%>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <script src="jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.11.4/jquery-ui.js"></script>
+    <link href="jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#txtEmailID').autocomplete({
+                source: 'StudentHandler.ashx'
+            });
+        });
+    </script>
+    <style type="text/css">   
+        td {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1F3F9), color-stop(1, #F1F3F9) );
+    padding: 10px;
+}
+        table{
+                box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #000000;
+}
+        input[type="text"], select {
+    width: 100%;
+    padding:5px;
+}
+        .bg-grey{
+                background: #dadada;
+        }
+      .downloadcert{    background: #F8F7F3;
+    border: #EEEEDF 1px solid;    
+    font-size: 1.4em;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #D91E18;}
+       
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <section class="ptb-30">
+        <div class="container">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <table class=" border table-bordered width-100">
+                    <tr>
+                        <td colspan="2">
+                            <h2 class="downloadcert">Download Your Certificate</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblEmailID" runat="server" Font-Bold="True" Text="Enter Email ID"></asp:Label>
+                            <span class="textred">*</span>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtEmailID" runat="server" AutoPostBack="True" OnTextChanged="txtEmailID_TextChanged"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblCourse" runat="server" Font-Bold="True" Text="Select Course"></asp:Label>
+                            <span class="textred">*</span></td>
+                        <td>
+                            <asp:DropDownList ID="ddlCourse" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCourse_SelectedIndexChanged"></asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Your Certificate Id</strong></td>
+                        <td>
+                            <asp:TextBox ID="txtCertificateid" runat="server" CssClass="bg-grey border" ReadOnly="True"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="border-0 text-center">
+                            <asp:Button ID="btnDownload" CssClass="btn bg-black text-white" runat="server" Text="Download" OnClick="btnDownload_Click" Font-Bold="True" Width="136px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="border-0 text-center">
+                            <br />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <h4>Note:</h4>
+                            <ol>
+                                <li>Fields marked with <span class="textred">*</span> (asterisk) are mandatory.</li>                                
+                                <li>Your Certificate Id will be auto generated</li>
+                            </ol>
+                        </td>
+
+                    </tr>
+                </table>
+
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+    </section>
+    
+     <div>
+
+        <CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" AutoDataBind="true" ToolPanelView="None" DisplayToolbar="False" />
+        
+    </div>
+    
+</asp:Content>
+

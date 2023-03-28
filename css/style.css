@@ -1,0 +1,188 @@
+
+
+a {color:#000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+a:hover, a:active, a:focus {color:#004488;}
+#form1{margin-top:0px; height: auto;
+	width: 1000px;
+}   
+#main {
+	background-color: #fff;
+	height: auto;
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+#header
+{
+	background-image: url('../images/shadow.png');
+    background-repeat: no-repeat;
+    height: 165px;
+}
+#menu{
+	background-position: center center;
+	margin: 0px 2px 0px 2px;
+	padding: 0px;
+	background-repeat: repeat-x;
+	height: 28px;
+}
+#footer{
+	border: 2px solid white;
+	width: 996px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	height: 150px;
+	vertical-align: middle;
+}
+#center
+{
+	width: 1000px;
+	height: 221px;
+	background-color: #FFFFFF;
+}
+#left
+{
+	float: left;
+	width: 149px;
+	height: 451px;
+	background-color: #FFFFFF;
+}
+#right
+{
+	float: left;
+	width: 847px;
+	height: 473px;
+	background-color: #FFFFFF;
+}
+.clr
+{
+	margin:0px;
+	padding:0px;
+	clear:both;
+}
+#footerdata
+{
+	width:1000px;
+	height:143px;
+	text-align:center;
+	vertical-align:middle;
+	margin:auto auto auto auto;
+	}
+		
+	
+   
+   
+.banner{ background:url(..); background-repeat:no-repeat; width:1000px; height:137px; margin:0 auto;}
+.blink{
+	margin-left: 210px;
+	margin-top: 85px;
+}
+ .blink a img{ border:0;}
+	
+	.mg{ border:0;}
+	
+	
+	.autocomplete_completionListElement 
+{  
+	
+	margin : 2px;
+	margin-left:0px;
+	width:100px;
+	background-color : inherit;
+	color : windowtext;
+	border : buttonshadow;
+	border-width :0px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : auto;
+	font-family:Tahoma;
+	font-size:small;
+    text-align : left; 
+    list-style-type : none;
+    
+   /*  border-bottom:solid 1px Black; */
+	 
+}
+
+/* AutoComplete highlighted item */
+
+.autocomplete_highlightedListItem
+{
+	background-color: white ;
+	color: black;
+	padding: 0px;
+	margin-left: -38px;
+	
+}
+
+/* AutoComplete item */
+
+.autocomplete_listItem 
+{
+	background-color :  Silver;
+	color : windowtext;
+	padding : 0px;
+	margin-left: -38px;
+	
+	
+	
+	
+	
+}
+	.autocompleteReg_listItem 
+{
+	background-color :  #ADA96E;
+	color : windowtext;
+	padding : 0px;
+	margin-left: -38px;
+	
+	
+	
+	
+	
+}
+	.autocompleteReg_highlightedListItem
+{
+	background-color: #3BB9FF ;
+	color: black;
+	padding: 0px;
+	margin-left: -38px;
+	
+}
+	
+	.searchbutton
+    {
+	background-image: url('../Images/search.png') ;
+	background-repeat:repeat;
+	background-position: center center;
+	text-align: center;
+	border-style:none;
+	background-color:transparent;
+	
+	
+}
+
+.Allbuttons
+    {
+	background-image: url('../Images/menu_bg.gif');
+	background-repeat:repeat;
+	background-position: center center;
+	text-align: center;
+	border-style:none;
+	background-color:transparent;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	border-radius:3px;
+	behavior:url('ie-css3.htc');
+	margin-left: 0px;
+	color:White;
+	}
+img.adjust-pic {
+    /* height: 42%; */
+    width: 45%;
+}

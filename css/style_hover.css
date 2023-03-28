@@ -1,0 +1,61 @@
+bg-3.png
+
+.grid_4 {
+    width: 25%;float: left;
+display: inline; margin:10px 0 0 0; padding:0}
+
+	
+	.box-3 {
+    background:transparent;
+    padding:0;
+	
+    -moz-box-sizing: border-box;
+    margin:0;
+	}
+	
+	
+	.img-bord {
+    padding: 6px;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px 0px rgb(214, 214, 214);
+    margin-right: 1px;
+}
+
+.magnifier {
+    position: relative;
+    display: block;
+    background:url(../images/magnifier.png) no-repeat scroll center center rgb(0, 0, 0);
+}
+
+.magnifier img {
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+    transition: all 0.5s ease 0s;
+}
+img {
+   
+}
+
+
+.magnifier:hover img {
+    opacity: 0.4;
+}
+.magnifier img {
+       
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+    transition: all 0.5s ease 0s;
+}
+.img-bord img {
+    width: 100%;
+       
+}
+
+.img-bord {
+    padding: 6px;
+  border:5px solid #fff;
+    margin-right: 1px;
+}
+
+
+

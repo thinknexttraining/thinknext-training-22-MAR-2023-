@@ -1,0 +1,49 @@
+﻿
+
+.Menu
+{
+    background:url(../Images/menu_bg.gif) repeat-x;
+    text-align:center;
+   font-weight:bold;
+    /* set width if needed.*/
+   line-height:25px;
+   z-index:999;
+   
+    
+}
+.Menuleft
+{
+    background:url(../Images/menu_bg.gif) repeat-x;
+    text-align:left;
+    /* set width if needed.*/
+   line-height:25px;
+   font-family:Arial,times News701 BT roman;
+    font-size:10px;
+   font-weight:bold;
+   z-index:999;
+    
+}
+.Menu4
+{
+    background: url(../Images/menu_bg.gif) repeat-x;
+    text-align:left;
+    font-family:Arial,times News701 BT roman;
+    font-size:10px;
+    text-indent:10px;
+    line-height:25px;
+    font-weight:bold;
+    z-index:999;
+}
+
+.Menuleft4
+{
+    background: url(../Images/menu_bg.gif) repeat-x;
+    text-align:left;
+    font-family:Arial,times News701 BT roman;
+    font-size:10px;
+    line-height:25px;
+    font-weight:bold;
+    width:150px;
+    z-index:999;
+    
+}

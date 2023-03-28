@@ -1,0 +1,1329 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage-Course-New.master.vb" Inherits="MasterPageCourse" %>
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta content="#fff" name="theme-color">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/ico" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="../bootstrap5/bootstrap.min.css" rel="stylesheet" >
+    <script src="../bootstrap5/bootstrap.bundle.min.js" ></script>
+    
+    <link href="../new-bootstrap/css/style.css" rel="stylesheet" />
+    <script  src="../new-bootstrap/js/jquery.min.js"></script>
+    <script  src="../js/custom.js"></script>
+
+ <!-- Google Analytics -->
+  <script>
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-45989872-1', 'thinknexttraining.com');
+      ga('send', 'pageview');
+
+  </script>
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 987828495 -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-987828495"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-987828495');
+</script>
+
+        <!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1287913394619192');
+    fbq('track', 'PageView');
+</script>
+
+<noscript>
+    <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1287913394619192&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+        <!-- //  New Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '650548395565669');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=650548395565669&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
+
+    
+        <script>var continuallySettings = { appID: "69vrpz3g4rpx" };</script>
+        <script src="https://cdn-app.continual.ly/js/embed/continually-embed.latest.min.js"></script>
+    
+ <script type="application/ld+json">
+{
+"@context": "https://schema.org/", 
+"@type": "Product", 
+"name": "ThinkNEXT Technologies",
+"image": "https://thinknexttraining.com/images/6-weeks-summer-training-chandigarh-1.jpg",
+"description": "Stipend Based or Free 6 Six Months/Weeks Industrial Training in Chandigarh Mohali. PHP Web Designing Java Android Digital Marketing Networking Training Course.",
+"mpn": "no",
+"sku": "ThinkNEXT",
+"offers": {
+"@type": "Offer",
+"url": "https://www.thinknexttraining.com",
+"priceCurrency": "INR",
+"price": "12000",
+"priceValidUntil": "2050-12-30",
+"availability": "https://schema.org/OnlineOnly"
+},
+"brand": {
+"@type": "Brand",
+"name": "ThinkNEXT Technologies"
+},  
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5",
+"ratingCount": "998690"
+},
+"review": {
+"@type": "Review",
+"name": "Munish Mittal",
+"reviewBody": "Industrial Training/Internship in Chandigarh Mohali- ThinkNEXT",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "5"
+},
+"datePublished": "2022-02-01",
+"author": {"@type": "Person", "name": "Munish Mittal"}
+}
+}
+</script>
+
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        	::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+html {
+  scrollbar-color: blue white;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+ width: 10px;
+    height: 8px;
+    background-color: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+		background: #2aa1d1;
+    border-radius: 16px;
+}
+
+        p{
+           line-height:1.8;
+        }
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        .h4, h4 {
+            font-size: 20px;
+        }
+       
+         .bg-07294d{
+            background:#07294d;
+        }
+         .bg-8ca94a{
+  background:#8ca94a;
+         }
+          .bg-07294d{
+            background:#07294d;
+        }
+           .bg-fd6e6f{
+            background:#fd6e6f;
+        }
+            .bg-5789e8{
+            background:#5789e8;
+        }
+
+
+        .bg-0f54bb{
+            background:#0f54bb;
+        }
+        .bg-ececec{
+ background:#ececec;
+        }
+
+        .form-control {
+            padding: 0.6rem .75rem;
+        }
+
+       
+
+        .dropdown-menu {
+            font-size: 14px;
+            background: #000;
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        .dropdown-header {
+            color: #ff1200;
+            font-size: 17px;
+        }
+
+        a.dropdown-item {
+            white-space: inherit;
+        }
+
+        .dropdown-item:focus, .dropdown-item:hover {
+            color: #1e2125;
+            background-color: #ea2f32;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .icon-sticky {
+            position: fixed;
+            bottom: 20%;
+            width: 45px;
+            right: 16px;
+        }
+      #callme{
+              background: #3c3c9e;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 13px;
+      }
+
+        .navbar-brand img {
+            max-width: 175px;
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+         .downloadsyllabus {
+              min-height: 250px;
+        }
+         .custom-menu{
+             z-index:999
+         }
+         .right-fix-img {
+    top: 26%;
+    right: 0px;
+    z-index: 9999999;
+    width: 32px;
+}
+            .scholarshipform .form-control{
+           height: 36px;
+       }
+       .scholarshipform .input-group{
+       margin-bottom: 1.2rem !important;
+       }
+      ul.checklist {
+    list-style: none;
+    padding-left: 0px;
+}
+       .checklist > li {
+    font-size: 17px;
+    padding-left: 28px;
+    margin-top: 12px;
+    position: relative;
+    font-family: sans-serif;
+}
+  .checklist > li:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 18px;
+   
+}
+      ul.squarelist {
+    list-style: none;
+    padding-left: 0px;
+}
+       .squarelist > li {
+    font-size: 17px;
+    padding-left: 28px;
+    margin-top: 12px;
+    position: relative;
+    font-family: sans-serif;
+}
+  .squarelist > li:before {
+    content: "\f0c8";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 18px;
+   
+}
+  .text-ffe108{
+      color:#ffe108;
+  }
+
+      .mobile-socialfix {
+            bottom: 0;
+            z-index: 9999999999999999;
+        }
+
+        .whatapp-mob {
+            background: #1fb314;
+        }
+
+            .whatapp-mob img {
+                width: 40px;
+            }
+
+        .call-mob {
+            background: #3c3c9e;
+        }
+
+            .call-mob img {
+                width: 35px;
+            }
+
+  
+        .customers-icon{
+    fill: #153e4d;
+    color: #153e4d;
+    border-color: #153e4d;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0.5em;
+    /* color: #818a91; */
+    border: 3px solid #153e4d;
+    background-color: white;
+    display: inline-block;
+    font-size: 36px;
+}
+
+      .customers-icon i {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+}
+
+      .customers-icon i:before {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+      .buttonicon::before {
+    font-family: FontAwesome;
+    content: "\f019";
+    /* font-size: 13px; */
+    position: absolute;
+    left: 17px;
+    top: 0px;
+    pointer-events: none;
+    color: white;
+}
+.buttonicon{
+position:relative;
+}
+.dnloadbtn{
+padding: 6px 15px 6px 40px;
+}
+
+        @media screen and (max-width:768px) {
+
+         /*   .custom-menu{
+    margin-top: 75px;
+            }*/
+            .dropdown-menu {
+                font-size: 17px;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+                font-size: 18px;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+                color: #000;
+            }
+
+            li.nav-item {
+                border-bottom: 1px solid #cacaca;
+            }
+
+            .dropdown-toggle::after {
+                position: absolute;
+                right: 0;
+            }
+            
+        }
+
+        @media screen and (min-width:992px) {
+            .custom-menu {
+                position: absolute;
+                background: linear-gradient(#000000b3, #c5c2c203);
+            }
+
+                .custom-menu .navbar-nav .nav-link {
+                    color: #fff !important;
+                }
+
+            .navbar-expand-lg .navbar-nav .dropdown-menu {
+                width: 100%;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+                color: #000;
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (min-width:992px) and (max-width:1200px) {
+            .menu-container {
+                max-width: 95% !important;
+            }
+        }
+        @media screen and (max-width:575px) {
+
+           #continually-message-container {
+                bottom: 70px !important;
+            }
+
+            #continually-button-container {
+                bottom: 70px !important;
+            }
+        }
+               @media (min-width: 768px){
+.modal-dialog {
+    max-width: 600px;
+    margin: 1.75rem auto;
+}
+}
+    </style>
+     
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         
+        <div class="py-5 my-3 d-md-none"></div>
+        <nav class="custom-menu navbar navbar-expand-lg navbar-light w-100">
+            <div class="container menu-container">
+                <a class="navbar-brand" href="http://www.thinknext.co.in/">
+                    <img src="../images/Logo(PNG).png" class="img-responsive" alt="default-logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse position-relative" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Default.aspx">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown mega-dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Training
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <ul class="row bg-black">
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">CSE/IT/MCA</li>
+                                                <li><a class="dropdown-item" href="../digital-marketing-course-training-in-chandigarh.aspx">Digital Marketing Course</a> </li>
+                                                <li><a class="dropdown-item" href="../php-training-in-chandigarh.aspx">PHP\MySQL</a></li>
+                                                <li><a class="dropdown-item" href="../laravel-php-framework-training-in-chandigarh-mohali.aspx">Laravel PHP </a></li>
+                                                <li><a class="dropdown-item" href="../wordpress-training-in-chandigarh-mohali.aspx">WordPress Training</a></li>
+                                                <li><a class="dropdown-item" href="../dot-net-training-in-chandigarh.aspx">.Net</a></li>
+                                                <li><a class="dropdown-item" href="../java-training-in-chandigarh.aspx">JAVA</a></li>
+                                                <li><a class="dropdown-item" href="../Android-training-in-chandigarh.aspx">Android</a></li>
+                                                <li><a class="dropdown-item" href="../iphone-training-in-chandigarh.aspx">iPhone</a></li>
+                                                <li><a class="dropdown-item" href="../web-designing-training-in-chandigarh.aspx">Web Designing</a></li>
+                                                <li><a class="dropdown-item" href="../graphic-designing-course-in-chandigarh.aspx">Graphic Designing</a></li>
+                                                <li><a class="dropdown-item" href="../software-testing-training-in-chandigarh.aspx">Software Testing</a></li>
+                                                <li><a class="dropdown-item" href="../networking-training-in-chandigarh.aspx">Hardware & Networking</a></li>
+                                                <li><a class="dropdown-item" href="../ccna-training-in-chandigarh.aspx">CCNA</a></li>
+                                                <li><a class="dropdown-item" href="../ccnp-training-institutions-chandigarh.aspx">CCNP</a></li>
+                                                <li><a class="dropdown-item" href="../computer-courses-in-chandigarh-mohali.aspx">Computer Courses</a></li>
+                                                <li><a class="dropdown-item" href="../ethical-hacking-training-in-chandigarh-mohali.aspx">Ethical Hacking</a></li>
+                                                <li><a class="dropdown-item" href="../seo-training-in-chandigarh.aspx">SEO,SMO & Bidding </a></li>
+                                                <li><a class="dropdown-item" href="../Asp-Net-MVC-training-in-chandigarh-mohali.aspx">Asp .Net MVC </a></li>
+                                                <li><a class="dropdown-item" href="../online-bidding-freelancing.aspx">Online Bidding(FreeLancing)</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">
+                                                    <br />
+                                                </li>
+                                                <li><a class="dropdown-item" href="../games-design-development-courses-in-chandigarh.aspx">Game Designing </a></li>
+
+                                                <li><a class="dropdown-item" href="../AngularJS-training-course-chandigarh-mohali.aspx">AngularJS </a></li>
+                                                <li><a class="dropdown-item" href="../reactjs-training-course-chandigarh-mohali.aspx">ReactJS </a></li>
+                                                <li><a class="dropdown-item" href="../react-native-training-course-chandigarh.aspx">React Native </a></li>
+                                                <li><a class="dropdown-item" href="../nodejs-training-course-chandigarh-mohali.aspx">NodeJS </a></li>
+                                                <li><a class="dropdown-item" href="../mean-stack-course-training-chandigarh-mohali.aspx">MEAN Stack</a> </li>
+                                                <li><a class="dropdown-item" href="../mern-stack-development-training-in-chandigarh.aspx">MERN Stack</a> </li>
+                                                <li><a class="dropdown-item" href="../mcitp-training-in-chandigarh.aspx">MCITP</a></li>
+
+                                                <li><a class="dropdown-item" href="../c-and-c-training-in-chandigarh.aspx">C\C++</a></li>
+
+                                                <li><a class="dropdown-item" href="../sql-server-database-dba-training-in-chandigarh-mohali.aspx">Oracle\SQL Server</a></li>
+                                                <li><a class="dropdown-item" href="../Animation-and-Multimedia-training-in-chandigarh.aspx">Animation & Multimedia</a></li>
+                                                <!--<li><a class="dropdown-item" href="../sap-training-in-chandigarh.aspx">SAP Training</a></li> -->
+                                                <li><a class="dropdown-item" href="../matlab-training-institute-in-chandigarh.aspx">MATLAB</a></li>
+                                                <li><a class="dropdown-item" href="../big-data-hadoop-course-chandigarh.aspx">Big Data Hadoop</a></li>
+                                                <li><a class="dropdown-item" href="../python-training-in-chandigarh-mohali.aspx">Python</a> </li>
+                                                <li><a class="dropdown-item" href="../machine-learning-and-artificial-intelligence-with-python-course-chandigarh-mohali.aspx">Machine Learning & AI</a> </li>
+                                                <li><a class="dropdown-item" href="../data-science-with-python-course-training-chandigarh-mohali.aspx">Data Science </a></li>
+                                                <li><a class="dropdown-item" href="../cyber-security-course-chandigarh.aspx">Cyber Security</a> </li>
+                                                <li><a class="dropdown-item" href="../aws-training-course-chandigarh-mohali.aspx">AWS </a></li>
+                                                <li><a class="dropdown-item" href="../flutter-training-chandigarh.aspx">Flutter</a> </li>
+                                                <li><a class="dropdown-item" href="../linux-training-in-chandigarh-mohali.aspx">Linux</a> </li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">ECE/Electrical</li>
+                                                <li><a class="dropdown-item" href="../embedded-systems-training-in-chandigarh.aspx">Embedded System & Robotics</a></li>
+                                                <li><a class="dropdown-item" href="../PLC-SCADA-training-in-chandigarh.aspx">PLC/SCADA(Automation)</a></li>
+                                                <li><a class="dropdown-item" href="../vlsi-training-chandigarh-mohali.aspx">VLSI Training</a></li>
+                                                <li><a class="dropdown-item" href="../networking-training-in-chandigarh.aspx">Networking </a></li>
+                                                <li><a class="dropdown-item" href="../Android-training-in-chandigarh.aspx">Android</a></li>
+                                                <li><a class="dropdown-item" href="../pdms-training-institutes-in-chandigarh.aspx">PDMS Training </a></li>
+                                                <li><a class="dropdown-item" href="../IoT-training-chandigarh-mohali-india.aspx">IoT Training </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">Mechanical\Civil</li>
+                                                <li><a class="dropdown-item" href="../Autocad-training-in-chandigarh.aspx">AutoCAD</a></li>
+                                                <li><a class="dropdown-item" href="../solid-works-training-in-chandigarh.aspx">Solid Works</a></li>
+                                                <li><a class="dropdown-item" href="../Pro-Engineer-Training-in-chandigarh.aspx">Pro-E</a> </li>
+                                                <li><a class="dropdown-item" href="../catia-training-Chandigarh.aspx">CATIA</a></li>
+
+                                                <li><a class="dropdown-item" href="../CNC-training-in-chandigarh.aspx">CNC Programming</a></li>
+                                                <li><a class="dropdown-item" href="../STAADpro-training-in-chandigarh.aspx">STAADPro</a></li>
+                                                <li><a class="dropdown-item" href="../revit-training-courses-institute-chandigarh-mohali.aspx">Revit </a></li>
+                                                <li><a class="dropdown-item" href="../3dsmax-training-courses-institute-chandigarh-mohali.aspx">3DS MAX </a></li>
+                                                <li><a class="dropdown-item" href="../primavera-training-courses-institute-chandigarh-mohali.aspx">Primavera </a></li>
+                                                <li><a class="dropdown-item" href="../6-weeks-industrial-cnc-programming-training-courses-chandigarh-mohali.aspx">CNC Programming</a></li>
+                                                <li><a class="dropdown-item" href="../google-sketchup-training-in-chandigarh.aspx">Google Sketchup</a></li>
+                                                <li><a class="dropdown-item" href="../etabs-training-course-chandigarh-mohali.aspx">ETABS </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">Training</li>
+                                                <li><a class="dropdown-item" href="../industrial-training-cse-it-mca-msc-bca.aspx">CSE/IT</a></li>
+                                                <li><a class="dropdown-item" href="../industrial-training-ece-electronics-engineering.aspx">ECE</a></li>
+                                                <li><a class="dropdown-item" href="../industrial-training-mechanical-engineering-students.aspx">Mechanical Engineering</a></li>
+                                                <li><a class="dropdown-item" href="../industrial-training-civil-engineering-students.aspx">Civil Engineering</a></li>
+                                                <li><a class="dropdown-item" href="../industrial-training-electrical-engineering-students.aspx">Electrical Engineering</a></li>
+                                                <li><a class="dropdown-item" href="../advance-excel-course-training-in-chandigarh-mohali.aspx">Advance Excel</a></li>
+                                                <li><a class="dropdown-item" href="../tally-erp-training-coaching-institute-in-chandigarh-mohali.aspx">Tally</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">SAP</li>
+                                                <li><a class="dropdown-item" href="../sap-training-in-chandigarh.aspx">SAP</a></li>
+                                                <li><a class="dropdown-item" href="../sap-abap-training.aspx">SAP ABAP</a></li>
+                                                <li><a class="dropdown-item" href="../sap-hr-training.aspx">SAP HR</a></li>
+                                                <li><a class="dropdown-item" href="../sap-mm-training.aspx">SAP MM</a></li>
+                                                <li><a class="dropdown-item" href="../sap-qm-training.aspx">SAP QM</a></li>
+                                                <li><a class="dropdown-item" href="../sap-pp-training.aspx">SAP PP</a></li>
+                                                <li><a class="dropdown-item" href="../sap-basis-training.aspx">SAP Basis</a></li>
+                                                <li><a class="dropdown-item" href="../sap-sd-training.aspx">SAP SD</a></li>
+                                                <li><a class="dropdown-item" href="../sap-fi-training.aspx">SAP Fi</a></li>
+                                                <li><a class="dropdown-item" href="../sap-co-training.aspx">SAP Co</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="../#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Free Industrial Training
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../stipend-based-industrial-training.aspx">Stipend Based Industrial Training</a></li>
+                                <li><a class="dropdown-item" href="../free-industrial-training-in-chandigarh.aspx">ThinkNEXT Free Industrial Training</a></li>
+                                <li><a class="dropdown-item" href="../free-industrial-training-esdm-govt-scheme.aspx">ESDM Govt. Scheme</a></li>
+                                <li><a class="dropdown-item" href="../free-industrial-training-pmkvy-govt-scheme.aspx">PMKVY 2.0 Govt. Scheme</a></li>
+                                <li><a class="dropdown-item" href="../free-industrial-training-in-chandigarh-mohali.aspx">Digital India Govt. Scheme</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="../#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <ul class="row bg-black">
+                                        <li class="col-sm-4 ">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../internship-in-chandigarh.aspx">Internship</a></li>
+                                                <li><a class="dropdown-item" href="../free-online-internship-with-certificate.aspx">Free Online Internship</a></li>                                                
+                                                 <li><a class="dropdown-item" href="../internship-cse-students.aspx">Internship for CSE students</a></li>
+                                                <li><a class="dropdown-item" href="../online-internship-cse-students.aspx">Online Internship for CSE students</a></li>                                                
+                                                <li><a class="dropdown-item" href="../summer-internship-cse-students.aspx">Summer Internship for CSE students</a></li>                                               
+                                                <li><a class="dropdown-item" href="../Summer-training-in-chandigarh.aspx">Summer Training</a></li>
+                                                <li><a class="dropdown-item" href="../online-summer-training.aspx">Online Summer Training</a></li>
+                                                 <li><a class="dropdown-item" href="../free-industrial-training-in-chandigarh.aspx">Zero Pay Program</a></li>
+                                                <li><a class="dropdown-item" href="../45-days-summer-industrial-training-chandigarh-mohali.aspx">45 Days Summer Training</a></li>
+                                                <li><a class="dropdown-item" href="../6-weeks-summer-training-chandigarh.aspx">6 Weeks Summer Training</a></li>
+                                                <li><a class="dropdown-item" href="../summer-internship-in-chandigarh-mohali.aspx">Summer Internship</a></li>
+                                                <li><a class="dropdown-item" href="../industrial-training-chandigarh.aspx">Industrial Training in chandigarh</a></li>
+                                                <li><a class="dropdown-item" href="../diploma-mobile-application-development-chandigarh.aspx">Mobile Application Development</a></li>                                               
+                                                <li><a class="dropdown-item" href="../VerifyCertificate.aspx">Certificate Verification</a></li>
+                                              
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-4 ">
+                                            <ul>
+                                                <li class="dropdown-header">Diploma Courses</li>
+                                                <li><a class="dropdown-item" href="../diploma-in-3d-animation-courses-in-chandigarh.aspx">Diploma in Animation & VFX</a></li>
+                                                <li><a class="dropdown-item" href="../diploma-in-animation-multimedia-chandigarh-mohali.aspx">Diploma in Animation & Multimedia</a></li>
+                                                <li><a class="dropdown-item" href="../diploma-web-designing-developement-courses-in-chandigarh.aspx">Web Designing & Development</a></li>
+                                                <li><a class="dropdown-item" href="../diploma-web-designing-digital-marketing-in-chandigarh.aspx">Web Designing & Digital Marketing</a></li>
+                                                <li><a class="dropdown-item" href="../diploma-course-Web-Design-Development-Internet-marketing-chandigarh-mohali.aspx">Web Design, Development & Internet Marketing</a></li>
+                                                <li><a class="dropdown-item" href="../six-weeks-industrial-training-in-chandigarh.aspx">Six Month /6 Weeks Industrial Training</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-4 ">
+                                            <ul>
+                                                <li class="dropdown-header">Job Oriented Courses</li>
+                                                <li><a class="dropdown-item" href="../photography-course-chandigarh.aspx">Professional Photography Course </a></li>
+                                                <li><a class="dropdown-item" href="../video-editing-course-chandigarh-mohali.aspx">Video Editing Course </a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="../#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Management Training
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../HR-training-in-chandigarh-with-management-internship.aspx">HR</a></li>
+                                <li><a class="dropdown-item" href="../marketing-training-internship-in-chandigarh-mohali.aspx">Marketing</a></li>
+                                <li><a class="dropdown-item" href="../finance-training-internship-in-chandigarh-mohali.aspx">Finance</a></li>
+                                <li><a class="dropdown-item" href="../it-training-internship-in-chandigarh-mohali.aspx">IT</a></li>
+                                <li><a class="dropdown-item" href="../international-business-training-internship-in-chandigarh-mohali.aspx">International Business</a></li>
+                                <li><a class="dropdown-item" href="../sap-training-in-chandigarh.aspx">SAP</a></li>
+                                <li><a class="dropdown-item" href="../industrial-training-internship-mba-bba-students-chandigarh-mohali.aspx">MBA/BBA Training Internship</a></li>
+                                <li><a class="dropdown-item" href="../internship-in-chandigarh-for-bba.aspx">Internship for BBA</a></li>
+                                <li><a class="dropdown-item" href="../internship-in-chandigarh-for-mba.aspx">Internship for MBA</a></li>
+                                <li><a class="dropdown-item" href="../bca-internship.aspx">Internship for BCA</a></li>
+                                <li><a class="dropdown-item" href="../mca-internship.aspx">Internship for MCA</a></li>
+                            </ul>
+                        </li>
+
+                           <li class="nav-item">
+                            <a class="nav-link" href="../get-free-demo-class.aspx">Free Demo Class</a>
+                        </li>
+
+                        <li class="nav-item dropdown position-relative d-none">
+                            <a class="nav-link dropdown-toggle" href="../#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placements
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../Hire-from-thinknext.aspx">Hire From ThinkNEXT</a></li>
+                                <li><a class="dropdown-item" href="../Company-list.aspx">Company List</a></li>
+                                <li><a class="dropdown-item" href="../Company-testimonial.aspx">Company Testimonial</a></li>
+                                <li><a class="dropdown-item" href="../Student-testimonial.aspx">Student Testimonial</a></li>
+                                <li><a class="dropdown-item" href="../placement-cell.aspx">Placement Cell</a></li>
+                                <li><a class="dropdown-item" href="../PlacementRecords.aspx">Placements After Training</a></li>
+                                <li><a class="dropdown-item" href="../hot-jobs.aspx">Hot Jobs</a></li>
+                                <li><a class="dropdown-item" href="../ParttimeFulltime.aspx">PartTime/FullTime Job During Training</a></li>
+                                <li><a class="dropdown-item" href="../short-listed-students.aspx">Short Listed Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="../#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../photogallery.aspx">Photo Gallery</a></li>
+                                <li><a class="dropdown-item" href="../videogallery.aspx">Video Gallery</a></li>
+                                <li><a class="dropdown-item" href="../media.aspx">Media</a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contactus.aspx">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="clear-both"></div>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="clear-both"></div>
+
+        <footer class="footer-section py-4 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h4 class="text-warning mb-3">Useful Links</h4>
+                      <ul class="welcomeLinks mb-0">
+                            <li><a class="text-white text-decoration-none" href="../digital-marketing-course-training-in-chandigarh.aspx">Digital Marketing Course</a></li>
+                            <li><a class="text-white text-decoration-none" href="../web-designing-training-in-chandigarh.aspx">Web Designing Course</a></li>
+                            <li><a class="text-white text-decoration-none" href="../php-training-in-chandigarh.aspx">PHP Course</a></li>
+                            <li><a class="text-white text-decoration-none" href="../Android-training-in-chandigarh.aspx">Android Course</a></li>
+                            <li><a class="text-white text-decoration-none" href="../python-training-in-chandigarh-mohali.aspx">Python Course</a></li>
+                           <li><a class="text-white text-decoration-none" href="../photography-course-chandigarh.aspx">Photography Course</a></li>
+                             <li><a class="text-white text-decoration-none" href="../cinematography-course-chandigarh.aspx" title="Cinematography Course">Cinematography Course</a></li>
+                        </ul>
+                    </div>                   
+                    <div class="col-12 col-md-4">
+                           <h4 class="text-warning mb-3 d-none d-md-block">Useful Links</h4>
+                      
+                        <ul class="welcomeLinks">
+
+                            <li><a class="text-white text-decoration-none" href="../blog.aspx" title="Video Editing Course">Blogs</a></li>
+                            <li><a class="text-white text-decoration-none" href="../video-editing-course-chandigarh-mohali.aspx" title="Video Editing Course">Video Editing Course</a></li>
+                            <li><a class="text-white text-decoration-none" href="../interior-designing-course-chandigarh.aspx" title="Interior Designing Course">Interior Designing Course</a></li>
+                            <li><a class="text-white text-decoration-none" href="../industrial-training-in-chandigarh.aspx">Industrial training in chandigarh</a></li>
+                            <li><a class="text-white text-decoration-none" href="../top-companies-providing-industrial-training.aspx">Top companies providing industrial training</a></li>
+
+
+                        </ul>
+                        <div class="footer-social-icon mb-4">
+                        <ul class="list list_inline list_social-networks">
+                            <li class="list__item"><a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/thinknexttechnologies" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list__item"><a class="list__item-link list__item-link_twitter" href="https://twitter.com/thinknextchd" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list__item"><a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/ThinkNEXTIndia?sub_confirmation=1" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            <li class="list__item"><a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/thinknexttechnologies/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list__item"><a class="list__item-link list__item-link_linkedin" href="https://www.linkedin.com/company/thinknext-technologies" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                             <li class="list__item"><a class="list__item-link" href="https://t.me/thinknext" target="_blank"><img src="../images/telegram-icon.svg" alt="Telegram Icon"/></a></li>
+                            <li class="list__item"><a class="list__item-link" href="https://www.quora.com/thinknexttechnologies" target="_blank"><img src="../images/quora-icon.png" alt="Telegram Icon"/></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-4 bg-light py-4 mb-5 mb-md-0">
+                        <h4 class="text-center"><strong>Download Brochure Now</strong></h4>
+                           <asp:Label class="label5" ID="Label5" runat="server" ForeColor="white"></asp:Label>
+                         <asp:Label ID="msg" runat="server" Visible="false" Text="" ForeColor="Red"></asp:Label>
+                        <div class="row m-0">
+
+                            <div class="col-12 mb-4">
+                                <asp:TextBox ID="Emailid" runat="server" class="form-control" placeholder="Email ID"></asp:TextBox>
+                                <asp:RegularExpressionValidator ID="FbrochValidatorEmail" CssClass="text-danger position-absolute" Display="Dynamic" ErrorMessage="Enter Valid Email ID" runat="server"  ControlToValidate="Emailid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="FBrochureGroup1"></asp:RegularExpressionValidator>                           
+                                <asp:RequiredFieldValidator ID="RequiredFbrochValidatorEmail" CssClass="text-danger position-absolute" runat="server" ControlToValidate="Emailid" ErrorMessage="Enter EmailID" ValidationGroup="FBrochureGroup"></asp:RequiredFieldValidator>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <asp:TextBox ID="Phoneno" runat="server" class="form-control" Type="text" placeholder="Mobile No."></asp:TextBox>
+                                <asp:RegularExpressionValidator ID="FbrochValidatorPhone" CssClass="text-danger position-absolute" Display="Dynamic" runat="server" ErrorMessage="Enter Valid Mobile Number"  ControlToValidate="Phoneno" ValidationExpression="^[1-9][0-9](\s){0,1}(\-){0,1}(\s){0,1}[0-9]{1}[0-9]{7}$" ValidationGroup="FBrochureGroup1"></asp:RegularExpressionValidator>
+                                <asp:RequiredFieldValidator ID="RequiredFbrochValidatorPhone" CssClass="text-danger position-absolute" runat="server" ControlToValidate="Phoneno" ErrorMessage="Enter Mobile No." ValidationGroup="FBrochureGroup"></asp:RequiredFieldValidator>
+
+                            </div>
+
+                            <div class="col-12 py-3 text-center">
+                                <span class="buttonicon">
+                                    <asp:Button ID="btnadd" runat="server" class="btn btn-dark text-white dnloadbtn" Text="Download Brochure" OnClick="btnadd_Click1" OnClientClick="return FBrochValidate()" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright pb-0 text-white text-center mt-md-5">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | <a href="../#">ThinkNEXT</a>
+                </div>
+            </div>
+
+          
+            <div class="right-fix-img position-fixed">
+            <a href="../lp/stipend-free-internship.aspx"><img src="../images/stipend-based-internship-vertical.jpg" alt="Online Training Courses"></a>
+        </div>
+
+           <div id="Stickytimer" class="bg-black py-2 stickybar"> 
+      <div class="container1"> 
+        <div class="row align-items-center text-center text-white"> 
+          <div class="col-lg-3 col-sm-4 py-md-3 text-center"><h4 class="text-white">Get Top Deals on Summer Internship 2022</h4>
+          </div> 
+          <div class="col-lg-3 col-sm-3 col-6 "> 
+            <div id="clockdiv2"> 
+              <div class="row"> 
+				<div class="col-lg-3 col-3 d-none ">
+					<span class="dayss">0</span>
+				    <div class="smalltext">Days</div>
+				</div>				  
+                <div class="col-lg-4 col-sm-4 col-4 d-xs-block"> <span class="hourss">00</span> 
+                  <div class="smalltext">Hours</div> 
+                </div> 
+                <div class="col-lg-4 col-sm-4 col-4"> <span class="minutess">28</span> 
+                  <div class="smalltext">Minutes</div> 
+                </div> 
+                <div class="col-lg-4 col-sm-4 col-4"> <span class="secondss">03</span> 
+                  <div class="smalltext">Seconds</div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+           
+          <div class="col-lg-2 col-sm-3 col-6">
+		  <div class="btn-success pd-10">		  
+		 <a class="text-white" href="https://www.thinknexttraining.com/lp/summer-internship-jackpot-offer.aspx"><strong>GET TOP DEALS</strong></a> 
+		  </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
+
+
+        </footer>
+
+           <div class="call-now d-none d-sm-block"><a href="../tel:7837401000" class="button-21">Call now 7837401000</a> </div>
+            
+            <div class="icon-sticky d-none d-sm-block">
+                <div>
+                    <a id="whatsapp-message" href="https://wa.me/917837404000?text=Hi I am interested in ThinkNEXT. Please contact me as soon as possible">
+                        <img src="../images/whatsapp1.gif" alt="Whatsapp icon">
+                    </a>
+                </div>
+                <div id="callme">
+                    <a href="../tel:7837401000">
+                        <img src="../images/callme.gif" alt="call icon" />
+                    </a>
+                </div>
+            </div> 
+
+
+        	<section class="mobile-socialfix position-fixed w-100 d-block d-sm-none">
+	      <div class="row m-0">
+	          <div class="col-6 whatapp-mob text-center">
+	              <div class="p-2">
+	                     <a class="text-white fw-bold text-decoration-none" href="https://wa.me/917837404000?text=Hi I am interested in ThinkNEXT. Please contact me as soon as possible">
+                        <img src="../images/whatsapp-icon2.gif" alt="Stipend Based Internship"> WhatsApp
+                    </a>
+	              </div>
+	          </div>
+	          <div class="col-6 text-center call-mob">
+	              <div class="p-2">
+	                    <a href="../tel:+917837401000" class="text-white fw-bold text-decoration-none">
+                         <img src="../images/callme.gif" alt="Stipend Based Internship"> Call Now
+                    </a>
+	              </div>
+	          </div>
+	      </div>
+	  </section>
+
+
+        <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="right_box">
+                        <!--div class="close-popup">               
+                <img src="../images/close.png" alt="Cloase Popup"  data-dismiss="modal" aria-label="Close" />
+            <div-->
+                        <button class="close close-one" type="button" data-bs-dismiss="modal">X</button>
+                        <div class="rounded_box def-pop-rounded-box">
+                            <img class="pop-offer-img" alt="6 Months Industrial Training In Chandigarh" title="6 Months Industrial Training In Chandigarh" src="../images/6-months-industrial-training-chandigarh-festival.png" />
+                            <span class="pop-arngeclbck">Scholarship Form<br /></span>
+                            <span class="pop-arngeclbck2">(Register to get scholarship upto 100%)</span>
+
+                            <asp:Label class="label4" ID="Label4" runat="server" ForeColor="white"></asp:Label>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator8" class="label4" Display="Dynamic" ErrorMessage="Enter Valid Email ID" runat="server" ControlToValidate="txtEmailId1" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator6" class="label4" Display="Dynamic" runat="server" ErrorMessage="Only Characters are allowed" ControlToValidate="txtName1" ValidationExpression="[a-zA-Z ]*$"></asp:RegularExpressionValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator7" class="label4" Display="Dynamic" runat="server" ErrorMessage="Enter Valid Mobile Number" ControlToValidate="txtMobile1" ValidationExpression="^[1-9][0-9](\s){0,1}(\-){0,1}(\s){0,1}[0-9]{1}[0-9]{7}$"></asp:RegularExpressionValidator>
+                            <div class="scholarshipform">
+                                <br />
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                    </div>
+                                    <asp:TextBox ID="txtName1" runat="server" class="form-control" placeholder="Name" OnTextChanged="txtName1_TextChanged" AutoPostBack="false"></asp:TextBox>
+
+
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-phone text-info"></i></div>
+                                    </div>
+                                    <asp:TextBox ID="txtMobile1" runat="server" class="form-control" MaxLength="10" Placeholder="Mobile No." AutoPostBack="false"></asp:TextBox>
+
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                    </div>
+                                    <asp:TextBox ID="txtEmailId1" runat="server" class="form-control" placeholder="Email ID" AutoPostBack="false"></asp:TextBox>
+
+
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-graduation-cap text-info"></i></div>
+                                    </div>
+                                    <asp:TextBox ID="txtcrse" runat="server" class="form-control" placeholder="Training / Program interested in"></asp:TextBox>
+                                    <asp:RegularExpressionValidator Display="Dynamic" ID="RegularExpressionValidator10" runat="server" ErrorMessage="Only Charactors are allowed" ValidationExpression="[a-zA-Z ]*$" ControlToValidate="txtcrse"></asp:RegularExpressionValidator>
+
+                                </div>
+
+                                <asp:TextBox ID="TextBox6" runat="server" Visible="False" Text="TNK101"></asp:TextBox>
+                                <div class="text-center">
+
+                                    <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="search_submit_button trans_200" ValidationGroup="submit" OnClientClick="Button1_Click" />
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="arr-call-sde-img">
+                          
+                            <img class="arr-call-sde-img" alt="Best Industrial Training In Chandigarh" src="../images/ThinkNEXT-Festival-Offer-min.jpg" />
+                        </div>
+
+                        <div class="clear-both"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        	<!-- light-box modelBox -->
+	<div class="modal fade modal-profile-lg" tabindex="-1" role="dialog" aria-labelledby="modalProfile" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">					
+						<h5 class="modal-title"></h5>
+                        	<button class="close" type="button" data-bs-dismiss="modal">X</button>
+					</div>
+					<div class="modal-body">
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+        
+			</div>
+		</div>
+	<!--/// End light-box modelBox -->
+
+
+          <!-- Image Modal -->
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center"></h5>
+                    <button class="close" type="button" data-bs-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="imagepreview w-100" alt="Digital Marketing Company in Chandigarh Mohali">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ////  End Media Modal -->
+
+        
+    <!-- Video Modal -->
+    <div class="modal fade" id="VideoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-body p-0">
+                  <button type="button" class="btn-modal-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+         <!-- // END Video Modal -->
+
+
+          <script>
+              function SyllValidate() {
+                  var isValid = false;
+                  isValid = Page_ClientValidate('DSyllabusGroup');
+                  if (isValid) {
+                      isValid = Page_ClientValidate('DSyllabusGroup1');
+                  }
+
+                  return isValid;
+              }
+          </script>
+
+        <script>
+            function FBrochValidate() {
+                var isValid = false;
+                isValid = Page_ClientValidate('FBrochureGroup');
+                if (isValid) {
+                    isValid = Page_ClientValidate('FBrochureGroup1');
+                }
+
+                return isValid;
+            }
+        </script>
+      
+
+        <script type="text/javascript">
+            if ($(window).width() > 768) {
+                $(document).ready(function () {
+                    $(".dropdown").hover(
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                            $(this).toggleClass('open');
+                        },
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                            $(this).toggleClass('open');
+                        }
+                    );
+                });
+
+            }
+            else {
+                $(document).ready(function () {
+                    $(".dropdown").hover(
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                            $(this).toggleClass('blod');
+                        },
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                            $(this).toggleClass('blod');
+                        }
+                    );
+                });
+            }
+        </script>
+           <script>
+               function broucherdownload() {
+                   var states = document.getElementById('brochiframe').style.display;
+                   if (states == 'block') {
+
+                       document.getElementById('brochiframe').style.display = 'none';
+
+
+                   } else {
+                       document.getElementById('brochiframe').style.display = 'block';
+                   }
+               };
+
+
+               function clsifrm() {
+                   var states = document.getElementById('brochiframe').style.display;
+                   if (states == 'block') {
+                       document.getElementById('brochiframe').style.display = 'none';
+
+
+                   } else {
+                       document.getElementById('brochiframe').style.display = 'block';
+                   }
+               };
+
+
+           </script>
+
+ 
+
+
+        <script>
+            let modalId = $('#image-gallery');
+
+            $(document)
+                .ready(function () {
+
+                    loadGallery(true, 'a.thumbnail');
+
+                    //This function disables buttons when needed
+                    function disableButtons(counter_max, counter_current) {
+                        $('#show-previous-image, #show-next-image')
+                            .show();
+                        if (counter_max === counter_current) {
+                            $('#show-next-image')
+                                .hide();
+                        } else if (counter_current === 1) {
+                            $('#show-previous-image')
+                                .hide();
+                        }
+                    }
+
+                    /**
+                     *
+                     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+                     * @param setClickAttr  Sets the attribute for the click handler.
+                     */
+
+                    function loadGallery(setIDs, setClickAttr) {
+                        let current_image,
+                            selector,
+                            counter = 0;
+
+                        $('#show-next-image, #show-previous-image')
+                            .click(function () {
+                                if ($(this)
+                                    .attr('id') === 'show-previous-image') {
+                                    current_image--;
+                                } else {
+                                    current_image++;
+                                }
+
+                                selector = $('[data-image-id="' + current_image + '"]');
+                                updateGallery(selector);
+                            });
+
+                        function updateGallery(selector) {
+                            let $sel = selector;
+                            current_image = $sel.data('image-id');
+                            $('#image-gallery-title')
+                                .text($sel.data('title'));
+                            $('#image-gallery-image')
+                                .attr('src', $sel.data('image'));
+                            disableButtons(counter, $sel.data('image-id'));
+                        }
+
+                        if (setIDs == true) {
+                            $('[data-image-id]')
+                                .each(function () {
+                                    counter++;
+                                    $(this)
+                                        .attr('data-image-id', counter);
+                                });
+                        }
+                        $(setClickAttr)
+                            .on('click', function () {
+                                updateGallery($(this));
+                            });
+                    }
+                });
+
+            // build key actions
+            $(document)
+                .keydown(function (e) {
+                    switch (e.which) {
+                        case 37: // left
+                            if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                                $('#show-previous-image')
+                                    .click();
+                            }
+                            break;
+
+                        case 39: // right
+                            if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                                $('#show-next-image')
+                                    .click();
+                            }
+                            break;
+
+                        default:
+                            return; // exit this handler for other keys
+                    }
+                    e.preventDefault(); // prevent the default action (scroll / move caret)
+                });
+
+        </script>
+
+        <script>
+            $(".popupvid").click(function () {
+                $("#video-view-curtain").css("display", "block");
+                var $this = $(this);
+                var $iframe = $("<iframe allowfullscreen>").attr("src", $this.data("link"));
+                //var $title = $("<h1>").text($this.data("title"));
+                var $close = $("<img>").attr("src", $this.data("img"));
+                //$("#video-view").html($title).append($iframe);
+                $("#video-view").html($close).append($iframe);
+                $iframe.wrap("<div class='class-video'>");
+            });
+            $("#video-view-curtain").click(function () {
+                $(this).css("display", "none");
+
+            });
+        </script>
+
+         <script>
+
+             /// Hide ID Name in #url 
+
+             $(document).on('click', 'a[href^=\\#]', function () {
+                 $('html, body').animate({ scrollTop: $('[id="' + this.hash.slice(1) + '"]').offset().top }, 500);
+                 return false;
+             });
+         </script>
+
+        <script>
+            function getTimeRemaining(endtime) {
+                const total = Date.parse(endtime) - Date.parse(new Date());
+                const secondss = Math.floor((total / 1000) % 60);
+                const minutess = Math.floor((total / 1000 / 60) % 60);
+                const hourss = Math.floor((total / (1000 * 60 * 60)) % 24);
+                const dayss = Math.floor(total / (1000 * 60 * 60 * 24));
+
+                return {
+                    total,
+                    dayss,
+                    hourss,
+                    minutess,
+                    secondss
+                };
+            }
+
+            function initializeClock(id, endtime) {
+                const clock = document.getElementById(id);
+                const daysSpan = clock.querySelector('.dayss');
+                const hoursSpan = clock.querySelector('.hourss');
+                const minutesSpan = clock.querySelector('.minutess');
+                const secondsSpan = clock.querySelector('.secondss');
+
+                function updateClock() {
+                    const tot = getTimeRemaining(endtime);
+
+                    daysSpan.innerHTML = tot.dayss;
+                    hoursSpan.innerHTML = ('0' + tot.hourss).slice(-2);
+                    minutesSpan.innerHTML = ('0' + tot.minutess).slice(-2);
+                    secondsSpan.innerHTML = ('0' + tot.secondss).slice(-2);
+
+                    if (tot.total <= 0) {
+                        clearInterval(timeinterval);
+                    }
+                }
+
+                updateClock();
+                const timeinterval = setInterval(updateClock, 1000);
+            }
+
+            //const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+            const deadlinet = new Date(Date.parse(new Date()) + 40 * 60 * 1000);
+            initializeClock('clockdiv2', deadlinet);
+
+
+        </script>
+
+	  <script>
+          window.onscroll = function () { myFunction() };
+
+          var header = document.getElementById("Stickytimer");
+          var sticky = header.offsetTop;
+
+          function myFunction() {
+              if (window.pageYOffset > sticky) {
+                  header.classList.add("stickybar");
+              } else {
+                  header.classList.remove("stickybar");
+              }
+          }
+      </script>
+
+           <script type="text/javascript">
+               $(window).on('load', function () {
+                   $('#memberModal').modal('show');
+               });
+           </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /* show lightbox when clicking a thumbnail */
+                $('a.thumb').click(function (event) {
+                    event.preventDefault();
+                    var content = $('.modal-body');
+                    content.empty();
+                    var title = $(this).attr("title");
+                    $('.modal-title').html(title);
+                    content.html($(this).html());
+                    $(".modal-profile").modal({ show: true });
+                });
+
+            });
+        </script>
+
+    </form>
+</body>
+   
+</html>

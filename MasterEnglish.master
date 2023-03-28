@@ -1,0 +1,123 @@
+﻿<%@ Master Language="VB" CodeFile="MasterEnglish.master.vb" Inherits="MasterEnglish" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet" />
+ 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="english/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="english/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="english/css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="english/css/flaticon.css" />
+	<link rel="stylesheet" href="english/css/slicknav.min.css" />
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="english/css/style.css"/>
+    <style>
+        .call-now {
+            z-index: 9;
+            position: fixed;
+            bottom: 5%;
+            text-align: center;
+            width: 100%;
+        }
+
+        .button-21 {
+            background-color: #a62535;
+            font-size: 19px;
+            padding: 9px;
+            color: #fff;
+        }
+
+        .icon-sticky {
+            position: fixed;
+            bottom: 20%;
+            width: 45px;
+            right: 16px;
+        }
+          .downloadsyllabus {
+              min-height: 250px;
+        }
+    </style>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <!-- Header Section -->
+	<header class="header-section">
+		<a href="#" class="site-logo" style="width:150px;">
+			<img src="images/Logo(PNG).png" alt="" />
+		</a>
+		<nav class="header-nav">
+			<ul class="main-menu">			
+				<li><a href="ielts-coaching-institute-mohali.aspx">IELTS</a></li>
+				<li><a href="#">PTE</a></li>
+				<li><a href="spoken-english-coaching-institute-mohali.aspx">Spoken English</a></li>
+                <li><a href="#">Demo Class</a></li>
+			</ul>
+			<div class="header-right">
+				<a href="tel:7837401000" class="hr-btn"><i class="flaticon-029-telephone-1"></i>Call us now! </a>
+				<div class="hr-btn hr-btn-2"><a href="tel:7837401000" class="text-white"> 78374-01000</a></div>
+			</div>
+		</nav>
+	</header>
+	<!-- Header Section end -->
+    <div>    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <!-- Footer Section -->
+	<footer class="footer-section py-3">
+		<div class="container">			
+            <div class="row">
+                <div class="col-md-8 d-none d-md-block">                
+                        <h4 class="text-warning mb-3">Useful Links</h4>
+                        <ul class="welcomeLinks mb-0">
+                            <li><a class="text-white text-decoration-none" href="ielts-coaching-institute-chandigarh.aspx">IELTS Coaching Institute in Chandigarh</a></li>
+                            <li><a class="text-white text-decoration-none" href="ielts-coaching-institute-mohali.aspx">IELTS Coaching Institute in Mohali</a></li>                            
+                            <li><a class="text-white text-decoration-none" href="spoken-english-coaching-institute-mohali.aspx">Spoken English Classes</a></li>
+                            
+                        </ul>                  
+                </div>
+
+                   <div class="col-12 col-md-4 bg-light py-4">                        
+                     <iframe src="DownloadsyllabusIELTS.aspx?data=ThinkNEXT IELTS" class="downloadsyllabus w-100 border-0" ></iframe>
+                   </div>
+            </div>
+			<div class="copyright pb-0">
+Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#">ThinkNEXT</a>
+</div>
+		</div>
+
+        <div class="call-now">  <a href="tel:7837401000" class="button-21">Call now 7837401000</a> </div>
+        <div class="icon-sticky">
+                <a id="whatsapp-message" href="https://wa.me/917837404000?text=Hi I am interested in ThinkNEXT IELTS Coaching please contact me as soon as possible">
+              <img src="images/whatsapp1.gif" alt="Whatsapp icon" />
+        </a>
+            </div>
+	</footer>
+	<!-- Footer Section end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="english/js/jquery-3.2.1.min.js"></script>
+	<script src="english/js/bootstrap.min.js"></script>
+	<script src="english/js/jquery.slicknav.min.js"></script>
+	<script src="english/js/owl.carousel.min.js"></script>
+	<script src="english/js/jquery-ui.min.js"></script>
+	<script src="english/js/main.js"></script>
+
+    </form>
+
+</body>
+</html>

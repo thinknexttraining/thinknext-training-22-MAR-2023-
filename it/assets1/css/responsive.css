@@ -1,0 +1,292 @@
+/*-------------------------------------------------------*/
+/* When the browser is between 0px to 767px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
+    .title h1 span {
+        font-size: 30px;
+    }
+    .dwn-btn a {
+        font-size: 24px;
+    }
+    .hsr-2 ul li h4 {
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .testmo-rat ul li {} .testmo-rat ul li:nth-child(7) {
+        display: block !important;
+    }
+    #ribbon span {
+        font-size: 22px;
+    }
+    .main h2 span {
+        border-right: 0px solid #333;
+        padding-right: 0px;
+    }
+    .title p {
+        font-size: 14px;
+    }
+    .bonus-2 a {
+        font-size: 22px;
+    }
+    .bonus-1 h3 {
+        font-size: 26px;
+    }
+    .ho-spec-full h4 {
+        font-size: 26px;
+    }
+    .ho-spec-full h4 span {
+        font-size: 26px;
+    }
+    .ho-spec-full h4 a {
+        font-size: 26px;
+    }
+    .fancy {
+        letter-spacing: 1px;
+    }
+    .dwn-btn a {
+        font-size: 24px;
+        padding: 15px 20px 15px 20px;
+        display: block;
+    }
+    .dwn-btn ul li {
+        float: initial;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is 768px or wider,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media (min-width: 768px) {}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px to 767px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media (max-width: 767px) {
+    .hsr-1 h2 {
+        font-size: 28px !important;
+    }
+    .hsr-1 h2 span {
+        font-size: 28px !important;
+    }
+    .site-width {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    .container {
+        padding: 50px 5%;
+    }
+    .container1 {
+        padding: 50px 5%;
+    }
+    .main i {
+        font-size: 60px;
+    }
+    .main h1 {
+        font-size: 54px;
+    }
+    .main h2 {
+        font-size: 54px;
+    }
+    .main h2 span {
+        font-size: 54px;
+    }
+    .main h4 {
+        margin-bottom: 20px;
+        margin-top: 18px;
+        font-size: 18px;
+    }
+    .spl-offer {
+        padding-bottom: 0px;
+    }
+    .button span i {
+        font-size: 24px;
+    }
+    .button span {
+        font-size: 20px;
+    }
+    .h-tes-1 {
+        padding: 0px 10px 30px 10px;
+        width: 100%;
+        border-left: 0px solid #bfbfbf;
+    }
+    .head-cent {
+        padding-bottom: 0px;
+    }
+    .ho-spec-left {
+        width: 100%;
+    }
+    .bonus-1 {
+        padding: 0px 0px;
+    }
+    .ho-spec-full h4 {
+        font-size: 32px;
+    }
+    .ho-spec-full h4 span {
+        font-size: 32px;
+    }
+    .ho-spec-full h4 a {
+        font-size: 32px;
+    }
+    .ho-spec-full-right h4 {
+        font-size: 20px;
+    }
+    .video-here {
+        padding-top: 35px;
+        width: 100%;
+    }
+    .h-tes-3 p {
+        padding-top: 0px;
+    }
+    .head-cent p {
+        margin-bottom: 30px;
+    }
+    .bf-1 ul li:nth-child(1) {
+        display: none;
+    }
+    .bf-1 ul li:nth-child(2) {
+        width: 100%;
+    }
+    .top-menu ul {
+        display: none;
+    }
+    .top-menu img {
+        float: inherit;
+    }
+    .top-menu {
+        padding-bottom: 35px;
+    }
+    .spl-12-offers {
+        width: 100%;
+        padding: 50px 0%;
+    }
+    .dwn-btn a {
+        font-size: 24px;
+        padding: 15px 20px 15px 20px;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px to 1200px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+    .site-width {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hsr-1 h2 {
+        font-size: 36px;
+    }
+    .hsr-1 h2 span {
+        font-size: 36px;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px to 991px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media (max-width: 991px) {
+    .six-hs-2-1 {
+        width: 100%;
+        padding: 45px 20px 0px 20px;
+        text-align: center;
+    }
+    .ho-spec-full-left {
+        width: 100%;
+    }
+    .ho-spec-full-right {
+        width: 100%;
+        padding: 25px 0px 0px 0px;
+    }
+    .mob-hide {
+        display: none
+    }
+    .ho-spec-right {
+        width: 100%;
+    }
+    .ho-spec-left {
+        padding-bottom: 50px;
+    }
+    .six-hs-2-1-mob {
+        padding-top: 45px;
+    }
+    .six-hs-2-1 h3 {
+        margin-top: 0px;
+    }
+    .main h1 {
+        font-size: 62px;
+    }
+    .main h2 span {
+        border-right: 0px solid #333;
+    }
+    .mob-pad-to-0 {
+        padding-top: 0px;
+    }
+    .mob-head-sp-top {} .mob-head-sp-top h3 {
+        margin-top: 35px;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 481px to 767px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .title h1 {
+        font-size: 36px;
+    }
+    .title h1 span {
+        font-size: 36px;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 481px to 767px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .ho-spec-left {
+        width: 100%;
+    }
+    .ho-spec-right {
+        width: 100%;
+    }
+    .button span {
+        font-size: 26px;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 992px to 1200px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .six-hs-2-1 h3 {
+        font-size: 18px;
+        overflow: hidden;
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .bonus-2 a {
+        font-size: 26px;
+    }
+    .button span {
+        font-size: 28px;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px to 420px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media (max-width: 420px) {
+    .hsr-1 h2 {
+        font-size: 24px !important;
+    }
+    .hsr-1 h2 span {
+        font-size: 24px !important;
+    }
+}

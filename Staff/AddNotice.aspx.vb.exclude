@@ -1,0 +1,595 @@
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Imports System.IO
+
+Partial Class NoticeBoard
+    Inherits System.Web.UI.Page
+
+    Shared varNoticeID1 As Label
+    Dim varIP As String
+    Public Shared Files As ArrayList = New ArrayList()
+
+    Protected Sub gdShow_RowCancelingEdit(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCancelEditEventArgs) Handles gdShow.RowCancelingEdit
+        gdShow.EditIndex = -1
+        Show()
+    End Sub
+
+    Protected Sub gdShow_RowCommand(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs) Handles gdShow.RowCommand
+        If e.CommandName = "Subject" Then
+            Dim varSubject1 As LinkButton = CType(e.CommandSource, LinkButton)
+            Dim gvRow As GridViewRow
+            gvRow = varSubject1.BindingContainer
+            varSubject1 = gdShow.Rows(gvRow.RowIndex).FindControl("lnkbtnSubject")
+            Dim varnoticeid As New Label
+            varnoticeid = gdShow.Rows(gvRow.RowIndex).FindControl("lblNoticeID")
+            Session("NoticeID") = varnoticeid.Text
+            Session("Subject") = varSubject1.Text
+            Session("CollegeName") = ddlCollegeName.Text
+            Response.Redirect("CheckNotice.aspx")
+        End If
+    End Sub
+
+    Protected Sub gdShow_RowDeleting(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewDeleteEventArgs) Handles gdShow.RowDeleting
+
+        Dim Con As SqlConnection
+        Dim varClass1 As New Class1
+        Con = New SqlConnection(varClass1.GetConnectionString(varIp))
+        Con.Open()
+        Dim i As Integer
+        i = e.RowIndex
+        Dim row1 As GridViewRow
+        row1 = gdShow.Rows(i)
+        Dim varNoticeID As Label
+        varNoticeID = gdShow.Rows(i).FindControl("lblNoticeID")
+        Dim varCollegeName As Label
+        varCollegeName = gdShow.Rows(i).FindControl("lblCollegeName0")
+
+        Dim sql As String
+        Dim cmd As SqlCommand
+        sql = "delete from NoticeBoard where CollegeName='" & varCollegeName.Text & "' and NoticeID= '" & varNoticeID.Text & "'"
+        cmd = New SqlCommand(sql, Con)
+        cmd.ExecuteNonQuery()
+        gdShow.EditIndex = -1
+        Con.Close()
+        Show()
+        GenNoticeID()
+        lblMsg.Visible = True
+        lblMsg.Text = "Notice hass been deleted successfully"
+    End Sub
+
+    Protected Sub gdShow_RowEditing(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewEditEventArgs) Handles gdShow.RowEditing
+
+        gdShow.EditIndex = e.NewEditIndex
+        Dim varSubject1 As LinkButton
+        Dim gvRow As GridViewRow
+        varNoticeID1 = New Label
+        varSubject1 = gdShow.Rows(e.NewEditIndex).FindControl("lnkbtnSubject")
+        varNoticeID1 = gdShow.Rows(e.NewEditIndex).FindControl("lblNoticeID")
+        Session("Subject") = varSubject1.Text
+        Session("NoticeID") = varNoticeID1.Text
+        Session("CollegeName") = ddlCollegeName.Text
+        Response.Redirect("EditNoticeDetail.aspx")
+
+        ''gdShow.EditIndex = e.NewEditIndex
+        ''Show()
+        ''varNoticeID1 = gdShow.Rows(e.NewEditIndex).FindControl("lblNoticeID")
+
+    End Sub
+
+    Protected Sub gdShow_RowUpdating(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewUpdateEventArgs) Handles gdShow.RowUpdating
+
+        Dim varNoticeID As Label
+        Dim varDate As TextBox
+        Dim varTime As TextBox
+        Dim varSubject As TextBox
+        Dim varNotice As TextBox
+        Dim varAuthority As TextBox
+
+        Dim i As Integer
+        i = e.RowIndex
+
+        varNoticeID = gdShow.Rows(i).FindControl("lblNoticeID")
+        varDate = gdShow.Rows(i).FindControl("txtDate0")
+        If varDate.Text <> "" Then
+            If IsDate(varDate.Text) = False Then
+                lblMsg.Visible = True
+                lblMsg.Text = "Invalid date"
+                Exit Sub
+            End If
+        End If
+        lblMsg.Visible = False
+        varTime = gdShow.Rows(i).FindControl("txtTime0")
+        varSubject = gdShow.Rows(i).FindControl("txtSubject0")
+        varAuthority = gdShow.Rows(i).FindControl("txtAuthority0")
+        varNotice = gdShow.Rows(i).FindControl("txtNotice0")
+        Dim Con As SqlConnection
+        Dim varClass1 As New Class1
+        Con = New SqlConnection(varClass1.GetConnectionString(varIP))
+        Con.Open()
+        Dim cmd As SqlCommand
+        Dim sql As String
+        Dim varTime1 As Date
+        Dim varDate1 As Date
+        varTime1 = CDate(varTime.Text)
+        varDate1 = CDate(varDate.Text)
+
+        sql = "update NoticeBoard set Date=@Date,Time=@Time, Authority=@Authority, Subject=@Subject,Notice=@Notice where NoticeID=@NoticeID1"
+
+        cmd = New SqlCommand(sql, Con)
+        cmd.Parameters.AddWithValue("@Date", Format(varDate1, "MM/dd/yyyy"))
+        cmd.Parameters.AddWithValue("@Time", Format(varTime1, "HH:mm:ss tt"))
+        cmd.Parameters.AddWithValue("@Authority", varAuthority.Text)
+        cmd.Parameters.AddWithValue("@Subject", varSubject.Text)
+        cmd.Parameters.AddWithValue("@Notice", varNotice.Text)
+        cmd.Parameters.AddWithValue("@NoticeID1", varNoticeID1.Text)
+        cmd.ExecuteNonQuery()
+        gdShow.EditIndex = -1
+        Con.Close()
+        Show()
+        lblMsg.Visible = True
+        lblMsg.Text = "Notice hass been updated successfully"
+    End Sub
+
+  
+    Sub Show()
+        Dim sql As String
+        Dim da As SqlDataAdapter
+        Dim ds As DataSet
+        Dim Con As SqlConnection
+        Dim varClass1 As New Class1
+        Con = New SqlConnection(varClass1.GetConnectionString(varIP))
+        Con.Open()
+        If ddlCollegeName.SelectedItem.Text = "Select" Then
+            lblMsg.Visible = True
+            lblMsg.Text = "Invalid College Name"
+            gdShow.Visible = False
+            lblRecords.Text = ""
+            Exit Sub
+        End If
+
+        lblMsg.Visible = False
+        sql = "Select * from NoticeBoard where CollegeName='" & ddlCollegeName.Text & "' order by Date DESC"
+        da = New SqlDataAdapter(sql, con)
+        ds = New DataSet
+        da.Fill(ds, "NoticeBoard")
+        If ds.Tables("NoticeBoard").Rows.Count = 0 Then
+            lblMsg.Visible = True
+            lblMsg.Text = ("No records found")
+            gdShow.Visible = False
+            lblRecords.Text = ""
+            Exit Sub
+        End If
+        Dim varNoticeBoard As String
+        For i = 0 To ds.Tables("NoticeBoard").Rows.Count - 1
+            If IsDBNull(ds.Tables("NoticeBoard").Rows(i).Item("Notice")) = False Then
+                varNoticeBoard = ds.Tables("NoticeBoard").Rows(i).Item("Notice")
+                If varNoticeBoard <> "" Then
+                    varNoticeBoard = varClass1.StripHTML(varNoticeBoard)
+                End If
+                ds.Tables("NoticeBoard").Rows(i).Item("Notice") = Mid(varNoticeBoard, 1, 160) & " ..."
+            End If
+        Next
+
+
+        lblMsg.Visible = False
+        gdShow.Visible = True
+        gdShow.DataSource = ds.Tables("NoticeBoard")
+        gdShow.DataBind()
+        gdShow.Width = 1300
+        gdShow.Columns(0).ItemStyle.Width = 150
+        gdShow.Columns(6).ItemStyle.Width = 450
+        lblRecords.Text = "Total records : " & gdShow.Rows.Count
+        con.Close()
+    End Sub
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        If Page.IsPostBack = False Then
+            diattachment.Style.Add("Style", "None")
+            txtDate.Text = Date.Now.ToShortDateString
+            txtTime.Text = Date.Now.ToShortTimeString
+            txtAuthority.Text = GetName()
+            varIP = Request.ServerVariables("SERVER_NAME").ToString
+            Dim Con As SqlConnection
+            Dim varClass1 As New Class1
+            Con = New SqlConnection(varClass1.GetConnectionString(varIP))
+            Con.Open()
+            Dim sql As String
+            Dim da As SqlDataAdapter
+            Dim ds As DataSet
+            Dim varcollege As String
+            If Request.Cookies("Myck").Value.ToString <> "" Then
+                sql = "Select Distinct CollegeName from"
+                If Session("LoginType") = "Management" Then
+                    sql = sql & " MasterCourse"
+                ElseIf Session("LoginType") = "Admin" Then
+                    varClass1.PassedLoginUserName = Request.Cookies("Myck").Value
+                    varClass1.getRightsCollege(ddlCollegeName)
+                    Con.Close()
+                    If Session("CollegeName") <> "" Then
+                        varcollege = Session("CollegeName").ToString
+                        ddlCollegeName.Text = varcollege
+                        GenNoticeID()
+                        Show()
+                    End If
+                    Exit Sub
+                ElseIf Session("LoginType") = "Staff" Then
+                    sql = sql & " Staff where IDNo=" & Request.Cookies("Myck").Value.ToString & ""
+                End If
+                sql = sql & " order by CollegeName"
+                da = New SqlDataAdapter(sql, Con)
+                ds = New DataSet
+                da.Fill(ds, "MasterCourse")
+                If ds.Tables("MasterCourse").Rows.Count = 0 Then
+                    lblMsg.Visible = True
+                    lblMsg.Text = "No records found"
+                    Exit Sub
+                End If
+                Dim dt As DataTable
+                dt = ds.Tables("MasterCourse")
+
+                If dt.Rows.Count > 0 Then
+                    For i = 0 To dt.Rows.Count - 1
+                        If IsDBNull(dt.Rows(i).Item("CollegeName")) = False Then
+                            ddlCollegeName.Items.Add(dt.Rows(i).Item("CollegeName"))
+                        End If
+                    Next
+                    If Session("CollegeName") <> "" Then
+                        varcollege = Session("CollegeName").ToString
+                        ddlCollegeName.Text = varcollege
+                        GenNoticeID()
+                        Show()
+                    End If
+                End If
+            End If
+            Con.Close()
+        End If
+
+        If (Session("Logged_IN") = "No") Then
+            Response.Redirect("Home.aspx")
+        End If
+    End Sub
+    Function GetName() As String
+        lblmsg.Visible = False
+        Dim varClass1 As New Class1
+        Dim Con As SqlConnection
+        Con = New SqlConnection(varClass1.GetConnectionString(VarIp))
+        Con.Open()
+        Dim sql As String
+        Dim name As String = ""
+        Dim da As SqlDataAdapter
+        Dim ds As New DataSet
+        sql = "Select Name from Staff where IDNo='" & Request.Cookies("Myck").Value & "'"
+        da = New SqlDataAdapter(sql, Con)
+        da.Fill(ds, "Authority")
+        If ds.Tables("Authority").Rows.Count > 0 Then
+            If IsDBNull(ds.Tables("Authority").Rows(0).Item("Name")) = False Then
+                name = ds.Tables("Authority").Rows(0).Item("Name")
+            End If
+        End If
+        Con.Close()
+        Return name
+    End Function
+
+    Function GenNoticeID() As Long
+        Dim Con As SqlConnection
+        Dim varClass1 As New Class1
+        Con = New SqlConnection(varClass1.GetConnectionString(varIP))
+        Con.Open()
+        Dim sql As String
+        Dim da As SqlDataAdapter
+        Dim ds As DataSet
+        If ddlCollegeName.SelectedItem.Text = "Select" Then
+            lblMsg.Visible = True
+            lblMsg.Text = "Invalid College Name"
+            gdShow.Visible = False
+            lblRecords.Text = ""
+            Exit Function
+        End If
+
+        lblMsg.Visible = False
+        sql = "Select Max(NoticeId) As NoticeID from NoticeBoard where CollegeName='" & ddlCollegeName.Text & "'"
+        da = New SqlDataAdapter(sql, Con)
+        ds = New DataSet
+        da.Fill(ds, "NoticeBoard")
+        Dim varNotice As Integer
+        If ds.Tables("NoticeBoard").Rows.Count > 0 Then
+            If IsDBNull(ds.Tables("NoticeBoard").Rows(0).Item("NoticeID")) = False Then
+                varNotice = ds.Tables("NoticeBoard").Rows(0).Item("NoticeID")
+                varNotice = CInt(varNotice) + 1
+                txtNoticeID.Text = varNotice
+            Else
+                txtNoticeID.Text = 1
+            End If
+        Else
+            txtNoticeID.Text = 1
+        End If
+
+        GenNoticeID = txtNoticeID.Text
+        Con.Close()
+    End Function
+
+    Protected Sub btnAdd_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnAdd.Click
+        Dim Con As SqlConnection
+        Dim varClass1 As New Class1
+        Con = New SqlConnection(varClass1.GetConnectionString(varIP))
+        Try
+
+            attchmentmsg.Text = ""
+            Con.Open()
+            Dim sql As String
+            Dim cmd As SqlCommand
+            If ddlCollegeName.Text = "Select" Then
+                lblMsg.Visible = True
+                lblMsg.Text = "Invalid College Name"
+                Exit Sub
+            End If
+            lblMsg.Visible = False
+            If txtAuthority.Text = "" Then
+                lblMsg.Visible = True
+                lblMsg.Text = "Invalid Authority Name"
+                Exit Sub
+            End If
+            lblMsg.Visible = False
+            If Editor1.Content = "" Then
+                lblMsg.Visible = True
+                lblMsg.Text = "Invalid Notice"
+                Exit Sub
+            End If
+            lblMsg.Visible = False
+            If txtSubject.Text = "" Then
+                lblMsg.Visible = True
+                lblMsg.Text = "Invalid Subject"
+                Exit Sub
+            End If
+            If txtDate.Text <> "" Then
+                If IsDate(txtDate.Text) = False Then
+                    lblMsg.Visible = True
+                    lblMsg.Text = "Invalid  date"
+                    Exit Sub
+                End If
+            End If
+            If (System.Text.RegularExpressions.Regex.IsMatch(txtAuthority.Text, "^[a-zA-Z. ]+$")) = False Then
+                lblMsg.Visible = True
+                lblMsg.Text = "Authority can have characters only."
+                Exit Sub
+            End If
+           
+            GenNoticeID()
+            lblMsg.Visible = False
+
+            sql = "Insert into NoticeBoard(CollegeName,NoticeID,Date,Time,Subject,Notice,Authority)values(@CollegeName,@NoticeID,@Date,@Time,@Subject,@Notice,@Authority)"
+            cmd = New SqlCommand(sql, Con)
+            cmd.Parameters.AddWithValue("@CollegeName", ddlCollegeName.Text)
+            cmd.Parameters.AddWithValue("@NoticeID", txtNoticeID.Text)
+
+            If txtDate.Text <> "" Then
+                Dim varDate As Date
+                varDate = CDate(txtDate.Text)
+                cmd.Parameters.AddWithValue("@Date", Format(varDate, "MM/dd/yyyy"))
+            Else
+                cmd.Parameters.AddWithValue("@Date", DBNull.Value)
+            End If
+            If txtTime.Text <> "" Then
+                Dim varTime As Date
+                varTime = CDate(txtTime.Text)
+                cmd.Parameters.AddWithValue("@Time", Format(varTime, "HH:mm tt"))
+            Else
+                cmd.Parameters.AddWithValue("@Time", DBNull.Value)
+            End If
+            If txtSubject.Text <> "" Then
+                cmd.Parameters.AddWithValue("@Subject", txtSubject.Text)
+            Else
+                cmd.Parameters.AddWithValue("@Subject", DBNull.Value)
+            End If
+            If Editor1.Content <> "" Then
+                cmd.Parameters.AddWithValue("@Notice", Editor1.Content)
+            Else
+                cmd.Parameters.AddWithValue("@Notice", DBNull.Value)
+            End If
+            
+            'If Editor1.Content <> "" Then
+            '    Dim str As String = Editor1.Content
+            '    Dim str1 As String = StripTags(str)
+            '    str1 = str1.Replace("&nbsp;", " ")
+            '    cmd.Parameters.AddWithValue("@NoticeDetail", str1)
+            'Else
+            '    cmd.Parameters.AddWithValue("@NoticeDetail", DBNull.Value)
+            'End If
+            If txtAuthority.Text <> "" Then
+                cmd.Parameters.AddWithValue("@Authority", txtAuthority.Text)
+            Else
+                cmd.Parameters.AddWithValue("@Authority", DBNull.Value)
+            End If
+
+            'If txtDate.Text <> "" Then
+            '    Dim varDate As Date
+            '    varDate = CDate(txtDate.Text)
+            '    cmd.Parameters.AddWithValue("@Date", Format(varDate, "MM/dd/yyyy"))
+            'Else
+            '    txtDate.Text = ""
+            'End If
+            'If txtTime.Text <> "" Then
+            '    Dim varTime As Date
+            '    varTime = CDate(txtTime.Text)
+            '    cmd.Parameters.AddWithValue("@Time", Format(varTime, "HH:mm tt"))
+            'Else
+            '    txtTime.Text = ""
+            'End If
+            'If txtSubject.Text <> "" Then
+            '    cmd.Parameters.AddWithValue("@Subject", txtSubject.Text)
+            'Else
+            '    txtSubject.Text = ""
+            'End If
+            'If txtNotice.Text <> "" Then
+            '    cmd.Parameters.AddWithValue("@Notice", txtNotice.Text)
+            'Else
+            '    txtNotice.Text = ""
+            'End If
+            'If txtAuthority.Text <> "" Then
+            '    cmd.Parameters.AddWithValue("@Authority", txtAuthority.Text)
+            'Else
+            '    txtAuthority.Text = ""
+            'End If
+
+            cmd.Connection = Con
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+
+            If FileListBox.Items.Count > 0 And FileListBox.Items.Count <= 15 Then
+                AddNoticeAttachment()
+
+            ElseIf FileListBox.Items.Count > 15 Then
+                lblMsg.Visible = True
+                lblMsg.Text = "You can't Attach More Than 15 files"
+                Exit Sub
+            End If
+
+
+            GenNoticeID()
+            txtAuthority.Text = ""
+            Editor1.Content = ""
+            txtSubject.Text = ""
+            Con.Close()
+            Show()
+            Dim varNotice1 As Integer
+            varNotice1 = GenNoticeID()
+            lblMsg.Visible = True
+            FileListBox.Items.Clear()
+            lblMsg.Text = "Notice has been added successfully"
+
+        Catch ex As Exception
+            lblMsg.Visible = True
+            lblMsg.Text = ex.Message
+        End Try
+    End Sub
+    Function StripTags(ByVal html As String) As String
+        ' Remove HTML tags.
+        Return Regex.Replace(html, "<.*?>", "")
+    End Function
+
+
+    Protected Sub btnShow_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnShow.Click
+        Show()
+    End Sub
+
+
+    Protected Sub ddlCollegeName_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ddlCollegeName.SelectedIndexChanged
+        Dim varNotice1 As Integer
+        varNotice1 = GenNoticeID()
+    End Sub
+
+    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
+        lblMsg.Text = ""
+        attchmentmsg.Text = ""
+        diattachment.Style.Add("Display", "Block")
+
+        If FileUploader.HasFile Then
+            Dim varcls As New Class1
+           
+            'Check if file exists...
+            If FileUploader.PostedFile.ContentLength > 0 Then
+                Dim varfullPath As String
+                Dim folderName As String = ""
+                Dim Filename As String = ""
+               
+                varfullPath = Server.MapPath("Notices\")
+                folderName = "Notices\"
+                Filename = FileUploader.PostedFile.FileName
+                If FileListBox.Items.Contains(New ListItem(System.IO.Path.GetFileName(FileUploader.PostedFile.FileName))) = True Then
+                    attchmentmsg.Text = "Attachment already exist"
+                    Exit Sub
+                Else
+                    FileUploader.SaveAs(Server.MapPath(folderName & Filename))
+                    Files.Add(FileUploader)
+                    FileListBox.Items.Add(System.IO.Path.GetFileName(FileUploader.PostedFile.FileName))
+                    'If LblMyFiles.Text = "" Then
+                    '    LblMyFiles.Text = "<img style='Height:10px; width:10px;' src='Images/AddedAttachmentsNew.gif' alt=''>&nbsp;" & System.IO.Path.GetFileName(FileUploader.PostedFile.FileName)
+                    'Else
+                    '    LblMyFiles.Text += ",&nbsp;<img style='Height:10px; width:10px;' src='Images/AddedAttachmentsNew.gif' alt=''>&nbsp; " & System.IO.Path.GetFileName(FileUploader.PostedFile.FileName)
+                    'End If
+                    LblMyFiles.Text = varcls.CombineAttachFileInLabel(FileListBox)
+                    attchmentmsg.Text = "Attachment Added Successfully..."
+                End If
+            End If
+            'End If
+        Else
+            attchmentmsg.Text = "Please select a file to add ..!"
+        End If
+
+    End Sub
+
+    Protected Sub Remove_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Remove.Click
+        If FileListBox.Items.Count > 0 Then
+            If FileListBox.SelectedIndex < 0 Then
+                attchmentmsg.Text = "Please select a file to remove!"
+            Else
+                'Dim i = Convert.ToInt32(FileListBox.SelectedIndex)
+                'Files.RemoveAt(i)
+                FileListBox.Items.Remove(FileListBox.SelectedItem.Text)
+                Dim varcls As New Class1
+                LblMyFiles.Text = varcls.CombineAttachFileInLabel(FileListBox)
+                attchmentmsg.Text = "File removed....."
+            End If
+        End If
+    End Sub
+
+    Sub AddNoticeAttachment()
+        Dim userid As Integer
+        userid = Request.Cookies("Myck").Value
+
+        Dim varfullPath As String = ""
+        Dim folderName As String = ""
+        Dim Filename As String = ""
+
+        varfullPath = Server.MapPath("Notices\")
+        folderName = "Notices\"
+
+
+        Dim Con As SqlConnection
+        Dim varClass1 As New Class1
+        Con = New SqlConnection(varClass1.GetConnectionString(varIP))
+        Con.Open()
+
+        Dim sql As String
+        Dim cmd As SqlCommand
+        Try
+
+            If FileListBox.Items.Count > 0 And FileListBox.Items.Count <= 15 Then
+                For i As Integer = 0 To FileListBox.Items.Count - 1
+                    Dim item As New ListItem()
+                    'Dim filepath As String
+                    item.Text = FileListBox.Items(i).Text
+                    Filename = Path.GetFileName(item.Text)
+                    varfullPath = folderName & Filename
+
+                    sql = "Insert into NoticeBoardAttachments(CollegeName,NoticeID,Attachment)values(@CollegeName,@NoticeID,@Attachment)"
+                    cmd = New SqlCommand(sql, Con)
+                    cmd.Parameters.AddWithValue("@CollegeName", ddlCollegeName.Text)
+                    cmd.Parameters.AddWithValue("@NoticeID", txtNoticeID.Text)
+
+
+                    If FileListBox.Items.Count > 0 Then
+                        cmd.Parameters.AddWithValue("@Attachment", varfullPath)
+                    Else
+                        cmd.Parameters.AddWithValue("@Attachment", DBNull.Value)
+                    End If
+
+                    cmd.ExecuteNonQuery()
+                    cmd.Dispose()
+
+                Next
+            Else
+                lblMsg.Visible = True
+                lblMsg.Text = "You can't Attach More Than 15 files"
+
+            End If
+        Catch ex As Exception
+            lblMsg.Visible = True
+            lblMsg.Text = ex.Message
+        Finally
+            Con.Close()
+        End Try
+           
+    End Sub
+End Class

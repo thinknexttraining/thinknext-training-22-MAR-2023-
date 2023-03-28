@@ -1,0 +1,74 @@
+
+.div-style-9{
+    max-width: 90%;
+    background: darkgray;
+    padding: 30px;
+    margin: 9px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 0px;
+    border: 2px solid red;
+}
+.div-style-9 ul{
+    padding:0%;
+    margin:0%;
+    list-style:none;
+}
+.div-style-9 ul li{
+    display: block;
+    margin-bottom: 4%;
+    min-height: 35px;
+}
+.div-style-9 ul li  .field-style{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    padding: 2%;
+    outline: none;
+    border: 1px solid #191818;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.div-style-9 ul li  .field-style:focus{
+    box-shadow: 0 0 5px #f50000;
+    border:1px solid #f50000;
+}
+.div-style-9 ul li .field-split{
+    width: 100%;
+}
+.div-style-9 ul li .field-full{
+    width: 98.3%;
+}
+.div-style-9 ul li input.align-left{
+    float:left;
+}
+.div-style-9 ul li input.align-right{
+    float:right;
+}
+.div-style-9 ul li textarea{
+    width: 100%;
+    height: 100px;
+}
+.div-style-9 ul li input[type="button"], 
+.div-style-9 ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #000000;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #000000;
+    box-shadow: inset 0px 1px 0px 0px #000000;
+    background-color: #000000;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 1% 0%;
+    text-decoration: none;
+	margin-left:0%;
+    font: 18px Arial, Helvetica, sans-serif;
+	width: 100%;
+    height: 35px;
+}
+.div-style-9 ul li input[type="button"]:hover, 
+.div-style-9 ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #060606 33%, #f72e00 100%);
+    background-color: #28739E;
+}

@@ -1,0 +1,91 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMaster.master" AutoEventWireup="true" CodeFile="studentinfo1.aspx.cs" Inherits="Admin_studentinfo" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style4 {
+            margin-left: 0px;
+        }
+        .auto-style5 {
+            text-align: left;
+        }
+        .auto-style6 {
+            text-align: left;
+            height: 26px;
+        }
+        .auto-style7 {
+            text-align: center;
+        }
+        .auto-style8 {
+            height: 26px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style7" colspan="2">
+                <asp:Label ID="validlabel" runat="server" Text="validlabel" ForeColor="#CC0000" Visible="False"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td >&nbsp;&nbsp;CERTIFICATE ID</td>
+            <td class="auto-style5">
+                <asp:TextBox ID="txtcertificate" runat="server" CssClass="auto-style4" Width="186px" Visible="False"></asp:TextBox>
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style8">&nbsp;&nbsp;&nbsp; STUDENT&nbsp; NAME</td>
+            <td class="auto-style6">
+                <asp:TextBox ID="txtstudent" runat="server" CssClass="auto-style4" Width="186px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp; PROJECT NAME</td>
+            <td class="auto-style5">
+                <asp:TextBox ID="txtprojectname" runat="server" CssClass="auto-style4" Width="186px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp; TRAINING&nbsp; FROM</td>
+            <td class="auto-style5">
+                <asp:TextBox ID="txttrainingfrom" runat="server" CssClass="auto-style4" Width="186px"></asp:TextBox>
+                <asp:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txttrainingfrom" Format="dd-MMM-yyyy"></asp:CalendarExtender>
+            </td>
+        </tr>
+        <tr>
+            <td>TRAINING&nbsp; TO</td>
+            <td class="auto-style6">
+                <asp:TextBox ID="txttrainingto" runat="server" CssClass="auto-style4" Width="186px"></asp:TextBox>
+                <asp:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txttrainingto" Format="dd-MMM-yyyy"></asp:CalendarExtender>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;COURSE NAME</td>
+            <td class="auto-style5">
+                <asp:TextBox ID="txtcoursename" runat="server" CssClass="auto-style4" Width="186px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Image ID="imgQRCode" Width="100px" Height="100px" runat="server" Visible="false" />     
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style5">
+                <asp:PlaceHolder ID="plBarCode" runat="server" />&nbsp;</td>
+            <td class="auto-style5">&nbsp;<asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" Font-Bold="True" Height="30px" Width="120px"  />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnPrint" runat="server" Text="Print"  Font-Bold="True" Height="30px" Width="120px" OnClick="btnPrint_Click"  />
+            </td> 
+        </tr>
+        <tr>
+            <td class="auto-style5">
+                &nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
+        </tr>
+    </table>
+</asp:Content>
+

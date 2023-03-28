@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta content="#212121" name="theme-color">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <link href="new-bootstrap/css/style.css" rel="stylesheet" />
+    <script src="new-bootstrap/js/jquery.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45989872-1', 'thinknexttraining.com');
+    ga('send', 'pageview');
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Ads: 987828495 -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-987828495"></script>
+
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-987828495');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1287913394619192');
+  fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=1287913394619192&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- //  New Facebook Pixel Code -->
+    <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '650548395565669');
+fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=650548395565669&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+    <script type="application/ld+json">
+        {"@context": "http://schema.org/",
+        "@type": "Product",
+        "name": "Summer Training in Chandigarh Mohali - ThinkNEXT",
+        "image": "https://thinknexttraining.com/images/6-weeks-summer-training-chandigarh-1.jpg",
+        "description": "Stipend Based or Free 6 Six Months/Weeks Industrial Training in Chandigarh Mohali. PHP Web Designing Java Android Digital Marketing Networking Training Course",
+        "review":{
+        "reviewBody":"Digital Marketing Course in Chandigarh",
+        "author":"ThinkNEXT"
+        },
+        "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "reviewCount": "99083"
+        }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        .h4, h4 {
+            font-size: 20px;
+        }
+
+        .form-control {
+            padding: 0.6rem .75rem;
+        }
+
+        .downloadsyllabus {
+            width: 390px;
+            height: 318px;
+            border: none;
+        }
+
+        .dropdown-menu {
+            font-size: 14px;
+            background: #000;
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        .dropdown-header {
+            color: #ff1200;
+            font-size: 17px;
+        }
+
+        a.dropdown-item {
+            white-space: inherit;
+        }
+
+        .dropdown-item:focus, .dropdown-item:hover {
+            color: #1e2125;
+            background-color: #ea2f32;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .icon-sticky {
+            position: fixed;
+            bottom: 20%;
+            width: 45px;
+            right: 16px;
+        }
+
+        .call-now {
+            z-index: 9;
+            position: fixed;
+            bottom: 5%;
+            text-align: center;
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            max-width: 175px;
+            width: 100%;
+        }
+
+        @media screen and (max-width:768px) {
+
+
+            .dropdown-menu {
+                font-size: 17px;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+
+            .navbar-expand-lg .navbar-nav .dropdown-menu {
+                width: 100%;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+                color: #000;
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (min-width:1400px) {
+            .menimg{
+                position:relative;
+            }
+
+        }
+          @media screen and (max-width:1400px) {
+            .menimg{
+                position:absolute;
+            }
+
+        }
+    </style>
+
+    
+</head>
+<body>
+   
+
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <div class="container">
+                <a class="navbar-brand" href="http://www.thinknext.co.in/">
+                    <img src="images/Logo(PNG).png" class="img-responsive" alt="default-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse position-relative" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Default.aspx">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown mega-dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Training
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <ul class="row bg-black">
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">CSE/IT/MCA</li>
+                                                <li><a class="dropdown-item" href="digital-marketing-course-training-in-chandigarh.aspx">Digital Marketing Course</a> </li>
+                                                <li><a class="dropdown-item" href="php-training-in-chandigarh.aspx">PHP\MySQL</a></li>
+                                                <li><a class="dropdown-item" href="laravel-php-framework-training-in-chandigarh-mohali.aspx">Laravel PHP </a></li>
+                                                <li><a class="dropdown-item" href="wordpress-training-in-chandigarh-mohali.aspx">WordPress Training</a></li>
+                                                <li><a class="dropdown-item" href="dot-net-training-in-chandigarh.aspx">.Net</a></li>
+                                                <li><a class="dropdown-item" href="java-training-in-chandigarh.aspx">JAVA</a></li>
+                                                <li><a class="dropdown-item" href="Android-training-in-chandigarh.aspx">Android</a></li>
+                                                <li><a class="dropdown-item" href="iphone-training-in-chandigarh.aspx">iPhone</a></li>
+                                                <li><a class="dropdown-item" href="web-designing-training-in-chandigarh.aspx">Web Designing</a></li>
+                                                <li><a class="dropdown-item" href="graphic-designing-course-in-chandigarh.aspx">Graphic Designing</a></li>
+                                                <li><a class="dropdown-item" href="software-testing-training-in-chandigarh.aspx">Software Testing</a></li>
+                                                <li><a class="dropdown-item" href="networking-training-in-chandigarh.aspx">Hardware & Networking</a></li>
+                                                <li><a class="dropdown-item" href="ccna-training-in-chandigarh.aspx">CCNA</a></li>
+                                                <li><a class="dropdown-item" href="ccnp-training-institutions-chandigarh.aspx">CCNP</a></li>
+                                                <li><a class="dropdown-item" href="computer-courses-in-chandigarh-mohali.aspx">Computer Courses</a></li>
+
+                                                <li><a class="dropdown-item" href="ethical-hacking-training-in-chandigarh-mohali.aspx">Ethical Hacking</a></li>
+                                                <li><a class="dropdown-item" href="seo-training-in-chandigarh.aspx">SEO,SMO & Bidding </a></li>
+                                                <li><a class="dropdown-item" href="Asp-Net-MVC-training-in-chandigarh-mohali.aspx">Asp .Net MVC </a></li>
+                                                <li><a class="dropdown-item" href="online-bidding-freelancing.aspx">Online Bidding(FreeLancing)</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">
+                                                    <br />
+                                                </li>
+                                                <li><a class="dropdown-item" href="games-design-development-courses-in-chandigarh.aspx">Game Designing </a></li>
+
+                                                <li><a class="dropdown-item" href="AngularJS-training-course-chandigarh-mohali.aspx">AngularJS </a></li>
+                                                <li><a class="dropdown-item" href="reactjs-training-course-chandigarh-mohali.aspx">ReactJS </a></li>
+                                                <li><a class="dropdown-item" href="react-native-training-course-chandigarh.aspx">React Native </a></li>
+                                                <li><a class="dropdown-item" href="nodejs-training-course-chandigarh-mohali.aspx">NodeJS </a></li>
+                                                <li><a class="dropdown-item" href="mean-stack-course-training-chandigarh-mohali.aspx">MEAN Stack</a> </li>
+                                                <li><a class="dropdown-item" href="mern-stack-development-training-in-chandigarh.aspx">MERN Stack</a> </li>
+                                                <li><a class="dropdown-item" href="mcitp-training-in-chandigarh.aspx">MCITP</a></li>
+
+                                                <li><a class="dropdown-item" href="c-and-c-training-in-chandigarh.aspx">C\C++</a></li>
+
+                                                <li><a class="dropdown-item" href="sql-server-database-dba-training-in-chandigarh-mohali.aspx">Oracle\SQL Server</a></li>
+                                                <li><a class="dropdown-item" href="Animation-and-Multimedia-training-in-chandigarh.aspx">Animation & Multimedia</a></li>
+                                                <!--<li><a class="dropdown-item" href="sap-training-in-chandigarh.aspx">SAP Training</a></li> -->
+                                                <li><a class="dropdown-item" href="matlab-training-institute-in-chandigarh.aspx">MATLAB</a></li>
+                                                <li><a class="dropdown-item" href="big-data-hadoop-course-chandigarh.aspx">Big Data Hadoop</a></li>
+                                                <li><a class="dropdown-item" href="python-training-in-chandigarh-mohali.aspx">Python</a> </li>
+                                                <li><a class="dropdown-item" href="machine-learning-and-artificial-intelligence-with-python-course-chandigarh-mohali.aspx">Machine Learning & AI</a> </li>
+                                                <li><a class="dropdown-item" href="data-science-with-python-course-training-chandigarh-mohali.aspx">Data Science </a></li>
+                                                <li><a class="dropdown-item" href="cyber-security-course-chandigarh.aspx">Cyber Security</a> </li>
+                                                <li><a class="dropdown-item" href="aws-training-course-chandigarh-mohali.aspx">AWS </a></li>
+                                                <li><a class="dropdown-item" href="flutter-training-chandigarh.aspx">Flutter</a> </li>
+                                                <li><a class="dropdown-item" href="linux-training-in-chandigarh-mohali.aspx">Linux</a> </li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">ECE/Electrical</li>
+                                                <li><a class="dropdown-item" href="embedded-systems-training-in-chandigarh.aspx">Embedded System & Robotics</a></li>
+                                                <li><a class="dropdown-item" href="PLC-SCADA-training-in-chandigarh.aspx">PLC/SCADA(Automation)</a></li>
+                                                <li><a class="dropdown-item" href="vlsi-training-chandigarh-mohali.aspx">VLSI Training</a></li>
+                                                <li><a class="dropdown-item" href="networking-training-in-chandigarh.aspx">Networking </a></li>
+                                                <li><a class="dropdown-item" href="Android-training-in-chandigarh.aspx">Android</a></li>
+                                                <li><a class="dropdown-item" href="pdms-training-institutes-in-chandigarh.aspx">PDMS Training </a></li>
+                                                <li><a class="dropdown-item" href="IoT-training-chandigarh-mohali-india.aspx">IoT Training </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">Mechanical\Civil</li>
+                                                <li><a class="dropdown-item" href="Autocad-training-in-chandigarh.aspx">AutoCAD</a></li>
+                                                <li><a class="dropdown-item" href="solid-works-training-in-chandigarh.aspx">Solid Works</a></li>
+                                                <li><a class="dropdown-item" href="Pro-Engineer-Training-in-chandigarh.aspx">Pro-E</a> </li>
+                                                <li><a class="dropdown-item" href="catia-training-Chandigarh.aspx">CATIA</a></li>
+
+                                                <li><a class="dropdown-item" href="CNC-training-in-chandigarh.aspx">CNC Programming</a></li>
+                                                <li><a class="dropdown-item" href="STAADpro-training-in-chandigarh.aspx">STAADPro</a></li>
+                                                <li><a class="dropdown-item" href="revit-training-courses-institute-chandigarh-mohali.aspx">Revit </a></li>
+                                                <li><a class="dropdown-item" href="3dsmax-training-courses-institute-chandigarh-mohali.aspx">3DS MAX </a></li>
+                                                <li><a class="dropdown-item" href="primavera-training-courses-institute-chandigarh-mohali.aspx">Primavera </a></li>
+                                                <li><a class="dropdown-item" href="6-weeks-industrial-cnc-programming-training-courses-chandigarh-mohali.aspx">CNC Programming</a></li>
+                                                <li><a class="dropdown-item" href="google-sketchup-training-in-chandigarh.aspx">Google Sketchup</a></li>
+                                                <li><a class="dropdown-item" href="etabs-training-course-chandigarh-mohali.aspx">ETABS </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">Training</li>
+                                                <li><a class="dropdown-item" href="industrial-training-cse-it-mca-msc-bca.aspx">CSE/IT</a></li>
+                                                <li><a class="dropdown-item" href="industrial-training-ece-electronics-engineering.aspx">ECE</a></li>
+                                                <li><a class="dropdown-item" href="industrial-training-mechanical-engineering-students.aspx">Mechanical Engineering</a></li>
+                                                <li><a class="dropdown-item" href="industrial-training-civil-engineering-students.aspx">Civil Engineering</a></li>
+                                                <li><a class="dropdown-item" href="industrial-training-electrical-engineering-students.aspx">Electrical Engineering</a></li>
+                                                <li><a class="dropdown-item" href="advance-excel-course-training-in-chandigarh-mohali.aspx">Advance Excel</a></li>
+                                                <li><a class="dropdown-item" href="tally-erp-training-coaching-institute-in-chandigarh-mohali.aspx">Tally</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <ul>
+                                                <li class="dropdown-header">SAP</li>
+                                                <li><a class="dropdown-item" href="sap-training-in-chandigarh.aspx">SAP</a></li>
+                                                <li><a class="dropdown-item" href="sap-abap-training.aspx">SAP ABAP</a></li>
+                                                <li><a class="dropdown-item" href="sap-hr-training.aspx">SAP HR</a></li>
+                                                <li><a class="dropdown-item" href="sap-mm-training.aspx">SAP MM</a></li>
+                                                <li><a class="dropdown-item" href="sap-qm-training.aspx">SAP QM</a></li>
+                                                <li><a class="dropdown-item" href="sap-pp-training.aspx">SAP PP</a></li>
+                                                <li><a class="dropdown-item" href="sap-basis-training.aspx">SAP Basis</a></li>
+                                                <li><a class="dropdown-item" href="sap-sd-training.aspx">SAP SD</a></li>
+                                                <li><a class="dropdown-item" href="sap-fi-training.aspx">SAP Fi</a></li>
+                                                <li><a class="dropdown-item" href="sap-co-training.aspx">SAP Co</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Free Industrial Training
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="stipend-based-industrial-training.aspx">Stipend Based Industrial Training</a></li>
+                                <li><a class="dropdown-item" href="free-industrial-training-in-chandigarh.aspx">ThinkNEXT Free Industrial Training</a></li>
+                                <li><a class="dropdown-item" href="free-industrial-training-esdm-govt-scheme.aspx">ESDM Govt. Scheme</a></li>
+                                <li><a class="dropdown-item" href="free-industrial-training-pmkvy-govt-scheme.aspx">PMKVY 2.0 Govt. Scheme</a></li>
+                                <li><a class="dropdown-item" href="free-industrial-training-in-chandigarh-mohali.aspx">Digital India Govt. Scheme</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <ul class="row bg-black">
+                                        <li class="col-sm-3 ">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="internship-in-chandigarh.aspx">Internship</a></li>
+                                                <li><a class="dropdown-item" href="free-industrial-training-in-chandigarh.aspx">Zero Pay Program</a></li>
+                                                <li><a class="dropdown-item" href="corporate-training-in-chandigarh.aspx">Corporate Training</a></li>
+                                                <li><a class="dropdown-item" href="Student-Projects.aspx">Student Work</a></li>
+                                                <li><a class="dropdown-item" href="VerifyCertificate.aspx">Certificate Verification</a></li>
+                                                <li><a class="dropdown-item" href="diploma-mobile-application-development-chandigarh.aspx">Mobile Application Development</a></li>
+                                                <li><a class="dropdown-item" href="summer-training-in-chandigarh-mohali.aspx">Summer Training</a></li>
+                                                <li><a class="dropdown-item" href="summer-internship-in-chandigarh-mohali.aspx">Summer Internship</a></li>
+                                                <li><a class="dropdown-item" href="industrial-training-chandigarh.aspx">Industrial Training in chandigarh</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-3 ">
+                                            <ul>
+                                                <li class="dropdown-header">Diploma Courses</li>
+                                                <li><a class="dropdown-item" href="diploma-in-3d-animation-courses-in-chandigarh.aspx">Diploma in Animation & VFX</a></li>
+                                                <li><a class="dropdown-item" href="diploma-in-animation-multimedia-chandigarh-mohali.aspx">Diploma in Animation & Multimedia</a></li>
+                                                <li><a class="dropdown-item" href="diploma-web-designing-developement-courses-in-chandigarh.aspx">Web Designing & Development</a></li>
+                                                <li><a class="dropdown-item" href="diploma-web-designing-digital-marketing-in-chandigarh.aspx">Web Designing & Digital Marketing</a></li>
+                                                <li><a class="dropdown-item" href="diploma-course-Web-Design-Development-Internet-marketing-chandigarh-mohali.aspx">Web Design, Development & Internet Marketing</a></li>
+                                                <li><a class="dropdown-item" href="six-weeks-industrial-training-in-chandigarh.aspx">Six Month /6 Weeks Industrial Training</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-3 ">
+                                            <ul>
+                                                <li class="dropdown-header">Job Oriented Courses</li>
+                                                <li><a class="dropdown-item" href="photography-course-chandigarh.aspx">Professional Photography Course </a></li>
+                                                <li><a class="dropdown-item" href="video-editing-course-chandigarh-mohali.aspx">Video Editing Course </a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Management Training
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="HR-training-in-chandigarh-with-management-internship.aspx">HR</a></li>
+                                <li><a class="dropdown-item" href="marketing-training-internship-in-chandigarh-mohali.aspx">Marketing</a></li>
+                                <li><a class="dropdown-item" href="finance-training-internship-in-chandigarh-mohali.aspx">Finance</a></li>
+                                <li><a class="dropdown-item" href="it-training-internship-in-chandigarh-mohali.aspx">IT</a></li>
+                                <li><a class="dropdown-item" href="international-business-training-internship-in-chandigarh-mohali.aspx">International Business</a></li>
+                                <li><a class="dropdown-item" href="sap-training-in-chandigarh.aspx">SAP</a></li>
+                                <li><a class="dropdown-item" href="industrial-training-internship-mba-bba-students-chandigarh-mohali.aspx">MBA/BBA Training Internship</a></li>
+                                <li><a class="dropdown-item" href="internship-in-chandigarh-for-bba.aspx">Internship for BBA</a></li>
+                                <li><a class="dropdown-item" href="internship-in-chandigarh-for-mba.aspx">Internship for MBA</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Placements
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Hire-from-thinknext.aspx">Hire From ThinkNEXT</a></li>
+                                <li><a class="dropdown-item" href="Company-list.aspx">Company List</a></li>
+                                <li><a class="dropdown-item" href="Company-testimonial.aspx">Company Testimonial</a></li>
+                                <li><a class="dropdown-item" href="Student-testimonial.aspx">Student Testimonial</a></li>
+                                <li><a class="dropdown-item" href="placement-cell.aspx">Placement Cell</a></li>
+                                <li><a class="dropdown-item" href="PlacementRecords.aspx">Placements After Training</a></li>
+                                <li><a class="dropdown-item" href="hot-jobs.aspx">Hot Jobs</a></li>
+                                <li><a class="dropdown-item" href="ParttimeFulltime.aspx">PartTime/FullTime Job During Training</a></li>
+                                <li><a class="dropdown-item" href="short-listed-students.aspx">Short Listed Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="photogallery.aspx">Photo Gallery</a></li>
+                                <li><a class="dropdown-item" href="videogallery.aspx">Video Gallery</a></li>
+                                <li><a class="dropdown-item" href="media.aspx">Media</a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.aspx">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+      
+    <div class="main-image border">
+        <img src="images/apply-for-job-min.jpg" alt="Apply for Job" title="Apply for Job" />
+    </div>
+
+
+
+    <section class="py-5">
+        <div class="container border">
+            <div class="row">
+               
+                <div class="col-md-5 col-lg-6 bg-dark">
+                    <div class="p-4">
+                        <h2 class="text-warning text-center mb-3"><strong>Apply as Trainer</strong></h2>
+
+                        <form id="prospects_form" autocomplete="off" name="google-sheet">
+                            <div class="form-group mb-4">
+                                <input type="text" name="PersonName" class="form-control" placeholder="Your Name *" value="" required="" />
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="email" name="PersonEmail" class="form-control" placeholder="Your Email *" value="" id="Email" required="" />
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="number" name="MobileNo" class="form-control" placeholder="Your Contact Number *" value="" id="mobile-num" onkeypress="if(this.value.length==10) return false;" required="" />
+                                <strong><span class="text-danger" id="messageerror"></span></strong>
+                            </div>
+                            <div class="form-group mb-3">
+                                <select name="FormDescription" class="form-control" >
+                                    <option value="PHP Trainer">PHP</option>
+                                    <option value="Web Designing Trainer">Web Designing</option>
+                                    <option value="Digital Marketing Trainer">Digital Marketing</option>
+                                    <option value="Java Trainer">Java</option>
+                                </select>
+                            </div>
+                            <div class="form-group display-none">
+                                <input type="text" name="DateEntry" class="form-control" value="" id="dateval" />
+                            </div>
+                            <br />
+                            <div class="form-group text-center">
+                                <input type="submit" name="submit" class="btn-light border-0 h4 text-black px-4 py-2 rounded" value="Submit " />
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="col-md-7 col-lg-6 bg-light position-relative d-none d-md-block">
+                   
+                        <img class="menimg" src="images/man-apply-for-job.png" style="bottom:0" />
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #eaeaea;">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 position-relative">
+                    <a class="popupvid" href="#!" data-link="https://www.youtube.com/embed/DLMXX6pv0ow" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Crystal_button_cancel.svg/1024px-Crystal_button_cancel.svg.png">
+                        <img class="main-video" src="images/six-months-industrial-training-chandigarh-thinknext.jpg" alt="Six Months Industrial Training in Chandigarh"><svg class="ytp-large-play-button" version="1.1" viewBox="0 0 68 48"><path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00" fill-opacity="0.8"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 position-relative">
+                    <a class="popupvid" href="#!" data-link="https://www.youtube.com/embed/pL4gewo1OLM" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Crystal_button_cancel.svg/1024px-Crystal_button_cancel.svg.png">
+                        <img class="main-video" src="images/industrial-training-course-chandigarh-krishma.jpg" alt="Best Industrial Training in Chandigarh"><svg class="ytp-large-play-button" version="1.1" viewBox="0 0 68 48"><path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00" fill-opacity="0.8"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 position-relative">
+                    <a class="popupvid" href="#!" data-link="https://www.youtube.com/embed/HrI9DlsnT3s" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Crystal_button_cancel.svg/1024px-Crystal_button_cancel.svg.png">
+                        <img class="main-video" src="images/best-industrial-training-company-chandigarh-sunil.jpg" alt="6 Months Industrial Training in Chandigarh"><svg class="ytp-large-play-button" version="1.1" viewBox="0 0 68 48"><path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00" fill-opacity="0.8"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 position-relative">
+                    <a class="popupvid" href="#!" data-link="https://www.youtube.com/embed/gcORvuLHa7o" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Crystal_button_cancel.svg/1024px-Crystal_button_cancel.svg.png">
+                        <img class="main-video" src="images/industrial-training-chandigarh-award-surinder.jpg" alt="Digital Marketing Course in Chandigarh"><svg class="ytp-large-play-button" version="1.1" viewBox="0 0 68 48"><path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00" fill-opacity="0.8"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div id="video-view-curtain">
+                <div id="video-view"></div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+        <footer class="footer-section py-3 bg-dark">
+            <div class="container">
+                <div class="copyright pb-0 text-white text-center">
+                    Copyright �
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#">ThinkNEXT</a>
+                </div>
+            </div>
+
+            <div class="call-now">  <a href="tel:7837401000" class="button-21">Call now 7837401000</a> </div>
+            <div class="icon-sticky">
+                <a id="whatsapp-message" href="https://wa.me/917837404000?text=Hi I am interested in ThinkNEXT IELTS Coaching please contact me as soon as possible">
+                    <img src="images/whatsapp1.gif" alt="Whatsapp icon">
+                </a>
+            </div>
+        </footer>
+
+
+        <!--Add the following script at the bottom of the web page (immediately before the </body> tag)-->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            ///  <!--Bytepaper Lead Sync-->
+            Tawk_API.onPrechatSubmit = function (data) {
+                var name = data[0].answer;
+                var phone = data[1].answer;
+                var email = data[2].answer;
+                var leadtype = "Tawk to";
+                var createby = "swarnthinknext@gmail.com";
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("GET", "https://www.bytepaper.com/Cloud/Capture/TawkTo/Capture.php?License=535580444&Name=" + name + "&Phone=" + phone + "&Email=" + email + "&LeadType=" + leadtype + "&CreatedBy=" + createby, false); // false for synchronous request
+                xmlHttp.send(null);
+                return xmlHttp.responseText;
+
+            };
+
+            // -- END Bytepaper Lead Sync-->
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/5a279091d0795768aaf8d9bf/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+
+        <!--End of Tawk.to Script-->
+
+
+        <script type="text/javascript">
+            if ($(window).width() > 768) {
+                $(document).ready(function () {
+                    $(".dropdown").hover(
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                            $(this).toggleClass('open');
+                        },
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                            $(this).toggleClass('open');
+                        }
+                    );
+                });
+
+            }
+            else {
+                $(document).ready(function () {
+                    $(".dropdown").hover(
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                            $(this).toggleClass('blod');
+                        },
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                            $(this).toggleClass('blod');
+                        }
+                    );
+                });
+            }
+        </script>
+
+
+        <script>
+            // handle links with @href started with '#' only
+            $(document).on('click', 'a[href^="#"]', function (e) {
+                // target element id
+                var id = $(this).attr('href');
+
+                // target element
+                var $id = $(id);
+                if ($id.length === 0) {
+                    return;
+                }
+
+                // prevent standard hash navigation (avoid blinking in IE)
+                e.preventDefault();
+
+                // top position relative to the document
+                var pos = $id.offset().top;
+
+                // animated top scrolling
+                $('body, html').animate({ scrollTop: pos });
+            });
+        </script>
+
+
+
+
+        <script>
+            $(".popupvid").click(function () {
+                $("#video-view-curtain").css("display", "block");
+                var $this = $(this);
+                var $iframe = $("<iframe allowfullscreen>").attr("src", $this.data("link"));
+                //var $title = $("<h1>").text($this.data("title"));
+                var $close = $("<img>").attr("src", $this.data("img"));
+                //$("#video-view").html($title).append($iframe);
+                $("#video-view").html($close).append($iframe);
+                $iframe.wrap("<div class='class-video'>");
+            });
+            $("#video-view-curtain").click(function () {
+                $(this).css("display", "none");
+
+            });
+        </script>
+
+
+</body>
+
+</html>

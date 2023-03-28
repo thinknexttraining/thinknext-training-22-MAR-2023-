@@ -1,0 +1,6 @@
+
+VB
+ClientScript.RegisterStartupScript(Page.GetType(), "Onload", "readonlyTrue();", True)
+
+C#
+ClientScript.RegisterStartupScript(Page.GetType(), "Onload", "readonlyTrue();", True);

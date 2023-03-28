@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "thinknext training latest1", ".", "{DABE0D43-C515-4B62-BB13-F9564467B64F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/thinknext training latest1"
+		Debug.AspNetCompiler.PhysicalPath = "D:\thinknext training latest1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\thinknext training latest1\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/thinknext training latest1"
+		Release.AspNetCompiler.PhysicalPath = "D:\thinknext training latest1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\thinknext training latest1\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1040"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DABE0D43-C515-4B62-BB13-F9564467B64F}.Debug|.NET.ActiveCfg = Debug|.NET
+		{DABE0D43-C515-4B62-BB13-F9564467B64F}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

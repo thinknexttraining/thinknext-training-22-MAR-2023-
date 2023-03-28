@@ -1,0 +1,447 @@
+<%@ Page Language="VB" MasterPageFile="~/Admin/MasterAdmin.master" AutoEventWireup="false" CodeFile="~/Admin/AddNotice.aspx.vb" Inherits="NoticeBoard" title="Add Notice"  %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit.HTMLEditor" tagprefix="cc2" %>
+<%@ Register Namespace="MyControls"  TagPrefix ="custom"%>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+<script type="text/javascript" language="JavaScript">
+    function toggleAttachments() {
+        var state = document.getElementById('<%=diattachment.ClientID %>').style.display;
+        if (state == 'block') {
+            document.getElementById('<%=diattachment.ClientID %>').style.display = 'none';
+        } else {
+        document.getElementById('<%=diattachment.ClientID %>').style.display = 'block';
+        }
+    }
+</script>
+
+    <div style="height: 1189px; width: 837px;">
+     <table style="width: 833px; height: 390px;"><tr>
+         <td style ="height :212px ; width :800px" 
+            align="center" valign="top">
+                   <table style="width:795px; height: 321px;">
+                    <tr>
+                        <td valign="top" align="center" style="width: 815px">
+                            <asp:Label ID="Label1" runat="server" 
+                                style="font-weight: 700; font-size: large" Text="Add Notice"></asp:Label>
+                                        
+                        </td>
+                    </tr>
+                      <tr>
+            <td align="center">
+                 <asp:UpdatePanel ID="UpdatePanel6" runat="server">
+                                <ContentTemplate>
+                             <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+                <ProgressTemplate>
+                    Thinking. . . . . . . . .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <img alt="" style="height:14px; width:237px;" src="../Images/progressbar.gif" /> 
+                </ProgressTemplate>
+                </asp:UpdateProgress>
+                <asp:Label ID="lblMsg" runat="server" ForeColor="Red" style="color: #990000; font-size: small;"></asp:Label> 
+                <asp:Label ID="attchmentmsg" 
+                                                                 runat="server" Font-Size="Small" ForeColor="Red" ></asp:Label> 
+                                </ContentTemplate>
+                                </asp:UpdatePanel>
+            </td>
+        </tr>
+                    <tr>
+                        <td valign="top" align="left" style="width: 815px">
+                            
+                                    <asp:Panel ID="Panel2" runat="server" BorderColor="Black" 
+                                GroupingText="Notice Details" 
+    style="font-size: small" Width="826px" Height="528px">
+      <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                        <table style="width:808px; height: 32px;">
+                                            <tr>
+                                                <td align="left" class="style17">
+                                                    &nbsp;</td>
+                                                <td align="left" class="style13">
+                                                    <asp:Label ID="lblCollegeName" runat="server" SkinID="MytextID" 
+                                                        style="font-size: small" Text="College Name"></asp:Label>
+                                                </td>
+                                                <td colspan="3">
+                                                    <asp:DropDownList ID="ddlCollegeName" runat="server" AutoPostBack="True" 
+                                                Height="20px" SkinID="MytextID" style="font-size: x-small" Width="282px">
+                                                        <asp:ListItem>Select</asp:ListItem>
+                                                    </asp:DropDownList>
+                                                </td>
+                                                <td class="style5">
+                                                    &nbsp;</td>
+                                                <td align="left" class="style9">
+                                                    <asp:Label ID="lblNoticeID0" runat="server" SkinID="MytextID" 
+                                                style="font-size: small" Text="Notice ID"></asp:Label>
+                                                </td>
+                                                <td style="width: 316px">
+                                                    <asp:TextBox ID="txtNoticeID" runat="server" Height="14px" SkinID="MytextID" 
+                                                style="font-size: x-small" Width="275px" ReadOnly="True"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="style17">
+                                                    &nbsp;</td>
+                                                <td align="left" class="style13">
+                                                    <asp:Label ID="lblDate1" runat="server" SkinID="MytextID" 
+                                                        style="font-size: small" Text="Date"></asp:Label>
+                                                </td>
+                                                <td style="width: 112px">
+                                                    <asp:TextBox ID="txtDate" runat="server" Height="14px" SkinID="MytextID" 
+                                                style="font-size: x-small" Width="100px"></asp:TextBox>
+                                                    <cc1:CalendarExtender ID="txtDate_CalendarExtender0" runat="server" 
+                                                Enabled="True" Format="MM/dd/yyyy" TargetControlID="txtDate" 
+                                                TodaysDateFormat="MM/dd/yyyy">
+                                                    </cc1:CalendarExtender>
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="lblDate0" runat="server" 
+                                                        style="color: #CC3300; font-size: small;">(MM/dd/yyyy)</asp:Label>
+                                                </td>
+                                                <td style="width: 85px">
+                                                    &nbsp;</td>
+                                                <td class="style5">
+                                                    &nbsp;</td>
+                                                <td align="left" class="style9">
+                                                    <asp:Label ID="lblTime" runat="server" SkinID="MytextID" 
+                                                style="font-size: small" Text="Time"></asp:Label>
+                                                </td>
+                                                <td style="width: 316px">
+                                                    <asp:TextBox ID="txtTime" runat="server" Height="14px" SkinID="MytextID" 
+                                                style="font-size: x-small" Width="275px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            
+                                                            <tr>
+                                                <td align="left" class="style16">
+                                                    &nbsp;</td>
+                                                <td align="left" class="style14">
+                                                    <asp:Label ID="lblSubject" runat="server" SkinID="MytextID" 
+                                                        style="font-size: small" Text="Subject"></asp:Label>
+                                                </td>
+                                                <td colspan="3" style="height: 14px" valign="top">
+                                                    <asp:TextBox ID="txtSubject" runat="server" Height="14px" SkinID="MytextID" 
+                                                style="font-size: x-small" Width="275px" 
+                                                MaxLength="255"></asp:TextBox>
+                                                </td>
+                                                <td style="width: 15px; height: 14px;">
+                                                    </td>
+                                                <td align="left" style="width: 51px; height: 14px;">
+                                                    <asp:Label ID="lblAuthority" runat="server" SkinID="MytextID" 
+                                                        style="font-size: small" Text="Authority"></asp:Label>
+                                                </td>
+                                                <td align="left" style="height: 14px; width: 316px">
+                                                    <asp:TextBox ID="txtAuthority" runat="server" Height="14px" MaxLength="100" 
+                                                        SkinID="MytextID" style="font-size: x-small" Width="275px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="style10">
+                                                    </td>
+                                                <td align="left" class="style11">
+                                                    <asp:Label ID="Label17" runat="server" Text="Attach File: "></asp:Label>
+                                                </td>
+                                                <td colspan="6" class="style12">
+                                                <img src="../Images/Attachment.gif" alt=""></img>
+                                                <span style="font-family: Arial, Helvetica, sans-serif; font-weight: bold">
+                                             <a href="#" onclick="toggleAttachments();" 
+                                                 style="text-decoration: none; color: #3399FF">Add Attachments </a> &nbsp;<asp:Label ID="LblMyFiles" runat="server" Font-Size="X-Small" ForeColor="RoyalBlue"></asp:Label></span>&nbsp;</td>
+                                            </tr>
+                                            
+                                           
+                                           
+                                       
+                                     </tr>
+                                            <tr>
+                                                <td align="left" valign="top" class="style4">
+                                                </td>
+                                                <td align="left" valign="top" class="style15">
+                                                    <asp:Label ID="lblNotice" runat="server" SkinID="MytextID" 
+                                                        style="font-size: small" Text="Notice"></asp:Label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </td>
+                                                <td colspan="6" align="left" valign="top" style="height: auto;">
+                                                    <cc2:Editor ID="Editor1" runat="server" Height="400px" NoScript="True" 
+                                                        NoUnicode="True" Width="700px" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                         </ContentTemplate>
+                            </asp:UpdatePanel>
+                                    </asp:Panel>
+                               
+                        </td>
+                    </tr>
+                    </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="height: 30px; width: 795px;" valign="middle">
+            
+                                            <asp:Button CssClass="BlackButtonCss" ID="btnShow" runat="server" 
+                    Height="26px" SkinID="MytextID" 
+                                                style="font-weight: 700" Text="Show" 
+                    Width="94px" />
+                                            &nbsp;&nbsp;&nbsp;
+                                            <asp:Button CssClass="BlackButtonCss" ID="btnAdd" runat="server" 
+                    Height="26px" SkinID="MytextID" 
+                                                style="font-weight: 700" Text="Add" 
+                    Width="94px" />
+                 
+      
+   
+                                            <br />
+                 
+      
+   
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="width: 795px; height: 161px" valign="top">
+            
+                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                    <ContentTemplate>
+                        <table style="width: 826px; height: 441px;">
+                            <tr>
+                                <td style="height: 19px">
+                                    &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <asp:Label ID="lblRecords" runat="server" SkinID="MytextID" 
+                                        style="font-size: small"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" style="height: 425px">
+                                    <asp:Panel ID="Panel1" runat="server" Height="419px" ScrollBars="Horizontal" 
+                                        style="margin-right: 0px" Width="823px">
+                                        <asp:GridView ID="gdShow" runat="server" AutoGenerateColumns="False" 
+                                            CellPadding="4" ForeColor="#333333" GridLines="None" Height="84px"   
+                                            style="font-size: small" Width="816px">
+                                            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" HorizontalAlign="Left" />
+                                            <Columns>
+                                                <asp:TemplateField HeaderText="CollegeName" SortExpression="CollegeName">
+                                                    <ItemTemplate>
+                                                        <asp:Label ID="lblCollegeName0" runat="server" 
+                                                            Text='<%# Eval("CollegeName") %>'></asp:Label>
+                                                    </ItemTemplate>
+                                                    <HeaderStyle HorizontalAlign="Left" />
+                                                    <ItemStyle HorizontalAlign="Left" Width="95px" />
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="NoticeID" SortExpression="NoticeID">
+                                                    <ItemTemplate>
+                                                        <asp:Label ID="lblNoticeID" runat="server" Text='<%# Eval("NoticeID") %>'></asp:Label>
+                                                    </ItemTemplate>
+                                                    <HeaderStyle HorizontalAlign="Center" />
+                                                    <ItemStyle HorizontalAlign="Center" Width="60px" />
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="Date" SortExpression="Date">
+                                                    <ItemTemplate>
+                                                        <asp:Label ID="lblDate" runat="server" Text='<%# Eval("Date","{0:d}") %>'></asp:Label>
+                                                    </ItemTemplate>
+                                                    <EditItemTemplate>
+                                                        <asp:TextBox ID="txtDate0" runat="server" Height="14px" 
+                                                            Text='<%# Eval("Date","{0:d}") %>'></asp:TextBox>
+                                                        <cc1:CalendarExtender ID="txtDate0_CalendarExtender" runat="server" 
+                                                            Enabled="True" TargetControlID="txtDate0">
+                                                        </cc1:CalendarExtender>
+                                                    </EditItemTemplate>
+                                                    <HeaderStyle HorizontalAlign="Center" />
+                                                    <ItemStyle HorizontalAlign="Center" Width="70px" />
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="Time" SortExpression="Time">
+                                                    <EditItemTemplate>
+                                                        <asp:TextBox ID="txtTime0" runat="server" Height="16px" 
+                                                            Text='<%# Eval("Time","{0:t}") %>' Width="112px"></asp:TextBox>
+                                                    </EditItemTemplate>
+                                                    <ItemTemplate>
+                                                        <asp:Label ID="lblTime0" runat="server" Text='<%# Eval("Time","{0:t}") %>'></asp:Label>
+                                                    </ItemTemplate>
+                                                    <HeaderStyle HorizontalAlign="Center" />
+                                                    <ItemStyle HorizontalAlign="Center" Width="60px" />
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="Authority" SortExpression="Authority">
+                                                    <EditItemTemplate>
+                                                        <asp:TextBox ID="txtAuthority0" runat="server" Height="16px" 
+                                                            Text='<%# Eval("Authority") %>' Width="112px"></asp:TextBox>
+                                                    </EditItemTemplate>
+                                                    <ItemTemplate>
+                                                        <asp:Label ID="lblAuthority0" runat="server" Text='<%# Eval("Authority") %>'></asp:Label>
+                                                    </ItemTemplate>
+                                                    <HeaderStyle HorizontalAlign="Left" />
+                                                    <ItemStyle HorizontalAlign="Left" Width="90px" />
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="Subject">
+                                                    <EditItemTemplate>
+                                                        <asp:TextBox ID="txtSubject0" runat="server" Text='<%# Eval("Subject") %>' 
+                                                            TextMode="MultiLine"></asp:TextBox>
+                                                    </EditItemTemplate>
+                                                    <ItemTemplate>
+                                                        <asp:LinkButton ID="lnkbtnSubject" runat="server" CommandName="Subject" 
+                                                            Text='<%# Eval("Subject") %>'></asp:LinkButton>
+                                                    </ItemTemplate>
+                                                    <HeaderStyle HorizontalAlign="Left" />
+                                                    <ItemStyle HorizontalAlign="Left" Width="160px" />
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="Notice">
+                                                    <ItemTemplate>
+                                                            <%--<asp:Label ID="lblNews0" runat="server" Text='<%# Eval("News") %>'></asp:Label>--%>
+                                                            <asp:Label ID="lblNotice" runat="server" Text='<%# Eval("Notice") %>'></asp:Label>
+                                                        </ItemTemplate>
+                                                    <HeaderStyle HorizontalAlign="Left" />
+                                                    <ItemStyle HorizontalAlign="Left" />
+                                                </asp:TemplateField>
+                                                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True">
+                                                    <ItemStyle Width="60px" />
+                                                </asp:CommandField>
+                                            </Columns>
+                                            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                                            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                                            <HeaderStyle BackColor="#336699" Font-Bold="True" ForeColor="White" 
+                                                HorizontalAlign="Left" />
+                                            <EditRowStyle BackColor="#999999" />
+                                            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                                        </asp:GridView>
+                                    </asp:Panel>
+                                </td>
+                            </tr>
+                        </table>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                 
+      
+   
+            </td>
+        </tr>
+        </table>
+   
+  <%--  -----------------------ADD Attachments---------------------------%>
+       
+         <div id="diattachment" runat="server" 
+          style="display:none ; padding : 10px 0px 0px 0px; width: 526px; height: 171px; text-align: center; vertical-align: middle; background-image: url('Images/tpr.png'); background-repeat: repeat; top: 55.5%; left: 34%; position: absolute;">
+            <%-- <asp:UpdatePanel ID="UpdatePanelattachment" runat="server">
+             <ContentTemplate>--%>
+              <table id="tableattachment" 
+                                                     style="margin: 5px auto auto auto; width: 96%; height: 152px; background-color: #FFFFFF;">
+                                                     <tr>
+                                                         <td colspan="2" 
+                                                             style="height: 23px; text-align: left; font-size: small; font-family: Arial, Helvetica, sans-serif;">
+                                                             <b>&nbsp;&nbsp;&nbsp; Attachments</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                         <td style="height: 23px; text-align: right">
+                                                             <div ID="closeAttachment" 
+                                                                 
+                                                                 style="width: 56px; height: 33px; position: relative; left: 90px; top: 0px; right: 0px;">
+                                                                <a href="#" onclick="toggleAttachments();" > <img src="Images/close.png"  alt="" style="border-style: none; height: 33px; width: 38px;" /></a>
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td style="width: 62px">
+                                                             &nbsp;</td>
+                                                         <td style="width: 284px; text-align: left">
+                                                             <asp:FileUpload ID="FileUploader" runat="server" Height="27px" Multiple="true" 
+                                                                 Width="260px" />
+                                                         </td>
+                                                         <td style="text-align: left">
+                                                             <asp:Button ID="Button1" runat="server" CssClass="BlackButtonCss" Height="25px" 
+                                                                 Text="Add" Width="70px" />
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td style="width: 62px">
+                                                             &nbsp;</td>
+                                                         <td style="width: 284px; height: auto; text-align: left;">
+                                                             <asp:ListBox ID="FileListBox" runat="server" BackColor="AliceBlue" 
+                                                                 Font-Size="Small" Height="50px" Rows="5" SelectionMode="Single" Width="260px">
+                                                             </asp:ListBox>
+                                                         </td>
+                                                         <td style="text-align: left">
+                                                             <asp:Button ID="Remove" runat="server" CssClass="BlackButtonCss" Height="25px" 
+                                                                 Text="Remove" Width="70px" />
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td style="width: 62px">
+                                                             &nbsp;</td>
+                                                         <td style="width: 284px">
+                                                             &nbsp;</td>
+                                                         <td>
+                                                             &nbsp;</td>
+                                                     </tr>
+                                                 </table>
+        <%--   </ContentTemplate>
+               <Triggers>
+                     <asp:PostBackTrigger ControlID="Remove" />
+                     <asp:PostBackTrigger ControlID="btnAdd" />
+                 </Triggers>
+            </asp:UpdatePanel>--%>
+                                                
+                                                
+                                                 <br />
+                                                 <br />
+                                                 <br />
+                                             </div>
+                                           
+        <%--  -----------------------ADD Attachments End---------------------------%>
+    </div>
+</asp:Content>
+
+<asp:Content ID="Content2" runat="server" contentplaceholderid="head">
+
+    <style type="text/css">
+        .style4
+        {
+            height: 166px;
+            width: 13px;
+        }
+        .style5
+        {
+            width: 15px;
+        }
+        .style9
+        {
+            width: 63px;
+        }
+        .style10
+        {
+            width: 13px;
+            height: 20px;
+        }
+        .style11
+        {
+            width: 113px;
+            height: 20px;
+        }
+        .style12
+        {
+            height: 20px;
+        }
+        .style13
+        {
+            width: 113px;
+        }
+        .style14
+        {
+            height: 14px;
+            width: 113px;
+        }
+        .style15
+        {
+            height: 166px;
+            width: 113px;
+        }
+        .style16
+        {
+            height: 14px;
+            width: 13px;
+        }
+        .style17
+        {
+            width: 13px;
+        }
+    </style>
+
+</asp:Content>
+
+

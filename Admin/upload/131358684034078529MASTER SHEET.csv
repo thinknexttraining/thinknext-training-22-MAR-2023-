@@ -1,0 +1,3 @@
+EnquiryNo,ModeOfEnquiry,CollegeName,Qualification,AdmissionDate,StudentName,FatherName,MotherName,ContactNo,StudentMobileNo,FatherMobileNo,Sex,EmailID,StatusCode,Session,FranchiseCode,BrandName,WhatsAppNo,EnquiryStatus
+,Online,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Enquiry,NULL,TNK101,THINKNEXT TRAINING,NULL,NULL
+,Online,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Enquiry,NULL,TNK101,THINKNEXT TRAINING,NULL,NULL

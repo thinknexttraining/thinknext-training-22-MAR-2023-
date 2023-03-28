@@ -1,0 +1,203 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Net;
+using System.Data;
+using System.Net.Mail;
+using System.Configuration;
+using System.Data.SqlClient;
+using CrystalDecisions.Shared;
+using CrystalDecisions.CrystalReports.Engine;
+using System.IO;
+
+public partial class DownloadCertificate : System.Web.UI.Page
+{
+    string VarIp;
+    
+    Class1 datahelper = new Class1();
+
+    
+    ReportDocument crystalReport;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        //crystalReport = new ReportDocument();
+        //crystalReport.Load(Server.MapPath("~/StudentCertificateReport.rpt"));
+        //Student dsStudent = this.GetData("SELECT * FROM StudentCertificate where CertificateId=123456 ");
+        //crystalReport.SetDataSource(dsStudent);
+        //CrystalReportViewer1.ReportSource = crystalReport;
+    }
+
+    protected void btnDownload_Click(object sender, EventArgs e)
+    {
+        bool EmailIDCheck;
+        EmailIDCheck = CheckEmailIdExist(txtEmailID.Text);
+        if (EmailIDCheck == true)
+        {
+            if (txtCertificateid.Text == "" && ddlCourse.SelectedItem.Text == "Select")
+            {
+                MessageBox("Please Select Course To Download Certificate");
+            }
+            else
+            {
+                crystalReport = new ReportDocument();
+                crystalReport.Load(Server.MapPath("~/StudentCertificateReport.rpt"));
+                Student dsStudent = this.GetData("SELECT * FROM StudentCertificate where CertificateId='" + txtCertificateid.Text + "' ");
+                crystalReport.SetDataSource(dsStudent);
+                crystalReport.ExportToHttpResponse(ExportFormatType.PortableDocFormat, Response, true, txtCertificateid.Text);
+                Response.End();
+            }
+        }
+        else if (txtEmailID.Text == "")
+        {
+            MessageBox("Please Enter Email ID");
+        }
+        else
+        {
+            MessageBox("No Record Found For Email ID:- " + txtEmailID.Text + "");
+        }
+        
+        
+
+
+    }
+    private Student GetData(string query)
+    {
+        string conString;
+        conString = datahelper.GetConnectionString(VarIp);
+        SqlCommand cmd = new SqlCommand(query);
+        using (SqlConnection con = new SqlConnection(conString))
+        {
+            using (SqlDataAdapter sda = new SqlDataAdapter())
+            {
+                cmd.Connection = con;
+
+                sda.SelectCommand = cmd;
+                using (Student dsStudent = new Student())
+                {
+                    sda.Fill(dsStudent, "DataTable1");
+                    return dsStudent;
+                }
+            }
+        }
+    }
+
+
+    public void CourseBindByEmailID()
+    {
+        string conString;
+        conString = datahelper.GetConnectionString(VarIp);
+        string sql1;
+        SqlDataReader dr;
+        SqlCommand cmd1 = new SqlCommand();
+        SqlConnection con1;
+        con1 = new SqlConnection(conString);
+        con1.Open();
+        sql1 = " Select course from StudentCertificate where EmailId = @EmailID";
+        cmd1 = new SqlCommand(sql1, con1);
+        cmd1.Parameters.AddWithValue("@EmailID", txtEmailID.Text);
+
+        ddlCourse.DataSource = cmd1.ExecuteReader();
+        ddlCourse.DataTextField = "course";
+        ddlCourse.DataValueField = "course";
+        ddlCourse.DataBind();
+        ddlCourse.Items.Insert(0, "Select");
+        con1.Close();
+        //dr.Close();
+        cmd1.Dispose();
+    }
+    public void CertificateBindByCourse()
+    {
+        string conString;
+        conString = datahelper.GetConnectionString(VarIp);
+        string sql1;
+        SqlConnection con1;
+        con1 = new SqlConnection(conString);
+        con1.Open();
+        sql1 = " Select CertificateId from StudentCertificate where EmailId = '" + txtEmailID.Text + "' and Course = '" + ddlCourse.SelectedItem.Text + "' and CertificateId <> ''";
+        SqlDataAdapter da = new SqlDataAdapter(sql1, con1);
+        DataSet ds = new DataSet();
+        da.Fill(ds, "StudentCertificate");
+        if (ds.Tables["StudentCertificate"].Rows.Count > 0)
+        {
+            txtCertificateid.Text = ds.Tables["StudentCertificate"].Rows[0]["CertificateId"].ToString();
+        }
+        else
+        {
+            MessageBox("No Record Found For EmailID:- "+ txtEmailID.Text +" and Course:- "+ ddlCourse.SelectedItem.Text +"");
+            txtCertificateid.Text = "";
+        }
+      con1.Close();
+    }
+    public string MessageBox(string msg)
+    {
+        //string message = "Your Certificate have been send to Your EmailID .";
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        sb.Append("<script type = 'text/javascript'>");
+        sb.Append("window.onload=function(){");
+        sb.Append("alert('");
+        sb.Append(msg);
+        sb.Append("')};");
+        sb.Append("</script>");
+        ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+        return msg;
+    }
+
+    public bool CheckEmailIdExist(string varEmailID)
+    {
+        bool status= false;
+        string conString;
+        conString = datahelper.GetConnectionString(VarIp);
+        string sql1;
+        SqlConnection con1;
+        con1 = new SqlConnection(conString);
+        con1.Open();
+        sql1 = " Select * from StudentCertificate where EmailId = '" + txtEmailID.Text + "'";
+        SqlDataAdapter da = new SqlDataAdapter(sql1, con1);
+        DataSet ds = new DataSet();
+        da.Fill(ds, "StudentCertificate");
+        if (ds.Tables["StudentCertificate"].Rows.Count > 0)
+        {
+            status = true;
+        }
+        else
+        {
+            status = false;
+        }
+        con1.Close();
+
+        return status;
+    }
+    protected void txtEmailID_TextChanged(object sender, EventArgs e)
+    {
+        bool EmailIDCheck;
+        EmailIDCheck = CheckEmailIdExist(txtEmailID.Text);
+        if (EmailIDCheck == true)
+        {
+            CourseBindByEmailID();
+        }
+        else
+        {
+            MessageBox("No Record Found For EmailID:- " + txtEmailID.Text + "");
+        }
+        
+    }
+
+
+
+    protected void ddlCourse_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        CertificateBindByCourse();
+        if (txtCertificateid.Text != "")
+        {
+            crystalReport = new ReportDocument();
+            crystalReport.Load(Server.MapPath("~/StudentCertificateReport.rpt"));
+            //crystalReport.SetDatabaseLogon("thinknex_usertraining", "Dvas07!8", "43.255.152.21", "thinknex_training");
+            Student dsStudent = this.GetData("SELECT * FROM StudentCertificate where CertificateId='" + txtCertificateid.Text + "' ");
+            crystalReport.SetDataSource(dsStudent);
+            //CrystalReportViewer1.ReportSource = crystalReport;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+﻿Imports Microsoft.VisualBasic
+Imports System.Data.SqlClient
+Imports System.Data
+Imports System
+Imports System.Web.UI.WebControls
+Imports System.Net
+Imports System.IO
+Imports System.Net.WebPermission
+Imports System.Xml
+Imports System.Text
+Imports System.Security.Cryptography
+Imports System.Net.Mail
+Imports System.Threading
+Imports System.Net.Mail.Attachment
+Imports System.Globalization
+Imports System.Web
+Imports System.Net.Mime
+Partial Class summer_internship_offers
+    Inherits System.Web.UI.Page
+    Dim sess As String
+    Dim varIP As String
+    Dim varclass As New Class1()
+    Class SurroundingClass
+        Public Shared INDIAN_ZONE As TimeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time")
+        Public indianTime As DateTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, INDIAN_ZONE)
+    End Class
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        Dim TodayDate As String
+        Dim Date1 As New SurroundingClass
+        TodayDate = Date1.indianTime.ToString()
+        Dim curr = Convert.ToDateTime(TodayDate)
+        Dim startTime As New Date(curr.Year, curr.Month, curr.Day, 0, 0, 0)
+        Dim endTime As New Date(curr.Year, curr.Month, curr.Day, 9, 0, 0)
+        If (curr >= startTime) And (curr <= endTime) Then
+            Response.Redirect("https://www.thinknexttraining.com/oops-offer-expired.html")
+        End If
+    End Sub
+
+End Class

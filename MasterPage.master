@@ -1,0 +1,2036 @@
+﻿
+<%@ Master Language="VB" CodeFile="~/MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" dir="ltr" lang="en-US"> <!--<![endif]-->
+<head>
+ 
+    <meta content="text/html;charset=UTF-8" />
+
+    <!-- Basic Page Needs
+  ================================================== -->
+<meta charset="UTF-8" />
+<meta name="alexaVerifyID" content="TyCywzEWT2w5aS7EcUuxKJlVe5k"/>
+<meta name="msvalidate.01" content="330E776C33E32ADE60A412A1A2C3264C"/>
+<meta name="google-site-verification" content="6NkNdA1tfxkdv4ueqtNccVMa8wM7JkP9oerFrKYkdFU" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="author" content="Munish Mittal, mittalmunish@thinknext.co.in" />
+
+
+
+<link href="css/rwd.css" rel="stylesheet" type="text/css" />
+ <link href="style.css"  rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="wp-content/themes/bluediamond/style.css" type="text/css" />
+<link href="css/styletab.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive-tabs.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="wp-content/themes/bluediamond/stylesheet/foundation-responsive.css" />
+<link rel='stylesheet' id='style-custom-css'  href='wp-content/themes/bluediamond/style-customccfb.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='Google-Font-ABeeZee-css'  href='http://fonts.googleapis.com/css?family=ABeeZee%3An%2Ci%2Cb%2Cbi&amp;subset=latin&amp;ver=3.4.2' type='text/css' media='all' />
+<link id='Google-Font-OfflineDroid+Serif-css' href='http://fonts.googleapis.com/css?family=Droid+Serif%3An%2Ci%2Cb%2Cbi&amp;subset=latin&amp;ver=3.4.2' media='all' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' id='Google-Font-PT+Sans-css'  href='http://fonts.googleapis.com/css?family=PT+Sans%3An%2Ci%2Cb%2Cbi&amp;subset=latin&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider_css-css'  href='wp-content/plugins/LayerSlider/css/layerslider5b75.css?ver=3.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='superfish-css'  href='wp-content/themes/bluediamond/stylesheet/superfishccfb.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='wp-content/themes/bluediamond/stylesheet/fancyboxccfb.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-thumbs-css'  href='wp-content/themes/bluediamond/stylesheet/jquery.fancybox-thumbsccfb.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='flex-slider-css'  href='wp-content/themes/bluediamond/stylesheet/flexsliderccfb.css?ver=3.4.2' type='text/css' media='all' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link rel='stylesheet' id='Link2'  href="bootstrap/css/bootstrap.css" type='text/css' media='all' />
+  <script src="logo-slider/js/jssor.slider-23.1.5.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='wp-content/plugins/LayerSlider/js/layerslider.kreaturamedia.jquery5b75.js?ver=3.0.2'></script>
+<script type='text/javascript' src='wp-content/plugins/LayerSlider/js/jquery-easing-1.36f3e.js?ver=1.3.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/jquery.fitvids5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-includes/js/comment-replyccfb.js?ver=3.4.2'></script>
+     
+    
+   
+     
+<link rel="shortcut icon" href="images/favicon.ico" type="image/ico">
+
+   
+<%-- <script src="/js/html5shiv.js" type="text/javascript"></script>
+ <script src="/js/respond.min.js" type="text/javascript"></script>--%>
+
+	
+<script src="js/jquery.responsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+<script src="js/jquery.responsiveTabs.min.js" type="text/javascript"></script>
+
+       <script type='application/ld+json'>
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "",
+                "sameAs": "GOOGLE-PLUS-LINK"
+            },
+            "url": "<data:blog.canonicalUrl/>",
+            "datePublished": "2018-03-26T20:00",
+            "publisher": {
+                "@type": "Organization",
+                "name": "ThinkNEXT Technologies",
+                "sameAs": "http://www.thinknexttraining.com/"
+            },
+            "description": "<data:blog.metaDescription/>",
+            "inLanguage": "en",
+            "itemReviewed": {
+                "@type": "Product",
+                "name": "<data:blog.pageName/>",
+                "sameAs": "<data:blog.canonicalUrl/>",
+                "image": "<data:blog.postImageThumbnailUrl/>",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "ratingCount": "99083"
+                }
+            }
+        }
+        </script>
+
+<script type="text/javascript">
+   function toggle() {
+        //alert("text");
+        var state = document.getElementById('<%=popup.ClientID%>').style.display;
+
+        if (state == 'block') {
+
+            document.getElementById('<%=popup.ClientID%>').style.display = 'none';
+        } else {
+            document.getElementById('<%=popup.ClientID%>').style.display = 'block';
+        }
+  
+    };
+
+
+    function toggle10() {
+        var states = document.getElementById('<%=Div1.ClientID%>').style.display;
+        if (states == 'block') {
+
+            document.getElementById('<%=Div1.ClientID%>').style.display = 'none';
+       
+        } else {
+            document.getElementById('<%=Div1.ClientID%>').style.display = 'block';
+        }
+    };
+
+
+
+    function broucherdownload() {
+        var states = document.getElementById('brochiframe').style.display;
+        if (states == 'block') {
+
+            document.getElementById('brochiframe').style.display = 'none';
+
+
+        } else {
+            document.getElementById('brochiframe').style.display = 'block';
+        }
+    };
+
+
+    function clsifrm() {
+        var states = document.getElementById('brochiframe').style.display;
+        if (states == 'block') {
+            document.getElementById('brochiframe').style.display = 'none';
+
+
+        } else {
+            document.getElementById('brochiframe').style.display = 'block';
+        }
+    };
+
+
+</script>
+
+    
+     <!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45989872-1', 'thinknexttraining.com');
+    ga('send', 'pageview');
+
+</script>
+
+ <!-- Global site tag (gtag.js) - Google Ads: 987828495 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-987828495"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-987828495');
+</script>
+
+    <!-- Event snippet for ThinknextTrainingLeads conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-987828495/fcDLCIjJ768BEI-ihNcD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+   
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1287913394619192');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1287913394619192&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
+       
+    <!-- //  New Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '650548395565669');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=650548395565669&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+	<style type="text/css">
+
+     .jobfair{
+    	position: fixed;
+	top: 0;
+    padding:7px;
+    width:100%;
+        background: #012ca9 !important;
+        border-bottom: 1px solid #E91E63;
+}
+      .jobfair strong{
+font-size:20px !important;
+      }
+       #jobfair strong{
+     color:#fff;
+ }
+        .jobfair a {
+font-size:22px !important;
+        }
+#jobfair{
+    z-index:999;
+    width:100%;background:#163579;
+}
+
+        #jobfair a {
+         font-size:16px;
+            color: #fff;
+           
+        }
+
+          .jobfairmobile{
+    	position: fixed;
+	top: 0;
+    padding:7px;
+    width:100%;
+        background: #012ca9 !important;
+        border-bottom: 1px solid #E91E63;
+}
+ .jobfairmobile strong{
+font-size:20px !important;
+color:#fff;
+      }
+        .jobfairmobile a {
+font-size:23px !important;
+        }
+#jobfairmobile{
+    z-index:999;
+    width:100%;background:#163579;
+}
+ #jobfairmobile strong{
+     color:#fff;
+ }
+        #jobfairmobile a {
+         font-size:16px;
+            color: #fff;
+           
+        }
+
+
+           .bling2{
+         font-size:19px;
+       -webkit-animation: bling 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: bling2 0.5s infinite;
+    }
+     @keyframes bling2 {
+    0%   {color: #fff;}
+    50%  {color: red;}
+    100%  {color: #fff}
+  
+}
+
+     .bling{
+         font-size:19px;
+       -webkit-animation: bling 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: bling 0.5s infinite;
+    }
+     @keyframes bling {
+    0%   {color: red;}
+    50%  {color: black;}
+    100%  {color: red;}
+  
+}
+
+
+     .megajobfair9th {
+          
+           border-radius: 3px;
+            background: #1dfb2e;
+            -webkit-animation: bgrndbling 0.6s infinite; /* Safari 4.0 - 8.0 */
+            animation: bgrndbling 0.6s infinite;
+
+        }
+
+       @keyframes bgrndbling {
+    0%   {background: black;}
+    50%  {background: red;}
+    100%  {background: black;}
+        }
+      
+
+	    html {
+            overflow-x:hidden;
+	    }
+        .footer-social-icon .list_social-networks .list__item {
+    margin-bottom: 8px;
+     padding: 0 4px;
+    font-size: 16px;
+    float:left;
+        width: auto;
+}
+.footer-social-icon .list_social-networks .list__item-link {
+    opacity: .7;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.list_social-networks .list__item-link {
+    display: block;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    opacity: .7;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.list_social-networks .list__item-link_facebook {
+    background: #3a5897;
+}
+.list_social-networks .list__item-link_google-plus {
+    background: #db4437;
+}
+.list_social-networks .list__item-link_twitter {
+    background: #00aced;
+}
+.list_social-networks .list__item-link_youtube {
+    background: #bb0000;
+}
+.list_social-networks .list__item-link_instagram {
+    background: #ac907a;
+}
+.list_social-networks .list__item-link_linkedin {
+    background: #0092d8fa;
+}
+
+        #cii-member1{
+float: left;
+       width: 43%;
+    margin-right: 11px;
+    margin-left: 90px;
+        }
+
+         #cii-member2{
+    float: left;
+   
+    width: 44%;
+    margin: 5px;
+
+        }
+
+	   .table2 input[type="text"], input[type="password"], input[type="email"], .round-box textarea, select {
+	    margin-left:0px !important;
+        margin-right:0px;
+        }
+	    .rounded_box {
+            margin-bottom:15px;
+            
+	    }
+	        .rounded_box a {
+                color:black !important;
+	        }
+            p:last-child{ margin-bottom:10px;}
+	    .right h1 {
+                border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: red;
+    text-align: center;
+    width: 100% !important;
+	    }
+
+        .brochiframe {
+    position: fixed;
+    top: 50px;
+    left: 23%;
+    border: 1px solid;
+    background: white;
+    height: 329px;
+    z-index: 9999;
+    display:none;
+   
+}
+
+	    .popupfreetraining
+	    {
+	        padding-bottom: 20px !important;
+	    }
+          .navbar {border-radius: 0 !important;}
+	    .tab1,.tab1 td
+	    {
+	        border: none;
+	    }
+	    .recentcomments a {
+	        display: inline !important;
+	        padding: 0 !important;
+	        margin: 0 !important;
+	    }
+
+	    #Text1 {
+	        width: 169px;
+	    }
+	    .head1 {
+	       margin:0 auto;
+	    }
+	    #Text2 {
+	        width: 169px;
+	    }
+	    .popupfreetraining
+	    {
+             padding: 0px 0px 0px 50px;
+	        margin-top: 125px;
+	        margin-left: auto;
+	        margin-right: auto;
+	        width: auto;
+	        
+	        position: absolute;
+	        background-color: white;
+	        box-shadow: 0px 15px 25px #000000;
+	        top: 15%;
+	        left: 31%;
+	        border-radius: 5px;
+	       
+	    }
+	    
+	    .popupsmsemail1 {
+	        padding: 0px 0px 0px 0px;
+	        margin-top: 125px;
+	        margin-left: auto;
+	        margin-right: auto;
+	        width: 329px;
+	        height: 400px;
+	        position: absolute;
+	        background-color: white;
+	        /*box-shadow: 0px 15px 25px #000000;*/
+	        top: 15%;
+	        left: 31%;
+	        border-radius: 5px;
+	        -moz-border-radius: 5px;
+	        -webkit-border-radius: 5px;
+	    }
+
+	    .button {
+	        width: 40%;
+	        background-color: #0b72a0;
+	        border-radius: 2em;
+	        margin-left: 59%;
+	    }
+         .popupemail2 {
+     padding: 0px 0px 0px 50px;
+        margin-top: -855px;
+        margin-left: 15%;
+        flex-align: center;
+        width: 380px;
+        height: 391px;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 15px 25px #000000;
+        top: 15%;
+        left: 30%;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+	    .navbar {
+            margin-bottom:0px !important;
+	    }
+
+
+    
+
+
+#whatsapp-message{    
+    width: 46px;
+    position: fixed;
+    bottom: 34%;
+    right: 2.2%;
+    z-index: 99999999999999;
+}
+#callme{    
+   width: 46px;
+    position: fixed;
+    bottom: 25%;
+    background: #3c3c9e;
+    right: 2.2%;
+    z-index: 99999999999999;
+    padding: 10px;
+    border-radius: 100%;
+}
+#youtubesubscribe{
+    width: 46px;
+    position: fixed;
+    bottom: 16%;
+    background: #cccccc;
+   right: 2.2%;
+    z-index: 99999999999999;
+    padding: 10px;
+    border-radius: 100%;
+}
+#facebooklike{
+    width: 46px;
+    position: fixed;
+    bottom: 7%;
+   right: 2.2%;
+    z-index: 99999999999999;
+  
+    border-radius: 100%;
+}
+#youtubesubscribe img{
+    width:100%;
+
+}
+#whatsapp-message img{
+    width: 100%;
+}
+#facebooklike img{
+    width: 100%;
+}
+#callme img{
+    width: 100%;
+}
+	    @media screen and (max-width:800px) {
+	        .button {
+	            margin-right: 5%;
+	            width: 50%;
+	        }
+
+	        .new {
+	            width: 100%;
+	        }
+
+	        .logo-right-text {
+	            width: 50% !important;
+	        }
+
+	        .logo-right-text-content {
+	            float: right !important;
+	            margin-bottom: 10% !important;
+	            width: 100% !important;
+	        }
+
+	        .logo-left-text-content {
+	            float: left !important;
+	        }
+
+	        .social {
+	            float: left;
+	            margin-bottom: 0px;
+	            padding-left: 30px;
+	        }
+	        .popupemail2
+	        {
+	            margin: auto !important;
+                top: 10% !important;
+                position: fixed !important;
+	        }
+             .popupfreetraining
+	        {
+	            margin: auto !important;
+                top: 10% !important;
+                position: absolute !important;
+	        }
+	    }
+
+
+        .scrollToTop{
+	width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+	display:none;
+    cursor:pointer;
+    
+	
+}
+
+
+ 
+	    @media screen and (max-width:1174px)
+         {
+	        .navbar-nav {
+                float: left !important ;
+                margin:20px;
+                
+	        }
+	    }
+	    @media screen and (max-width:1000px) {
+	        .brochiframe {
+	            left: 5%;
+	        }
+
+	    }
+          @media screen and (min-width:768px)
+         {
+	        .navbar-nav {
+                float: left !important ;
+                
+	        }
+
+	    }
+
+	    @media screen and (max-width:768px) {
+                     
+#whatsapp-message{       
+    bottom: 28.5%;   
+}
+#callme{    
+      bottom: 38%;  
+}
+#youtubesubscribe{   
+    bottom: 21%;   
+}
+#facebooklike{
+    bottom: 11%;
+}
+
+	        #brochform .left-side {
+	            display: none;
+	        }
+
+            #carousel-example-generics{
+                display:block;
+            }
+	        #carousel-example-generic {
+                     display:none;
+	        }
+            
+	    }
+	    @media screen and (max-width:400px) {
+	        .new {
+	            width: 100%;
+	            padding-right: 10%;
+	        }
+
+	        .button {
+	            width: 100%;
+	        }
+
+	        .logo-right-text-content {
+	            float: left !important;
+	        }
+
+	        .logo-right-text {
+	            width: 100% !important;
+	            float: left !important;
+	        }
+	    }
+	    @media screen and (max-width:600px)
+	    {
+	        .popu
+	        {
+	            height: 360px !important;
+	            width: 300px !important;
+	        }
+
+	        .popupemail2
+	        {
+	            width: 360px !important;
+	            height: 440px !important;
+                left:5% !important;
+	        }
+            .popupfreetraining{
+                left:5%;
+	            width: 360px !important;
+	            height: 440px !important;
+	        }
+	    }
+           @media (min-width: 320px) and (max-width: 385px)
+	    {
+	        #popup
+	        {
+                 width: 294px !important;
+	            height: 440px !important;
+	            left: 5% !important;
+	        }
+             #popup #P
+	        {
+	            margin-left: -10%;
+	            margin-top: 1px;
+	        }
+               .popupemail2
+	        {
+	            width: 294px !important;
+	            height: 440px !important;
+	            left: 5% !important;
+	        }
+	        #Div1 {
+	            width: 294px !important;
+	        }
+	        #P2 {
+	            margin-left: -20% !important;
+	        }
+            .popu {
+    height: 363px !important;
+    width: 276px !important;
+    margin-left: -40px !important;
+}
+     #popup #P
+	        {
+	            margin-left: -10%;
+	            margin-top: 1px;
+	        }
+
+	        .tab1 tbody tr td:first-child
+	        {
+                padding-left:4px !important;
+               
+	        }
+	        .tab1 tbody tr td:last-child
+	        {
+                padding-left:0px !important;
+                
+	        }
+	       .popupemail2 #P
+	        {
+	            margin-left: -10%;
+	            margin-top: 1px;
+	        }
+	       .popupapply #P
+	        {
+                margin-left: -10%;
+	            margin-top: 1px;
+	        }
+	    }
+
+	    @media screen and (max-width:900px)
+	    {
+	        .brochiframe
+	        {
+	            left: 5% !important;
+               
+	        }
+	        #cii-member1 {
+                margin-left:0px;
+	        }
+	    }
+        
+         @media screen and (max-width:730px)
+	    {
+	        .brochiframe
+	        {
+                 left: 1% !important;
+               top:1% !important;
+               width:315px !important;  
+                height:500px !important;
+
+	        }
+	            .brochiframe img
+	            {
+                    margin-top: -157% !important;
+                     margin-left: 84% !important;
+                     position:absolute;
+	            }
+	      .brochiframe iframe
+	        {
+	           width:315px !important;
+               
+	        }
+
+           #cii-member1 {
+                margin-left:0px;
+                width:100%;
+	        }
+             #cii-member2 {
+                margin-top:20px;
+                width:100%;
+	        }
+	    }
+          @media screen and (max-width:350px)
+	    {
+	    }
+	    .apply {
+	       
+	        border-radius: 7px;
+	        font-size: 12px;
+            width: 140px;
+            padding: 3px 0px;
+            height: auto;
+            color:#000;
+	    }
+	   
+	  @media screen and (max-width:430px)
+	    {
+	      .left-side
+	        {
+	            float:none !important;
+                width: 172px !important;
+margin: auto;
+	        }
+            #brochform
+            {
+                 width:298px !important;  
+                height:480px !important;
+            }
+            .right-side{
+                width:300px !important;
+    
+   }
+	    }
+
+        @media screen and (max-width:450px)
+        {
+
+            .default-pop1
+            {
+                width:75% !important;
+                margin-left:34px !important;
+                left: 0% !important;
+            }
+
+            .imp-links{
+                float:none !important;
+            }
+            .imp-links-seprte-line{
+                display:none;
+            }
+        }
+        @media screen and (min-width:450px) and  (max-width:900px)
+        {
+
+            .default-pop1
+            {
+                width:50% !important;
+                margin-left:0px !important;
+                left: 17% !important;
+            }
+        }
+
+	    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+          color:  #FFFF00 !important;
+	    }
+        .navbar-inverse .navbar-nav > li > a {
+    color: #FFF !important;
+}
+	    .navbar-nav > li > .dropdown-menu {
+            background:#000;
+	    }
+	        .navbar-nav > li > .dropdown-menu a {
+                color:#fff;
+	        }
+	    .mega-dropdown-menu > li > ul > li:hover {
+             background:red;
+	    }
+	    .mega-dropdown-menu > li > ul > .dropdown-header:hover {
+             background:none;
+	    }
+
+
+
+        p {
+    margin: 0px 0 10px 0px !important;
+}
+
+
+	        @media (min-width: 1200px) {
+	           .top-navigation-wrapper.boxed-style .col-lg-4 {
+	                width: 28.333333%;
+                        padding-right: 1px;
+    padding-left: 1px;
+	            }
+
+	           .top-navigation-wrapper.boxed-style .col-lg-2 {
+	                width: 13.666667%;
+                        padding-right: 1px;
+    padding-left: 1px;
+	            }
+
+	           .top-navigation-wrapper.boxed-style .col-lg-3 {
+	                width: 22%;
+                        padding-right: 1px;
+    padding-left: 1px;
+	            }
+
+	    }
+	    @media (min-width: 768px) {
+	        .dropdown:hover > .dropdown-menu {
+	            display: block !important;
+	        }
+	    }
+
+        input#ContentPlaceHolder1_btnsubmit {
+    margin-top: 4%;
+}
+
+        input#ContentPlaceHolder1_Btndemo {
+    margin-top: 4%;
+}
+        
+
+
+
+           @media screen and (min-width:768px){
+          #jobfairmobile{
+              display:none;
+          }
+      }
+       @media screen and (max-width:768px){
+          #jobfairmobile{
+              display:block;
+              text-align:center;
+          }
+            #jobfair{
+              display:none;
+          }
+      }
+
+	</style>
+    <script type="text/javascript">
+       
+
+        function RefreshParent() {
+            window.opener.document.getElementById('Button3').click();
+            window.close();
+        }
+</script>
+	<script type="text/javascript">
+	    $ = jQuery.noConflict();
+	    $(document).ready(function () {
+	        $('#horizontalTab').responsiveTabs({
+	            active: 2,
+	            startCollapsed: 'accordion',
+	            collapsible: 'accordion',
+	            rotate: false,
+	            setHash: true
+	        });
+	    });
+</script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</head>
+<body class="home page page-id-9 page-template-default">
+
+        <!-- Google Code for http://thinknexttraining.com/ Conversion Page -->
+
+
+     <!-- \\\END  Google Code for http://thinknexttraining.com/ Conversion Page -->
+
+   
+<%--<div class="button">
+<a href="contactus.aspx">
+<button type="button" style="position:fixed; background: transparent url(images/Phone.jpg) no-repeat scroll 0% 0%; text-shadow: 2px 2px 3px #969698; font-size: 18px; color:white; float:right; 
+    right:0px; width:30px; z-index:1;  height: 500px; text-indent: -9999px; overflow:hidden; top:32%;"></button></a>
+       
+    </div>--%>
+<%--   <div class="button">
+<a href="https://www.facebook.com/thinknextchandigarh" target=_blank>
+<button type="button" style="position:fixed; background: transparent url(images/facebook.jpg) no-repeat scroll 0% 0%; text-shadow: 2px 2px 3px #969698; font-size: 18px; color:white; float:left; 
+    right:1320px; width:30px; z-index:1;  height: 500px; text-indent: -9999px; overflow:hidden; top:32%;"></button></a>
+   </div>
+   <br />
+  --%>  <%--<div class="button">
+       <a href="https://plus.google.com/+ThinknexttrainingIndia/posts" target=_blank>
+<button type="button" style="position:fixed; background: transparent url(images/google.jpg) no-repeat scroll 0% 0%; text-shadow: 2px 2px 3px #969698; font-size: 18px; color:white; float:left; 
+    right:1320px; width:30px; z-index:1;  height: 500px; text-indent: -9999px; overflow:hidden; top:37%;"></button></a>
+
+       </div>
+         <div class="button">
+       <a href="https://twitter.com/thinknextchd" target=_blank>
+<button type="button" style="position:fixed; background: transparent url(images/twitter.jpg) no-repeat scroll 0% 0%; text-shadow: 2px 2px 3px #969698; font-size: 18px; color:white; float:left; 
+    right:1320px; width:30px; z-index:1;  height: 500px; text-indent: -9999px; overflow:hidden; top:42%;"></button></a>
+
+       </div>
+        <div class="button">
+       <a href="https://www.youtube.com/ThinkNEXTIndia?sub_confirmation=1" target=_blank>
+<button type="button" style="position:fixed; background: transparent url(images/youtube.jpg) no-repeat scroll 0% 0%; text-shadow: 2px 2px 3px #969698; font-size: 18px; color:white; float:left; 
+    right:1320px; width:30px; z-index:1;  height: 500px; text-indent: -9999px; overflow:hidden; top:47%;"></button></a>
+
+       </div>
+ <div class="button">
+       <a href="https://www.linkedin.com/company/thinknext-technologies"target=_blank>
+<button type="button" 
+           
+           style="position:fixed; background: transparent url(images/linkdin.jpg) no-repeat scroll 0% 0%; text-shadow: 2px 2px 3px #969698; font-size: 18px; color:white; float:left; 
+    right:1320px; width:30px; z-index:1;  height: 500px; text-indent: -9999px; overflow:hidden; top:-45%;"></button></a>
+
+       </div>--%>
+
+ 
+
+
+ <form id="form2" runat="server" style="background:#fff">
+     
+  
+     
+
+<div class="body-outer-wrapper">
+    <div class="top-navigation-wrapper boxed-style">
+       <div class="container">    
+      
+<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12  " style="margin-top: 3px;">
+    <img class="headpdg" alt="Phone" src="wp-content/uploads/2012/11/phone.png" /> <span style="font-size: 12px; color:#FFF; "><strong>78374-01000, 78374-02000, 78374-03000 &nbsp; &nbsp; &nbsp; <img alt="Whatsapp" src="wp-content/themes/bluediamond/images/icon/social-icon/Whatsapp.png" width="15px"> <b>78374-04000 </b></strong></span>
+
+</div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 headpdg" style="margin-top: 3px;">
+            <span class="headpdg" style= "color:#fff;  font-size:12px; "> <strong>Toll  Free :</strong> <span style="color:#fff; font-size:12px;"><strong>1800-102-4102</strong></span>
+</span>
+
+        </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 headpdg " style="margin-top: -2px;">
+              <span class="headpdg" style= "color:#fff;  font-size:15px; "> <strong> <i class="fa fa-envelope">&nbsp; info@thinknext.co.in </i></strong></span>
+&nbsp; &nbsp; &nbsp; &nbsp; 
+                <span class="headpdg" style= "color:#fff;  font-size:15px; "> <strong> <i class="fa fa-map-marker">&nbsp; <a style="color:#fff" href="Locate.aspx">Locate Us</a></i></strong></span>
+
+
+                 </div>
+           <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 headpdg" style="margin-top: 3px;">
+            <img class="headpdg" src="images/paytm-icon.png" alt="PayTM" width=" 37px" /> <span style="color:#fff; font-size:12px;"><strong>9815994197</strong></span>
+
+
+        </div>
+           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 headpdg ">
+                <div class="social-icon"  ><a href="https://www.facebook.com/thinknexttechnologies" target="_blank"><img src="wp-content/themes/bluediamond/images/icon/social-icon/facebook.png" alt="facebook"/></a></div>
+<div class="social-icon"><a target="_blank" href="https://twitter.com/thinknextchd"><img src="wp-content/themes/bluediamond/images/icon/social-icon/twitter.png" alt="twitter"/></a></div>
+<div class="social-icon"   ><a target="_blank" href="https://www.linkedin.com/company/thinknext-technologies"><img src="wp-content/themes/bluediamond/images/icon/social-icon/linkedin.png" alt="linkedin"/></a></div>
+<div class="social-icon " ><a target="_blank" href="https://thinknextchd.blogspot.com/"><img src="images/blogspot.png" alt="RSS"/></a></div>
+<div class="social-icon "><a target="_blank" href="https://www.youtube.com/ThinkNEXTIndia?sub_confirmation=1"><img src="images/youtube.png" alt="linkedin"/></a></div>
+
+<%--<div class="social-icon hepdg"><a target="_blank" href="https://plus.google.com/+ThinkNEXTTechnologies"><img src="images/gplus.png" alt="G+"/></a></div>--%>
+
+<div class="social-icon "><a target="_blank" href="https://www.instagram.com/thinknexttechnologies/"><img src="images/instagram.png" alt="Instagram."/></a></div>
+               
+
+        </div>
+
+
+
+
+
+     </div>
+
+
+
+	    
+            </div> 
+    
+    
+         <div id="jobfair">
+          <marquee scrollamount="3" onmouseover="stop()" onmouseout="start()"><strong>
+Applications are invited for Free 6 Months/6 Weeks Industrial Training. Email your resume at information@thinknext.co.in (Limited Seats).</strong></marquee>
+        </div>
+
+     <div id="jobfairmobile">
+            <strong>
+Applications are invited for Free 6 Months/6 Weeks Industrial Training. Email your resume at information@thinknext.co.in (Limited Seats).</strong>
+        </div>
+
+    </div>
+	<div class="body-wrapper boxed-style">
+		<script type="text/javascript">
+		    jQuery(document).ready(function () {
+		        $ = jQuery.noConflict();
+		        jQuery('.option-inactive').live("click", function () {
+		            jQuery(this).animate({
+		                marginLeft: "0px"
+		            });
+		            jQuery(this).removeClass('option-inactive');
+		            jQuery(this).addClass('option-active');
+		        });
+		        jQuery('.option-active').live("click", function () {
+		            jQuery(this).animate({
+		                marginLeft: "-145px"
+		            });
+		            jQuery(this).removeClass('option-active');
+		            jQuery(this).addClass('option-inactive');
+		        });
+		    });
+		    
+		   
+	</script>
+        
+	<div class="theme-option option-inactive">
+		<!--<div class="select-layout">
+			<span class="option-header">Select Layout</span>
+			<a href="index2f3e.html?boxed">> Boxed</a><br/>
+			<a href="index710b.html?full_size">> Full-Width</a>
+		</div>	--> 
+		<div class="option-toggle"></div>
+	</div>
+
+
+
+       <%-- ---------------start--------------%><%--<div class="top-navigation-wrapper boxed-style">
+            
+           
+
+           
+           
+
+            
+		
+
+    </div>--%>        <%----------end---------%>
+    </div>
+   
+
+		<div class="header-wrapper main" style="background-color:#FFF">
+				  
+
+			<!-- Get Logo -->
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+			<div class="logo-wrapper">
+			
+				<a href="http://www.thinknext.co.in/">
+				<img src="wp-content/themes/bluediamond/images/logo.png" class="img-responsive" alt="default-logo"/></a>
+               
+    
+		</div>
+              </div>
+       
+
+
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+             <div style="margin-top: 12px; margin-bottom:20px;">
+                     <img id="cii-member1" src="images/CII-Member1.jpg"  class="img-responsive" alt="Members"/>
+                  <img id="cii-member2" src="images/CII-Member2.jpg"  class="img-responsive"  alt="Members"/>
+                </div>
+				</div>
+
+           
+            
+            
+            
+           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+			<div class="logo-right-text" >
+               <div style ="display :none ;">
+                <a class="mba" href="http://managementinternship.com/" ><img class="img-responsive" src="images/mba.png" alt="mba"/></a>
+                
+			</div>
+              
+			
+                                
+			<div class="top-search-wrapper">
+                <div class="gdl-search-form">
+					
+		<div class="clear">
+
+		</div>
+	
+</div>
+
+			</div>
+
+			</div>
+               </div>
+           
+   
+
+			<!-- Navigation -->
+			<div class="clear"></div>
+			<div class="gdl-navigation-wrapper">
+				
+			<%--	responsive menu--%>
+				
+
+<!--
+
+ Vendor 
+
+-->
+
+
+<div class="row" style="width:100%;margin:0;"> 
+      <div class=" col-sm-12 col-xs-12 " style="color:#000; font-size:17px;margin-left:0; margin-bottom:10px; ">
+       <div class="imp-links" style="width:290px;float:left;">
+           <a href="stipend-based-industrial-training.aspx" class="apply bling"  style="font-size:16px" >  <strong>Stipend Based Industrial Training</strong></a><span class="imp-links-seprte-line"> &nbsp;  | &nbsp;</span>
+       
+           </div>
+  <div class="imp-links" style="width:220px;float:left;">
+     
+       <a href="free-industrial-training-in-chandigarh.aspx" class="apply bling"  style="font-size:16px" >  <%--<a id="A1" href="#" runat="Server" style="font-size:17px; color:#000; text-decoration:none; margin-top:11% ;" 
+			onclick="toggle();"> --%><strong> Free Industrial Training </strong>
+			</a><span class="imp-links-seprte-line"> &nbsp;  | &nbsp;</span>
+          </div>
+           <div class="imp-links" style="width: 198px;float:left;text-align:  center;">
+             <a href="free-industrial-training-esdm-govt-scheme.aspx" class="apply"  style="font-size:16px" >  <%--<a id="A1" href="#" runat="Server" style="font-size:17px; color:#000; text-decoration:none; margin-top:11% ;" 
+			onclick="toggle();"> --%><strong> Free Training under Govt. </strong>
+			</a>
+        </div>
+
+           <div class="imp-links" style="width:250px;float:left;">
+               <span class="imp-links-seprte-line"> &nbsp;  | &nbsp;</span>
+        <a  id="A3" href="apply-for-free-placement.aspx"  runat="Server" class="apply"  onclick="toggle10s();" style="font-size:16px" >  <strong>  Apply for Free Placement  </strong></a><span class="imp-links-seprte-line"> &nbsp;  | &nbsp;</span>
+               </div>
+
+        <!--<marquee scrolldelay="250" direction="left" onmouseover="stop();" onmouseout="start();" style="margin-right:20%; "> <span style="color:#OOO; font-weight:600;">ThinkNEXT is conducting Open Placement Drive for ECE Students on 31-05-2016 (Tuesday). So all students are required to refer all their ECE Friends for Placement Drive.</marquee>-->
+ 
+       <%--<p style="color:#000; margin-top:3%; font-size:17px; margin-bottom:5% "><a href="ParttimeFulltime.aspx" style="color:#000;"> <strong> Highest No. of Placements in the region for 2015  </strong> </a></p>--%>
+        
+      <%--     <div class="imp-links" style="width:160px;float:left;">
+            <a href="Online-Training-Chandigarh-Mohali.aspx"  style="color:#000;font-size: 16px;"> <strong>Online Training </strong> </a><span class="imp-links-seprte-line"> &nbsp;  | &nbsp;</span>
+
+               </div>--%>
+
+
+          
+           <div class="imp-links" style="width:161px;float:left;text-align: center;">
+            <a href="student-ambassador.aspx" style="color:#000;font-size: 16px;"> <strong>Student Ambassador</strong> </a>
+
+               </div>
+        
+         
+
+   
+           <div class="imp-links" style="width:160px;float:left;">
+               <span class="imp-links-seprte-line"> &nbsp;  | &nbsp;</span>
+       <a href="free-demo-class.aspx" class="apply"  style="font-size:16px" >  <%--<a id="A1" href="#" runat="Server" style="font-size:17px; color:#000; text-decoration:none; margin-top:11% ;" 
+			onclick="toggle();"> --%><strong> Free Demo Class </strong>
+			</a> 
+       
+          
+           </div>
+  
+     
+</div>
+    <div style="clear:both;"></div>
+
+<div class="">
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+    	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		
+	</div>
+	
+	<div class="collapse navbar-collapse js-navbar-collapse">
+
+
+
+     <ul class="nav navbar-nav">
+             <li><a href="Default.aspx">Home</a></li>
+
+			<li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Training <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+                   
+					<li class="col-sm-2">
+						<ul>
+							<li class="dropdown-header"> CSE/IT/MCA</li>      
+                            <li><a href="php-training-in-chandigarh.aspx">PHP\MySQL</a></li>     
+                            <li><a href="laravel-php-framework-training-in-chandigarh-mohali.aspx">Laravel PHP </a></li>
+                             <li> <a href="digital-marketing-course-training-in-chandigarh.aspx"> Digital Marketing Course</a> </li>                 
+                            <li><a href="dot-net-training-in-chandigarh.aspx">.Net</a></li>
+                            <li><a href="java-training-in-chandigarh.aspx">JAVA</a></li>
+                            <li><a href="Android-training-in-chandigarh.aspx">Android</a></li>
+                            <li><a href="iphone-training-in-chandigarh.aspx">iPhone</a></li>
+                            <li><a href="web-designing-training-in-chandigarh.aspx">Web Designing</a></li>
+                            <li><a href="software-testing-training-in-chandigarh.aspx"> Software Testing</a></li>
+                            <li><a href="networking-training-in-chandigarh.aspx">Hardware & Networking</a></li>
+                            <li><a href="ccna-training-in-chandigarh.aspx">CCNA</a></li>
+                            <li><a href="ccnp-training-institutions-chandigarh.aspx"> CCNP</a></li>
+                         
+                         <li><a href="computer-courses-in-chandigarh-mohali.aspx">Computer Courses</a></li>   
+                            <li><a href="wordpress-training-in-chandigarh-mohali.aspx">WordPress Training</a></li>
+                            <li><a href="ethical-hacking-training-in-chandigarh-mohali.aspx">Ethical Hacking</a></li>
+						</ul>
+
+					</li>
+                    <li class="col-sm-2">
+						<ul>
+							<li class="dropdown-header"><br /> </li>  
+
+                           <li> <a href="Asp-Net-MVC-training-in-chandigarh-mohali.aspx">Asp .Net MVC </a></li>
+                            <li><a href="aws-training-course-chandigarh-mohali.aspx">AWS </a></li>
+                             <li><a href="AngularJS-training-course-chandigarh-mohali.aspx">AngularJS </a></li>
+                            <li><a href="reactjs-training-course-chandigarh-mohali.aspx">ReactJS </a></li>
+                            <li><a href="nodejs-training-course-chandigarh-mohali.aspx">NodeJS </a></li>
+                            <li><a href="AngularJS-training-course-chandigarh-mohali.aspx">AngularJS </a></li>
+                            <li> <a href="mean-stack-course-training-chandigarh-mohali.aspx">MEAN Stack</a> </li>
+                              <li><a href="mcitp-training-in-chandigarh.aspx">MCITP</a></li>                          
+                          <li><a href="seo-training-in-chandigarh.aspx">SEO,SMO & Bidding </a></li>
+                            <li><a href="c-and-c-training-in-chandigarh.aspx">C\C++</a></li>
+                            <li><a href="online-bidding-freelancing.aspx">Online Bidding(FreeLancing)</a></li>
+                            <li><a href="sql-server-database-dba-training-in-chandigarh-mohali.aspx">Oracle\SQL Server</a></li>
+                            <li><a href="Animation-and-Multimedia-training-in-chandigarh.aspx">Animation & Multimedia</a></li>
+                            <!--<li><a href="sap-training-in-chandigarh.aspx">SAP Training</a></li> -->
+                            <li><a href="matlab-training-institute-in-chandigarh.aspx">MATLAB</a></li>
+                            <li><a href="big-data-hadoop-course-chandigarh.aspx">Big Data Hadoop</a></li>
+                           
+                            <li> <a href="python-training-in-chandigarh-mohali.aspx"> Python</a> </li>
+                             <li> <a href="linux-training-in-chandigarh-mohali.aspx"> Linux</a> </li>
+
+						</ul>
+					</li>
+					<li class="col-sm-2">
+						<ul>
+							<li class="dropdown-header">ECE/Electrical</li>
+							<li><a href="embedded-systems-training-in-chandigarh.aspx">Embedded System & Robotics</a></li>
+                            <li><a href="PLC-SCADA-training-in-chandigarh.aspx">PLC/SCADA(Automation)</a></li>
+                            <li><a href="vlsi-training-chandigarh-mohali.aspx">VLSI Training</a></li>
+                            <li> <a href="networking-training-in-chandigarh.aspx">   Networking </a></li>  
+                            <li> <a  href="Android-training-in-chandigarh.aspx">  Android</a></li>      
+                            <li> <a href="pdms-training-institutes-in-chandigarh.aspx">  PDMS Training </a></li>       
+                            <li> <a href="IoT-training-chandigarh-mohali-india.aspx">  IoT Training </a></li>                 
+   						</ul>
+					</li>
+					<li class="col-sm-2">
+						<ul>
+							<li class="dropdown-header">Mechanical\Civil</li>
+							<li><a href="Autocad-training-in-chandigarh.aspx">AutoCAD</a></li>
+                            <li><a href="solid-works-training-in-chandigarh.aspx">Solid Works</a></li>
+							<li><a href="Pro-Engineer-Training-in-chandigarh.aspx">Pro-E</a> </li>
+							<li><a href="catia-training-Chandigarh.aspx">CATIA</a></li>	                       
+							
+                            <li><a href="CNC-training-in-chandigarh.aspx">CNC Programming</a></li>
+                            <li><a href="STAADpro-training-in-chandigarh.aspx">STAADPro</a></li>
+	  	                    <li><a href="revit-training-courses-institute-chandigarh-mohali.aspx">Revit </a></li> 
+	  	                    <li><a href="3dsmax-training-courses-institute-chandigarh-mohali.aspx">3DS MAX </a></li>
+	  	                     <li><a href="primavera-training-courses-institute-chandigarh-mohali.aspx">Primavera </a></li>
+	  	                    <li><a href="6-weeks-industrial-cnc-programming-training-courses-chandigarh-mohali.aspx">CNC Programming</a></li>
+                            <li><a href="google-sketchup-training-in-chandigarh.aspx"> Google Sketchup</a></li>
+                            <li><a href="etabs-training-course-chandigarh-mohali.aspx"> ETABS </a></li>
+                            </ul>
+					</li>
+                       <li class="col-sm-2">
+						<ul>
+							<li class="dropdown-header">Training</li>
+							<li><a href="industrial-training-cse-it-mca-msc-bca.aspx" >CSE/IT</a></li>
+                            <li><a href="industrial-training-ece-electronics-engineering.aspx" >ECE</a></li>
+                            <li><a href="industrial-training-mechanical-engineering-students.aspx" >Mechanical Engineering</a></li>
+                            <li> <a href="industrial-training-civil-engineering-students.aspx" > Civil Engineering</a></li>  
+                            <li> <a  href="industrial-training-electrical-engineering-students.aspx" >Electrical Engineering</a></li> 
+                            <li> <a  href="advance-excel-course-training-in-chandigarh-mohali.aspx" >Advance Excel</a></li> 
+                            <li><a  href="tally-erp-training-coaching-institute-in-chandigarh-mohali.aspx">Tally</a></li>                         
+   						</ul>
+					</li>
+                    <li class="col-sm-2">
+						<ul>
+							<li class="dropdown-header">SAP</li>
+							<li><a href="sap-abap-training.aspx">SAP ABAP</a></li>
+                            <li><a href="sap-hr-training.aspx">SAP HR</a></li>
+                            <li><a href="sap-mm-training.aspx">SAP MM</a></li>
+                            <li><a href="sap-qm-training.aspx">SAP QM</a></li>
+                            <li> <a href="sap-pp-training.aspx">SAP PP</a></li>  
+                            <li> <a  href="sap-basis-training.aspx">SAP Basis</a></li>
+                            <li><a href="sap-sd-training.aspx">SAP SD</a></li>
+                            <li> <a href="sap-fi-training.aspx">SAP Fi</a></li>  
+                            <li> <a  href="sap-co-training.aspx">SAP Co</a></li>                           
+   						</ul>
+					</li>
+                    </ul>
+           
+					 <li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Free Industrial Training<span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3 ">
+						<ul>
+                            <li><a href="stipend-based-industrial-training.aspx">Stipend Based Industrial Training</a></li>
+                            <li><a href="free-industrial-training-in-chandigarh.aspx">ThinkNEXT Free Industrial Training</a></li>
+							<li><a href="free-industrial-training-pmkvy-govt-scheme.aspx">PMKVY 2.0 Govt. Scheme</a></li>
+                            <li><a href="free-industrial-training-in-chandigarh-mohali.aspx">Digital India Govt. Scheme</a></li>
+		                   </ul>
+                        </ul>  
+   </li>
+			
+         
+               
+                <li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+                  
+					<li class="col-sm-3 ">
+						<ul>
+						<li><a href="internship-in-chandigarh.aspx">Internship</a></li>
+	                    <li><a href="free-industrial-training-in-chandigarh.aspx">Zero Pay Program</a></li>
+	                    <li><a href="corporate-training-in-chandigarh.aspx">Corporate Training</a></li>
+	                    <li> <a href="Student-Projects.aspx">Student Work</a></li>
+                        <li> <a href="VerifyCertificate.aspx">Certificate Verification</a></li>
+                        <li><a href="diploma-mobile-application-development-chandigarh.aspx">Mobile Application Development</a></li>
+                             <li><a href="summer-training-in-chandigarh-mohali.aspx">Summer Training</a></li>
+                            <li><a href="summer-internship-in-chandigarh-mohali.aspx">Summer Internship</a></li>
+                            <li><a href="industrial-training-chandigarh.aspx">Industrial Training in chandigarh</a></li>
+                             </ul>
+                        </li>
+                    <li class="col-sm-3 ">
+						<ul>
+							<li class="dropdown-header"> Diploma Courses</li>
+                            	<li><a href="diploma-in-3d-animation-courses-in-chandigarh.aspx">Diploma in Animation & VFX</a></li>
+                                <li><a href="diploma-web-designing-developement-courses-in-chandigarh.aspx">Web Designing & Development</a></li>
+		                        <li><a href="diploma-web-designing-digital-marketing-in-chandigarh.aspx">Web Designing & Digital Marketing</a></li>
+                                <li><a href="six-weeks-industrial-training-in-chandigarh.aspx">Six Month /6 Weeks Industrial Training</a></li>
+                        </ul>
+                        </li>  
+                    
+                        </ul>
+                    </li>
+
+
+          <li class="dropdown mega-dropdown">
+
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management Training<span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3 ">
+						<ul>
+
+                            <li><a href="HR-training-in-chandigarh-with-management-internship.aspx">HR</a></li>
+							<li><a href="marketing-training-internship-in-chandigarh-mohali.aspx">Marketing</a></li>
+                            <li><a href="finance-training-internship-in-chandigarh-mohali.aspx">Finance</a></li>
+                            <li><a href="it-training-internship-in-chandigarh-mohali.aspx">IT</a></li>
+							<li><a href="international-business-training-internship-in-chandigarh-mohali.aspx">International Business</a></li>
+                            <li><a href="sap-training-in-chandigarh.aspx">SAP</a></li>
+                            <li><a href="industrial-training-internship-mba-bba-students-chandigarh-mohali.aspx">MBA/BBA Training Internship</a></li>
+		                     <li><a href="internship-in-chandigarh-for-bba.aspx">Internship for BBA</a></li>
+                            <li><a href="internship-in-chandigarh-for-mba.aspx">Internship for MBA</a></li> 
+                            <li><a  href="bca-internship.aspx">Internship for BCA</a></li>
+                             <li><a href="mca-internship.aspx">Internship for MCA</a></li> 
+                            
+                        </ul>
+                        </ul>  
+              </li>
+          <li>
+                            <a  href="get-free-demo-class.aspx">Free Demo Class</a>
+                        </li>
+                    <li class="dropdown mega-dropdown ">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Placements <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+						<ul>
+						<li><a href="Hire-from-thinknext.aspx">Hire From ThinkNEXT</a></li>
+	                    <li><a href="Company-list.aspx">Company List</a></li>
+	                    <li><a href="Company-testimonial.aspx">Company Testimonial</a></li>	
+	                    <li> <a href="Student-testimonial.aspx">Student Testimonial</a></li>
+                        <li> <a href="placement-cell.aspx">Placement Cell</a></li>
+	                    <li> <a href="PlacementRecords.aspx">Placements After Training</a></li>
+                        <li> <a href="hot-jobs.aspx">Hot Jobs</a></li>
+	                    <li> <a href="ParttimeFulltime.aspx">PartTime/FullTime Job During Training</a></li>
+                            <li> <a href="short-listed-students.aspx"> Short Listed Students</a></li>
+	          	</ul>
+                        </li>
+                    </ul>
+                         <li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery<span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-2">
+						<ul>
+							<li><a href="photogallery.aspx">Photo Gallery</a></li>
+		                    <li><a href="videogallery.aspx">Video Gallery</a></li>
+                            </ul>
+                        </ul>  
+   </li>
+                    
+                     <li><a href="media.aspx">Media</a> </li>
+                   
+					<li><a href="blog.aspx">Blog</a></li>     
+                    <!--<li><a href="Careers.aspx">Careers</a></li>-->
+                 <!--  <li> <a href="">About Us</a></li> -->
+                  <%--  <li><a href="client.aspx">Clients</a></li>--%>
+                    
+          <li> <a href="thesis.aspx"> Thesis </a></li>
+        <%--    <li> <a  id="A2" href="#"  runat="Server" class="apply"  onclick="toggle10();" style="background-color:#3D77C1;    border-radius: 25px; height: 41px; padding: 5%; padding-left: 7%; width: 102%;">Apply for Placement Drive </a></li>--%>
+                <li><a href="contactus.aspx">Contact Us</a></li>
+            </ul>
+        
+       
+	</div><!-- /.nav-collapse -->
+  </nav>
+</div>
+
+	<%------------------------------------------------------------------------------------------------------------------------------------------	--%>		
+			
+                </div><div class="clear"></div>
+
+
+</div>				<div class="clear"></div>
+	
+			
+	
+
+     <div class="clear"></div>
+ <div class="row gdl-page-row-wrapper" style="margin :0 auto ;">
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+ 
+<div class="clear"></div></div><div class="clear"></div></div>
+
+		<div class="footer-top-bar boxed-style"></div>
+
+				
+				<div class="footer-wrapper boxed-style">
+
+		<!-- Get Footer Widget -->
+							<div class="container footer-container">
+   <div class="one">
+   <h3 style="margin: 0px; padding: 0px; color: #FFFF00; font-size:18px; font-weight:bold;">Industrial Training</h3>
+  <ul>
+     
+  <li><a href="Android-training-in-chandigarh.aspx">Android</a></li>
+  <li><a href="iphone-training-in-chandigarh.aspx">iPhone</a></li>
+  <li><a href="java-training-in-chandigarh.aspx">Java</a></li>
+  <li><a href="php-training-in-chandigarh.aspx">PHP/MySQL</a></li>
+  <li><a href="web-designing-training-in-chandigarh.aspx">Web Designing</a></li>
+  <li><a href="software-testing-training-in-chandigarh.aspx">Software Testing</a></li>
+  <li><a href="networking-training-in-chandigarh.aspx">Hardware & Networking</a></li>
+  <li><a href="ccna-training-in-chandigarh.aspx">CCNA</a></li>
+  <li><a href="c-and-c-training-in-chandigarh.aspx">C/C++</a></li>
+  <li><a href="online-bidding-freelancing.aspx">Online Bidding</a></li>
+  <li><a href="Animation-and-Multimedia-training-in-chandigarh.aspx">Animation & Multimedia Training in Chandigarh</a></li>
+  <li><a href="sap-training-in-chandigarh.aspx">SAP Training in Chandigarh</a></li>
+  <li><a href="seo-training-in-chandigarh.aspx">SEO/SMO</a></li>
+  <li><a href="mcitp-training-in-chandigarh.aspx">MCITP</a></li>
+  <li><a href="embedded-systems-training-in-chandigarh.aspx">Embedded Systems</a></li>
+  <li><a href="6-weeks-summer-training-chandigarh.aspx">6 Weeks Summer Training</a>
+       <li><a href="industrial-training-in-chandigarh.aspx">Industrial training in chandigarh</a></li>
+   <li><a href="software-companies-providing-industrial-training-chandigarh-mohali.aspx">Software companies providing industrial training in chandigarh</a></li>
+   <li><a href="computer-institute-in-chandigarh.aspx">Computer Institute in Chandigarh</a></li>
+        <li><a href="computer-training-institute-in-chandigarh.aspx">Computer Training Institute in Chandigarh</a></li>
+        <li><a href="call-center-jobs-in-chandigarh.aspx">Call center jobs in Chandigarh</a></li>
+
+  </ul>
+       <div class="clear-both"></div>
+<div class="footer-social-icon"><ul class="list list_inline list_social-networks">
+									<li class="list__item"><a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/thinknexttechnologies" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								
+									<li class="list__item"><a class="list__item-link list__item-link_twitter" href="https://twitter.com/thinknextchd" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="list__item"><a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/ThinkNEXTIndia?sub_confirmation=1" target="_blank"><i class="fa fa-youtube"></i></a></li>
+									<li class="list__item"><a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/thinknexttechnologies/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+									<li class="list__item"><a class="list__item-link list__item-link_linkedin" href="https://www.linkedin.com/company/thinknext-technologies" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							</ul> </div>
+<div class="clear-both"></div>
+  </div>
+  <div class="two">
+  <ul>
+    <h3 style="margin: 0px; padding: 0px; color: #FFFF00; font-size:18px; font-weight:bold;">Useful Links</h3>
+      <li><a href="internship-cse-students.aspx">Internship for CSE Students</a></li>
+   <li><a href="Best-Industrial-Training-in-chandigarh.aspx">Best industrial training in chandigarh</a></li>
+   <li><a href="industrial-training-in-chandigarh.aspx">Industrial training in chandigarh</a></li>
+   <li><a href="software-companies-providing-industrial-training-chandigarh-mohali.aspx">Software companies providing industrial training in chandigarh</a></li>
+   <li><a href="top-companies-providing-industrial-training.aspx">IT companies providing industrial training in chandigarh</a></li>
+   
+   <li><a href="six-weeks-industrial-training-in-chandigarh.aspx">Six weeks industrial training in chandigarh</a></li>
+  
+   <li><a href="six-weeks-industrial-training-in-chandigarh.aspx">6 weeks industrial training in chandigarh</a></li>
+   <li><a href="free-industrial-training-in-chandigarh.aspx">Free industrial training in chandigarh</a></li>
+    <li><a href="Summer-training-in-chandigarh.aspx">Summer Training in Chandigarh</a></li>
+    <li><a href="web-designing-training-in-chandigarh.aspx">Web Designing in Chandigarh</a></li>
+    <li><a href="top-10-companies-providing-java-training-in-chandigarh.aspx">Top 10 Companies Providing Java Training  in Chandigarh</a></li>
+      <li><a href="top-10-companies-providing-php-training-in-chandigarh.aspx">Top 10 Companies Providing PHP Training  in Chandigarh</a></li>
+     <li><a href="https://thinkenglish.in"">Spoken English Coaching Institute Mohali</a></li>
+       <li><a href="top-10-companies-providing-web-designing-training-in-chandigarh.aspx">Top 10 Companies Providing Web Designing Training in Chandigarh</a></li>     
+      <li><a href="https://thinkenglish.in"">IELTS Coaching Institute Mohali</a></li>   
+      <li><a href="top-10-companies-providing-digital-marketing-course-in-chandigarh.aspx">Top 10 Companies Providing Digital Marketing Course Training in Chandigarh</a></li>
+    <li><a href="catia-training-Chandigarh.aspx">CATIA Training in Chandigarh with ThinkNEXT</a></li>
+     <li><a href="autoCAD-training-in-chandigarh-with-thinknext.aspx">AutoCAD Training in Chandigarh with ThinkNEXT</a></li>
+     <li><a href="summer-industrial-training-for-polytechnic-diploma-students-in-chandigarh-mohali.aspx">6 Weeks Industrial Training for Polytechnic & Diploma Students in Chandigarh/Mohali</a></li>
+        <li><a href="https://thinkenglish.in">IELTS Coaching Institute Chandigarh</a></li> 
+       <li><a href="professional-it-computer-courses-after-12th.aspx">Courses after 12th</a></li>
+     <li><a href="job-oriented-courses.aspx">Job Oriented Courses</a></li>
+     <li><a href="3-months-cse-it-employability-enhancement-program.aspx">Employability Enhancement Program</a></li>
+      
+     </ul>
+
+   </div>
+    <div class="two11">
+   <ul>
+   <li><a href="internship-for-industrial-training-chandigarh-mohali.aspx">Internship for industrial training in chandigarh</a></li>
+   <li><a href="professional-industrial-training-chandigarh-mohali.aspx">Professional industrial training in chandigarh</a></li>
+   <li><a href="stipend-based-industrial-training.aspx">Stipend based industrial training</a></li>
+   <li><a href="Default.aspx">Short term professional courses</a></li>
+   <li><a href="top-companies-providing-industrial-training.aspx">Top companies providing industrial training</a></li>
+   <li><a href="top-10-companies-providing-industrial-training-in-chandigarh-mohali.aspx">Top 10 companies providing industrial training in 
+    Chandigarh</a></li>
+   <li><a href="top-it-company-in-chandigarh.aspx">Top IT companies in Chandigarh</a></li>
+   <li><a href="top-it-company-in-chandigarh.aspx">Top 10 software companies in chandigarh</a></li>
+   <li><a href="Best-Industrial-Training-in-chandigarh.aspx">Best six months industrial training in Chandigarh</a></li>
+   <li><a href="six-months-industrial-training-in-chandigarh.aspx">Six months industrial training in Mohali</a></li>
+  <li><a href="Php-training-in-chandigarh-mohali.aspx">PHP training in Chandigarh</a></li>
+  <li><a href="6-six-months-weeks-marketing-training-chandigarh-mohali.aspx">6 Weeks/6 Months Marketing Training in Chandigarh</a></li>
+  <li><a href="http://managementinternship.com/">6 Weeks/6 Months Management Training in Chandigarh</a></li>
+  <li><a href="HR-training-in-chandigarh-with-management-internship.aspx">HR Training in Chandigarh</a></li>
+  <li><a href="45-days-summer-industrial-training-chandigarh-mohali.aspx">45 Days Summer Industrial Training</a></li>
+  <li><a href="Careers.aspx">Careers</a></li>
+
+ </ul>
+
+        
+              </div>
+
+   
+  
+   </div>
+   
+ <div class="scrollToTop" style="z-index:214748"><a href="#" ><img alt="ThinkNEXT Img" src="images/scroll-top.png" /></a></div>
+
+
+
+
+               
+   
+   <div class="clear"></div>
+
+
+
+	</div> 
+		
+	
+
+
+							<div class="container copyright-container">
+				<div class="copyright-wrapper">
+					<div class="copyright-left text-center col-lg-4">
+						copyright ©&nbsp;2016 <a href="http://www.thinknext.co.in/" target="_blank">ThinkNEXT Technologies Private Limited</a>
+
+                        <div ><a href="#"><img src="http://www.hit-counts.com/counter.php?t=MTMzMjA0NA==" border="0" alt="Web Counter"></a></div>	
+						</div> 
+                     <div class="copyright-right col-lg-6">
+						<div><h3 style="color:#fff;text-align:center;font-size: 16px;text-shadow: 3px 2px 9px #ff0000;"> ThinkNEXT  Technologies Private Limited</h3></div>
+
+                        <div style="color:#fff;text-align:center;font-size: 12px;text-shadow: 3px 2px 9px #ff0000;" ><b>SCF 113, Sector-65, Phase-11, Mohali (Chandigarh)</b> </div>	
+						</div> 
+                     
+                           
+
+				<!--	<div class="copyright-right">
+						<a href="http://thinknexttraining.com">Home</a>|<a href="#">Support</a>|<a href="#">About</a>|<a href="contactus.aspx">Contact</a>
+							</div> -->
+					<div class="clear"></div>
+				</div>
+			</div>
+				</div><!-- footer wrapper -->
+     </div>
+	 <!-- body wrapper -->
+ <!-- body outer wrapper -->
+
+
+
+
+     <div id="Div1" runat="server" style="z-index:999; display:none;" class="popupfreetraining">
+            <p id="P1" style="height:19px; margin:0px; text-align:right; padding: 2px 15px 2px 15px; " >
+             <a href="#" onclick="toggle10()"; >
+              <img alt="Close" src="images/close.png" style="margin-top:3px; margin-right:3px; height:35px; width:35px; border-style:none; "  /> </a> </p>
+            <p id="P2" style="width: 284px !important;" align="center">
+            <asp:Label ID="Label1" runat="server" Font-Size="Small" Font-Bold="True"  Style="color:#FFF; background-color: #f83c3c; padding:2%; "
+                ForeColor="Red" Text="Register for Placement Drive"></asp:Label></p>
+            <div class="popu" style="height: 74%; width:auto; border:solid 1px #aaa7a7; margin-right:44px; border-radius:10px; margin-left: -8px; margin-top: 3px;padding-bottom:8px !important" 
+                                                    align="left">
+
+<table class="tab1" align="center" border="1" id="Table1" style="width:100%;">
+  <tbody><tr>
+    <td style="float:left";>Name</td>
+    <td colspan="2">
+        <asp:TextBox ID="txtnamename" runat="server" Height="22px" Width="140px" style="text-transform: capitalize;"></asp:TextBox>        &nbsp;</td>
+   
+  </tr>
+  <tr>
+    <td style="float:left;  margin-top:10%;">Mobile No</td>
+    <td colspan="2">
+        <asp:TextBox ID="txtmobilenono" runat="server"  style=" Height:22px; Width:140px; margin-top:5%;"></asp:TextBox>
+        <br />
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter Valid Mobile No." ControlToValidate="txtmobilenono" ValidationExpression="^([7-9]{1})([0-9]{9})$" ForeColor="#CC0000"></asp:RegularExpressionValidator>
+&nbsp;</td>
+  
+  </tr>
+  <tr>
+    <td style="float:left; margin-top:10%;">E-mail ID</td>
+    <td colspan="2">
+        <asp:TextBox ID="txtemailidid" runat="server" style=" Height:22px; Width:140px; margin-top:5%;"></asp:TextBox>
+        <br />
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Enter Valid Email ID." ControlToValidate="txtemailidid" ValidationExpression="/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/" ForeColor="#CC0000"></asp:RegularExpressionValidator>
+&nbsp;</td>
+  
+  </tr>
+  <tr>
+    <td style="float:left; margin-top:8%;">College Name</td>
+    <td colspan="2">
+        <asp:TextBox ID="txtcollegenamename" runat="server" style=" Height:22px; Width:140px; margin-top:5%; text-transform: capitalize;"></asp:TextBox>
+      </td>
+   </tr>
+  <tr>
+    <td style="float:left; margin-top:10%";> Batch </td>
+    <td colspan="2" style="padding-left:0px;">
+        &nbsp;  
+          <asp:TextBox ID="txtbatchch" runat="server" style=" Height:22px; Width:142px; margin-top:5%; text-transform: capitalize;"></asp:TextBox>
+ </td>
+  </tr>
+      <tr>
+    <td style="float:left; margin-top:10%";> Qualification </td>
+    <td colspan="2" style="padding-left:0px;">
+        &nbsp;  
+          <asp:TextBox ID="txtqualificationn" runat="server" style=" Height:22px; Width:142px; margin-top:5%; text-transform: capitalize;"></asp:TextBox>
+ </td>
+  </tr>
+
+
+</tbody>
+</table>
+                <br />
+<table style="border:none;">
+<tbody>
+<tr>
+        <td style="float:right; margin-right: 98px;border:none; margin-top:-5%;">
+        <asp:Button ID="btnsubmit" runat="server" EnableTheming="False" Text="Submit" OnClientClick="javascript:validate12()" />
+        </td>
+  </tr>
+</tbody>
+</table>
+ </div>  
+   
+
+
+<p style="padding-top: 6px">  <span id="Span1" style="color:Red;font-size:X-Small;font-weight:bold;text-align:center;"></span> </p>
+    </div>
+
+
+
+   <%----------------------------------------free industrial training popup--------------------------------------------------------------------------%>
+	<div id="popup" runat="server" style="z-index:999; display:none;" class="popupfreetraining">
+            <p id="close" style="height:40px; margin:0px; text-align:right; padding: 2px 15px 2px 15px; " >
+             <a href="#" onclick="toggle()"; >
+              <img alt="Close" src="images/close.png" style="margin-top:3px; margin-right:3px; height:35px; width:35px; border-style:none; "  /> </a> </p>
+            <p id="P" style="width: 284px; !important;" align="center">
+            <asp:Label ID="lblstatus" runat="server" Font-Size="Small" Font-Bold="True"  Style="color:#FFF; background-color: #f83c3c; padding:2%; "
+                ForeColor="Red" Text="Register for Scholarship Test"></asp:Label></p>
+            <div class="popu" style="height: 74%; width:auto; border:solid 1px #aaa7a7; margin-right:44px; border-radius:10px; margin-left: -8px; margin-top: 3px;padding-bottom:17px !important" 
+                                                    align="left">
+
+<table class="tab1" align="center" border="1" id="TableR" style="width:100%;">
+  <tbody><tr>
+    <td style="float:left";>Name</td>
+    <td colspan="2">
+        <asp:TextBox ID="txtNameR" runat="server" Height="22px" Width="140px"></asp:TextBox>
+        &nbsp;</td>
+   
+  </tr>
+  <tr>
+    <td style="float:left;  margin-top:10%;">Mobile No</td>
+    <td colspan="2">
+        <asp:TextBox ID="txtContectR" runat="server"  style=" Height:22px; Width:140px; margin-top:7%;"></asp:TextBox>
+&nbsp;</td>
+  
+  </tr>
+  <tr>
+    <td style="float:left; margin-top:10%;">E-mail ID</td>
+    <td colspan="2">
+        <asp:TextBox ID="txtEmailR" runat="server" style=" Height:22px; Width:140px; margin-top:7%;"></asp:TextBox>
+&nbsp;</td>
+  
+  </tr>
+  <tr>
+    <td style="float:left; margin-top:8%;">Training Type</td>
+    <td colspan="2">
+        &nbsp;<asp:DropDownList ID="ddlTraining" runat="server" Width="142px" style="margin-left:6%; margin-top:8%;">
+           <asp:ListItem>6 Months</asp:ListItem>
+            <asp:ListItem>6 Weeks</asp:ListItem>
+            <asp:ListItem>2 Months</asp:ListItem>
+              <asp:ListItem>4 Weeks</asp:ListItem>
+        </asp:DropDownList>
+      </td>
+   </tr>
+  <tr>
+    <td style="float:left; margin-top:17%";>Preferred Courses</td>
+    <td colspan="2" style="padding-left:0px;">
+        &nbsp;  
+          <asp:TextBox ID="txtcourses" runat="server" style=" Height:22px; Width:142px; margin-top:12%;"></asp:TextBox>
+ </td>
+  </tr>
+     
+</tbody>
+</table>
+<table style="border:none;">
+<tbody>
+<tr>
+        <td style="float:right; margin-right: 98px;border:none;">
+        <asp:Button ID="btnSave" runat="server" EnableTheming="False" Text="Submit" />
+        </td>
+  </tr>
+</tbody>
+</table>
+ </div>  
+   </div>
+     </div>
+     </div>
+
+
+<p style="padding-top: 6px">  <span id="ctl00_ContentPlaceHolder1_lblmsg" style="color:Red;font-size:X-Small;font-weight:bold;text-align:center;"></span> </p>
+    </div>
+
+
+      <a id="whatsapp-message" href="https://wa.me/917837404000?text=Hi, I am Interested. Please contact me as soon as possible.">
+  <img src="images/whatsapp1.gif" alt="Whatsapp icon" />
+</a>
+       <a id="callme" href="tel:7837401000">
+  <img src="images/callme.gif" alt="call icon" />
+</a>
+
+     <a id="youtubesubscribe" href="https://www.youtube.com/ThinkNEXTIndia?sub_confirmation=1">
+  <img src="images/youtubelike.png" alt="YouTube icon" />
+</a>
+         <a id="facebooklike" href="http://m.me/thinknexttechnologies">
+  <img src="images/fb-messenger.png" alt="Messenger icon" />
+</a>
+
+      <!-- // START Social Share css and Html Code without-likes  ---------->
+     
+          <%-- <style>
+.rota:hover {
+	
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+
+</style>
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="right:0px; top:150px; ">
+    <a class="rota a2a_button_facebook"></a>
+    <a class="rota a2a_button_twitter"></a>
+    <a class="rota a2a_button_google_plus"></a>
+    <a class="rota a2a_button_pinterest"></a>
+    <a class="rota a2a_button_linkedin"></a>
+    
+</div>--%>
+
+
+    <!-- // END Social Share css and Html code ---------->
+
+
+
+       <%---------------------------------------Placement Drive Popup --------------------------------------------------------------------------%>
+	
+    
+
+
+<%--<script type="text/javascript">jQuery(document).ready(function () { });</script>	
+<script>
+
+    var getElementsByClassName = function (a, b, c) { if (document.getElementsByClassName) { getElementsByClassName = function (a, b, c) { c = c || document; var d = c.getElementsByClassName(a), e = b ? new RegExp("\\b" + b + "\\b", "i") : null, f = [], g; for (var h = 0, i = d.length; h < i; h += 1) { g = d[h]; if (!e || e.test(g.nodeName)) { f.push(g) } } return f } } else if (document.evaluate) { getElementsByClassName = function (a, b, c) { b = b || "*"; c = c || document; var d = a.split(" "), e = "", f = "http://www.w3.org/1999/xhtml", g = document.documentElement.namespaceURI === f ? f : null, h = [], i, j; for (var k = 0, l = d.length; k < l; k += 1) { e += "[contains(concat(' ', @class, ' '), ' " + d[k] + " ')]" } try { i = document.evaluate(".//" + b + e, c, g, 0, null) } catch (m) { i = document.evaluate(".//" + b + e, c, null, 0, null) } while (j = i.iterateNext()) { h.push(j) } return h } } else { getElementsByClassName = function (a, b, c) { b = b || "*"; c = c || document; var d = a.split(" "), e = [], f = b === "*" && c.all ? c.all : c.getElementsByTagName(b), g, h = [], i; for (var j = 0, k = d.length; j < k; j += 1) { e.push(new RegExp("(^|\\s)" + d[j] + "(\\s|$)")) } for (var l = 0, m = f.length; l < m; l += 1) { g = f[l]; i = false; for (var n = 0, o = e.length; n < o; n += 1) { i = e[n].test(g.className); if (!i) { break } } if (i) { h.push(g) } } return h } } return getElementsByClassName(a, b, c) },
+        dropdowns = getElementsByClassName('dropdown-menu');
+    for (i = 0; i < dropdowns.length; i++)
+        dropdowns[i].onchange = function () { if (this.value != '') window.location.href = this.value; }
+	</script>
+	<script type='text/javascript' src='../../s0.wp.com/wp-content/js/devicepx-jetpack104a.js?ver=201307'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/superfish5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/supersub5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/hoverIntent5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/jquery.easing5152.js?ver=1.0'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var ATTR = { "enable": "enable", "width": "80", "height": "45" };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/jquery.fancybox5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/jquery.fancybox-media5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/jquery.fancybox-thumbs5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/gdl-scripts5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/portfolio-carousel5152.js?ver=1.0'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var FLEX = { "animation": "fade", "pauseOnHover": "enable", "controlNav": "enable", "directionNav": "enable", "animationSpeed": "600", "slideshowSpeed": "12000", "pauseOnAction": "disable", "thumbnail_width": "75", "thumbnail_height": "50", "controlsContainer": ".flexslider" };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/jquery.flexslider5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/jquery.cycle5152.js?ver=1.0'></script>
+<script type='text/javascript'>
+</script>
+<script type='text/javascript' src='wp-content/themes/bluediamond/javascript/gdl-contactform5152.js?ver=1.0'></script>
+<script type='text/javascript' src='bootstrap/js/bootstrap.js'></script>
+<script type='text/javascript' src="js/jquery.js"></script>
+<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+    --%>
+
+
+ <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5a279091d0795768aaf8d9bf/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>  
+
+<!--End of Tawk.to Script-->
+
+
+   <!--Start of Zendesk Chat Script-->
+
+<!--End of Zendesk Chat Script-->
+
+
+<!--Add the following script at the bottom of the web page (immediately before the </body> tag)-->
+
+
+<%--<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=34503052"></script>
+--%>
+
+</form>
+      <script src="particle-animation/js/particles.js"></script>
+<script src="particle-animation/js/app.js"></script>
+      <script src="particle-animation/js/particles2.js"></script>
+<script src="particle-animation/js/app2.js"></script>
+     <script type='text/javascript' src='bootstrap/js/bootstrap.js'></script>
+    <script type='text/javascript' src="js/jquery.js"></script>
+     <script src="lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+      
+   <script>
+
+
+    $(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 200) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+
+       </script>
+
+    <script>
+$(document).ready(function(e) {
+    $(".awrds-ach img").click(function (e) {
+        var alt = $(this).attr("alt");
+        var imgsrc = $(this).attr("src");
+     
+        $("#cert-lightbox").toggle(200).html("<img alt=" + alt + " src=" + imgsrc + ">");
+        $(".CER-CLSW").toggle(200);
+    });
+    $("#cert-lightbox").click(function (e) {
+        $(this).hide(200);
+        $(".CER-CLSW").hide(200);
+    });
+    $(".CER-CLSW").click(function (e) {
+        $("#cert-lightbox").hide(200);
+        $(this).hide(200);
+    });
+});
+
+
+</script>
+
+   <%-- <script>
+            $(function () {
+
+                createSticky($("#jobfair"));
+
+            });
+
+            function createSticky(sticky) {
+
+                if (typeof sticky !== "undefined") {
+
+                    var pos = sticky.offset().top,
+                            win = $(window);
+
+                    win.on("scroll", function () {
+                        win.scrollTop() >= pos ? sticky.addClass("jobfair") : sticky.removeClass("jobfair");
+                    });
+                }
+            }
+
+        </script>
+    <script>
+            $(function () {
+
+                createSticky($("#jobfairmobile"));
+
+            });
+
+            function createSticky(sticky) {
+
+                if (typeof sticky !== "undefined") {
+
+                    var pos = sticky.offset().top,
+                            win = $(window);
+
+                    win.on("scroll", function () {
+                        win.scrollTop() >= pos ? sticky.addClass("jobfairmobile") : sticky.removeClass("jobfairmobile");
+                    });
+                }
+            }
+
+        </script>--%>
+</body>
+
+</html>
